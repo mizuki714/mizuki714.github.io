@@ -1,15 +1,17 @@
 
 
-body, footer{
+body{
     max-width: 960px;
     margin: auto;
-    background-color: #74D2E0;
+    background-color: rgb(255, 192, 252);
     padding: 5px 5px;
     color: #4381C1;
   }
+  h2{
+   color: aquamarine;   
+  }
   
   main{
-    background-color:#AFCBFF;
+    background-color: powderblue;
   }
-
   

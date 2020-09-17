@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Italianno|Rubik&display=swap');
 
-body {
+
+body, footer{
     max-width: 960px;
     margin: auto;
     background-color: #74D2E0;
-    font-family: 'Rubik', sans-serif;
     padding: 5px 5px;
-    font-size: 14px;
-    margin: 1em;
     color: #4381C1;
   }
   
   main{
     background-color:#AFCBFF;
   }
+
   

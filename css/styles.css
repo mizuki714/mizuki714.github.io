@@ -48,7 +48,7 @@ footer {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, ifr;
   grid-gap: 1em;
 }

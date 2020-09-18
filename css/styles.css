@@ -16,6 +16,7 @@ h1 {
   color: rgb(127, 208, 255);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24;
+  text-align: center;
 }
 
 h2 {
@@ -39,7 +40,8 @@ p {
 
 footer {
   background-color: rgb(14, 179, 201);
-  margin: 1em; 
+  margin: 2em;
+  text-align: center; 
 
 }
 
@@ -76,5 +78,5 @@ footer {
 .lastUpdated {
   grid-column: 2/3;
   grid-row: 4;
-
+ grid
 }

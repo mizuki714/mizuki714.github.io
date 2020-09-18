@@ -27,10 +27,11 @@ h2 {
 
 main {
   background-color: rgb(14, 179, 201);
+  margin: 1em; 
 }
 
 img {
-  width: 100 px;
+  width: 70 px;
   height: auto;
 }
 

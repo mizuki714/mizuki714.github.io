@@ -65,7 +65,7 @@ footer {
 .imageOfMe {
   grid-column: 2/3;
   grid-row: 1/2;
-  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }

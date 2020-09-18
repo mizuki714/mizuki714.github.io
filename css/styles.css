@@ -1,33 +1,43 @@
 
 
+#pageContent{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
 body{
-    max-width: 960px;
-    margin: auto;
-    background-color: rgb(255, 192, 252);
-    padding: 5em;
-    color: rgb(41, 2, 41);
+   
+    background-color: rgb(121, 9, 102);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em, 1em;
+    margin: 1em; 
   }
 
   h1{
-    color: aqua;
+    color: rgb(40, 4, 40);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24;
   }
 
   h2{
-   color: aquamarine;   
+   color: rgb(127, 208, 255);  
+   font-family: Georgia, 'Times New Roman', Times, serif; 
    font-size: 14;
   }
   
   main{
-    background-color: powderblue;
+    background-color: rgb(14, 179, 201);
   }
 
   img{
-     width: 40px;
-     height: auto px;
+     width: 60px;
+     height: auto;
+  }
+  p{
+    color: blueviolet;
   }
   footer{ 
-    background-color: aquamarine;
+    background-color: rgb(14, 179, 201);
 
   }
   

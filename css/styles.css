@@ -27,7 +27,7 @@ h2 {
 
 main {
   background-color: rgb(14, 179, 201);
-  margin: 1em; 
+  margin: 1em;
 }
 
 img {
@@ -41,9 +41,9 @@ p {
 
 footer {
   background-color: rgb(14, 179, 201);
-  margin: 2em;
-  text-align: center; 
-
+  margin: 1em;
+  text-align: center;
+  padding: 1em;
 }
 
 .main-grid {
@@ -80,5 +80,5 @@ footer {
 .lastUpdated {
   grid-column: 2/3;
   grid-row: 4;
- grid
+  grid
 }

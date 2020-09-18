@@ -1,43 +1,77 @@
-
-
-#pageContent{
+#pageContent {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
 }
-body{
-   
-    background-color: rgb(121, 9, 102);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 1em, 1em;
-    margin: 1em; 
-  }
 
-  h1{
-    color: rgb(40, 4, 40);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24;
-  }
+body {
 
-  h2{
-   color: rgb(127, 208, 255);  
-   font-family: Georgia, 'Times New Roman', Times, serif; 
-   font-size: 14;
-  }
-  
-  main{
-    background-color: rgb(14, 179, 201);
-  }
+  background-color: rgb(121, 9, 102);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 1em, 1em;
+  margin: 1em;
+}
 
-  img{
-     width: 60px;
-     height: auto;
-  }
-  p{
-    color: blueviolet;
-  }
-  footer{ 
-    background-color: rgb(14, 179, 201);
+h1 {
+  color: rgb(40, 4, 40);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24;
+}
 
-  }
-  
+h2 {
+  color: rgb(127, 208, 255);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14;
+}
+
+main {
+  background-color: rgb(14, 179, 201);
+}
+
+img {
+  width: 60px;
+  height: auto;
+}
+
+p {
+  color: blueviolet;
+}
+
+footer {
+  background-color: rgb(14, 179, 201);
+
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, ifr;
+  grid-gap: 1em;
+}
+
+.courseInfo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.imageOfMe {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.lessonList {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.copyright {
+  grid-column: 2/3;
+  grid-row: 3/4;
+
+}
+
+.lastUpdated {
+  grid-column: 2/3;
+  grid-row: 4;
+
+}

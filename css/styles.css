@@ -17,6 +17,7 @@ h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24;
   text-align: center;
+  padding: 1em; 
 }
 
 h2 {

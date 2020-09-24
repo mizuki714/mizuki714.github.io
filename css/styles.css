@@ -8,20 +8,20 @@
 body {
 
   background-color: rgb(14, 179, 201);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Crimson Text', serif;
   margin: 1em;
 }
 
 h1 {
   color: rgb(127, 208, 255);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: 24;
   text-align: center;
 }
 
 h2 {
   color: blueviolet;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: 14;
   padding: 1em; 
 }

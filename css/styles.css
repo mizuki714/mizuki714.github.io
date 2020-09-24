@@ -7,20 +7,20 @@
 
 body {
   background-color: rgb(14, 179, 201);
-  font-family: 'Crimson Text', serif;
+  font-family: 'Oxygen', sans-serif;
   margin: 1em;
 }
 
 h1 {
   color: rgb(127, 208, 255);
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Crimson Text', serif;
   font-size: 24;
   text-align: center;
 }
 
 h2 {
   color: blueviolet;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Crimson Text', serif;
   font-size: 14;
   padding: 1em; 
 }

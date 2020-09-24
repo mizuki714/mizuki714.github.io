@@ -16,4 +16,7 @@ h2 {
   header, footer {
     border-radius: 10px;
   }
+  body{
+    border-radius: 10px;
+  }
 }

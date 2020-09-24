@@ -10,11 +10,12 @@ body {
   background-color: #0eb3c9;
   font-family: 'Oxygen', sans-serif;
   font-size: 10px;
+  color:  rgb(121, 9, 102);
   margin: 1em;
 }
 
 h1 {
-  color: rgb(127, 208, 255);
+  color:  rgb(121, 9, 102);
   font-family: 'Crimson Text', serif;
   font-size: 18px;
   text-align: center;

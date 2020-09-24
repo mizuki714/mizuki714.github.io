@@ -7,16 +7,17 @@
         border-radius: 5px;
       } 
       h1 {
-        font-size: 24px;
+        font-size: 36px;
       }
       
 h2 {
-    font-size: 14px; 
+    font-size: 24px; 
   }
   header, footer {
     border-radius: 10px;
   }
   body{
+      font-size: 16px;
     border-radius: 10px;
   }
 }

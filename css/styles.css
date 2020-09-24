@@ -23,7 +23,7 @@ h2 {
   color: blueviolet;
   font-family: 'Oxygen', sans-serif;
   font-size: 14px;
-  padding: 1em; 
+  padding: 1em;
 }
 
 main {
@@ -34,7 +34,7 @@ main {
 img {
   max-width: 30%;
   height: auto;
-  padding: 1em; 
+  padding: 1em;
   border: black;
   border-style: solid;
   border-radius: 5px;

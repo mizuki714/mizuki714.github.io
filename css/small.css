@@ -15,14 +15,14 @@ body {
 h1 {
   color: rgb(127, 208, 255);
   font-family: 'Crimson Text', serif;
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
 }
 
 h2 {
   color: blueviolet;
   font-family: 'Oxygen', sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   padding: 1em;
 }
 
@@ -34,17 +34,13 @@ main {
 img {
   max-width: 30%;
   height: auto;
-  padding: 1em;
-  border: black;
-  border-style: solid;
-  border-radius: 5px;
 }
 
 p {
   color: blueviolet;
 }
 
-footer {
+header,footer {
   background-color: rgb(14, 179, 201);
   margin: 1em;
   text-align: center;

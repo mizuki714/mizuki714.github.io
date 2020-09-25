@@ -12,7 +12,7 @@ main {
     grid-template-columns: 1fr;
     background-color: lightgrey;
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 1em; 
+    padding: 1em;
 }
 
 h1 {
@@ -20,8 +20,8 @@ h1 {
     color: white;
     text-align: center;
     font-family: 'Merriweather', serif;
-    background-color:midnightblue;
-    margin:0;
+    background-color: midnightblue;
+    margin: 0;
 }
 
 h2 {
@@ -29,51 +29,62 @@ h2 {
     color: white;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    background-color:rgb(42, 73, 131);
-    margin: 0 20px; 
+    background-color: rgb(42, 73, 131);
+    margin: 0 20px;
     border-radius: 9px 9px;
 }
 
 h3 {
-    font-size: .8rem;
-    color:black;
+    font-size: .9rem;
+    color: black;
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 5px 0;
     border-radius: 9px 9px;
 }
-h4{
+
+h4 {
     text-align: left;
     margin: 5px 0;
+    color: navy;
 }
-p{
+
+p {
     margin: 5px 0;
     text-align: left;
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
-.name{
+
+.name {
     font-size: 1.5rem;
 }
-.contrast, .visualHierarchy, .fittsLaw{
-border: 1px solid rgb(42, 73, 131)
+
+.contrast,
+.visualHierarchy,
+.fittsLaw {
+    border: 1px solid rgb(42, 73, 131);
+    border-radius: 9px 9px;
 }
-header{
+
+header {
     margin-bottom: 10px;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
 }
-footer{
+
+footer {
     margin-top: 50px;
     padding: 20px;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
 }
+
 footer p:last-child {
     margin-bottom: 0;
-    }
+}

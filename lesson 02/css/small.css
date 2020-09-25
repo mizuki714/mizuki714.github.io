@@ -8,35 +8,44 @@ main {
     display: grid;
     color: black;
     grid-template-columns: 1fr;
-    background-color: rgb(160, 121, 160);
+    background-color: gray;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 1em; 
 }
 
 h1 {
-    font-size: 20;
-    color: blueviolet;
+    font-size: 2rem;
+    color: white;
     text-align: center;
     font-family: 'Merriweather', serif;
-    background-color:black;
+    background-color:navy;
     padding: 1em; 
 }
 
 h2 {
-    font-size: 16;
-    color: blueviolet;
+    font-size: 1rem;
+    color: white;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    background-color:black;
+    background-color:rgb(42, 73, 131);
     padding: 1em;
+    border-radius: 9px 9px;
 }
 
 h3 {
-    font-size: 10;
-    color: blueviolet;
+    font-size: .9rem;
+    color:black;
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 1em;
+    border-radius: 9px 9px;
+}
+h4{
+    text-align: left;
+}
+p{
+    margin: 5px 0;
+    text-align: left;
 }
 
 img {
@@ -44,4 +53,7 @@ img {
     height: auto;
     margin-right: auto;
     margin-left: auto; 
+}
+.name{
+    font-size: 1.5rem;
 }

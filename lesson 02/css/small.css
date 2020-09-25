@@ -1,5 +1,5 @@
 body {
-    background-color: purple;
+    background-color: white;
 }
 
 main {
@@ -8,7 +8,7 @@ main {
     display: grid;
     color: black;
     grid-template-columns: 1fr;
-    background-color: gray;
+    background-color: lightgrey;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 1em; 
 }
@@ -18,7 +18,7 @@ h1 {
     color: white;
     text-align: center;
     font-family: 'Merriweather', serif;
-    background-color:navy;
+    background-color:midnightblue;
     padding: 1em; 
 }
 

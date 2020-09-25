@@ -83,6 +83,7 @@ footer {
     padding: 20px;
     color: white;
     text-align: center;
+    background-color: midnightblue;
 }
 
 footer p:last-child {

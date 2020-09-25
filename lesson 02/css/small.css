@@ -30,7 +30,7 @@ h2 {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: rgb(42, 73, 131);
-    margin: 0 20px;
+    margin: 0 25px;
     border-radius: 9px 9px;
 }
 
@@ -68,6 +68,7 @@ img {
 .contrast,
 .visualHierarchy,
 .fittsLaw {
+    padding: 1em; 
     border: 1px solid rgb(42, 73, 131);
     border-radius: 9px 9px;
 }

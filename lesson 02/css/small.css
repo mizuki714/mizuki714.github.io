@@ -1,6 +1,4 @@
-body {
-   
-}
+body {}
 
 main {
     max-width: 767px;
@@ -8,7 +6,7 @@ main {
     display: grid;
     color: paleturquoise;
     grid-template-columns: 1fr;
-    background-color:purple;
+    background-color: purple;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -21,14 +19,19 @@ h1 {
 
 h2 {
     font-size: 16;
-    color:blueviolet;
+    color: blueviolet;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h3 {
     font-size: 10;
-    color:blueviolet;
+    color: blueviolet;
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

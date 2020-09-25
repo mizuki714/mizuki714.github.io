@@ -3,4 +3,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .visualHierarchy{
+        grid-row: 2/3;
+    }
+    .fittsLaw{
+        grid-row: 3/4;
+    }
 }

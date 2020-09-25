@@ -10,6 +10,7 @@ main {
     grid-template-columns: 1fr;
     background-color: rgb(160, 121, 160);
     font-family: 'Open Sans Condensed', sans-serif;
+    padding: 1em; 
 }
 
 h1 {
@@ -26,7 +27,7 @@ h2 {
     color: blueviolet;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    background-color:rgb(110, 110, 110);
+    background-color:black;
     padding: 1em;
 }
 

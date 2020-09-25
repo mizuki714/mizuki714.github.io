@@ -1,12 +1,14 @@
-body {}
+body {
+    background-color: purple;
+}
 
 main {
     max-width: 767px;
     margin: 0 auto;
     display: grid;
-    color: paleturquoise;
+    color: black;
     grid-template-columns: 1fr;
-    background-color: purple;
+    background-color: lightgray;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 

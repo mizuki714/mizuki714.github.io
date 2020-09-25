@@ -1,7 +1,22 @@
-@media only screen and (min-width: 32.5em){
+@media only screen and (min-width: 32.5em) {
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-    
+
+    .visualHiearchy {
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
+
+    .contrast {
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    .fittsLaw {
+        grid-column: 1/1;
+        grid-row: 2/3;
+    }
 }

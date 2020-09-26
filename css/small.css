@@ -10,19 +10,19 @@ body {
   background-color: #0eb3c9;
   font-family: 'Oxygen', sans-serif;
   font-size: 10px;
-  color:  rgb(121, 9, 102);
+  color:  black;
   margin: 1em;
 }
 
 h1 {
-  color:  rgb(121, 9, 102);
+  color: black);
   font-family: 'Crimson Text', serif;
   font-size: 20px;
   text-align: center;
 }
 
 h2 {
-  color: blueviolet;
+  color: black;
   font-family: 'Oxygen', sans-serif;
   font-size: 14px;
   padding: 1em;
@@ -39,7 +39,7 @@ img {
 }
 
 p {
-  color: blueviolet;
+  color:black;
 }
 
 header,footer {

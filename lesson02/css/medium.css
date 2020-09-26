@@ -3,7 +3,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .visualHierarchy{
+
+    .visualHierarchy {
         grid-row: 2/3;
+    }
+    .contrast {
+        grid-row: 1/2;
     }
 }

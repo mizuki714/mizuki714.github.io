@@ -3,6 +3,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .contrast {
+        grid-row: 1/2;
+    }
     .visualHierarchy{
         grid-row: 2/3;
     }

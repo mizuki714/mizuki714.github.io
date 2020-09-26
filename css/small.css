@@ -1,4 +1,4 @@
-#pageContent {
+html {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
@@ -40,6 +40,7 @@ img {
 
 p {
   color:black;
+
 }
 
 header,footer {
@@ -49,14 +50,7 @@ header,footer {
   padding: 1em;
 }
 
-.courseInfo {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
 .imageOfMe {
-  grid-column: 2/3;
-  grid-row: 1/3;
   margin-right: 1em;
   margin-left: 1em;
   margin-top: 1em;
@@ -64,16 +58,10 @@ header,footer {
 }
 
 .lessonList {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  text-align: left;
+  margin-bottom: 1em;
 }
 
 .copyright {
-  grid-column: 2/3;
-
-}
-
-.lastUpdated {
-  grid-column: 2/3;
-  grid-row: 6;
+text-align: center;
 }

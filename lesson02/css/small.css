@@ -7,12 +7,14 @@ body {
 main {
     max-width: 767px;
     margin: 0 auto;
-    display: grid;
     color: black;
-    grid-template-columns: 1fr;
     background-color: lightgrey;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 1em;
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 h1 {

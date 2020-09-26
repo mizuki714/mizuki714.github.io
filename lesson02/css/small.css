@@ -10,8 +10,7 @@ main {
     color: black;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 1em;
-}
-.principles{
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;

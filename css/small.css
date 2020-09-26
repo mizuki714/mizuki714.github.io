@@ -29,7 +29,7 @@ h2 {
 }
 
 main {
-  background-color: rgb(119, 191, 201);
+  background-color: rgb(138, 195, 202);
   margin: 1em;
 }
 
@@ -44,7 +44,7 @@ p {
 }
 
 header,footer {
-  background-color: rgb(119, 191, 201);
+  background-color: rgb(73, 189, 204);
   margin: 1em;
   text-align: center;
   padding: 1em;

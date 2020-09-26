@@ -1,3 +1,9 @@
-//shows date last modified
-const options = {weekday: 'long', day: 'numeric', month:'long', year: 'numeric'};
-document.getElementById('lastModifiedDate').textContent = new Date().toLocaleDateString('en-US', options);
+//shows date last modified and current year
+const dateTimeObject = new Date();
+const fullYear = dateTimeObject.getFullYear();
+const currentYear = document.getElementById("currentYear");
+currentYear.textContent = fullYear;
+
+
+document.getElementById('lastModifiedDate') = document.lastModified
+document.getFullYear.textContent = dateTimeObject.getFullYear;

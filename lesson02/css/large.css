@@ -2,7 +2,7 @@
     .principles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-row: 1fr;
+        grid-template-rows: 1fr;
     }
     .contrast {
         grid-column: 1/2;

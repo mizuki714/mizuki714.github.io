@@ -89,3 +89,6 @@ footer {
 footer p:last-child {
     margin-bottom: 0;
 }
+.copyright, .lastUpdated{
+    text-align: center;
+}

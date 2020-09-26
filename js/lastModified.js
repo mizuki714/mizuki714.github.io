@@ -5,5 +5,4 @@ const currentYear = document.getElementById("currentYear");
 currentYear.textContent = fullYear;
 
 
-document.getElementById('lastModifiedDate') = document.lastModified
-document.getFullYear.textContent = dateTimeObject.getFullYear;
+document.getElementById('lastModifiedDate').textContent = document.lastModified;

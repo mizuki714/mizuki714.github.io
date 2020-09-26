@@ -2,12 +2,19 @@
     .section {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr;
     }
 
     .visualHierarchy {
         grid-column: 2/3;
+        grid-row: 1/2;
     }
     .contrast {
         grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .fittsLaw{
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
 }

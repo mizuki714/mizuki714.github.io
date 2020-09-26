@@ -6,9 +6,8 @@ body {
 
 main {
     max-width: 767px;
-    margin: 1em auto;
+    margin: 0 auto;
     color: black;
-    background-color: lightgrey;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 1em;
 }
@@ -16,7 +15,8 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    justify-items: center;
+    justify-content: space-evenly;
+    
 }
 
 h1 {
@@ -34,7 +34,7 @@ h2 {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: rgb(42, 73, 131);
-    border-radius: 9px 9px;
+    border-radius: 9px 9px 0 0;
 }
 
 h3 {
@@ -55,13 +55,13 @@ h4 {
 p {
     margin: 5px 0;
 }
+a{
+    color:grey;
+}
 
-.paypal, .barbie, .grubhub {
+.paypal, .barbie, .grubhub{
     max-width: 100%;
     height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
 }
 
 .name {
@@ -71,9 +71,13 @@ p {
 .contrast,
 .visualHierarchy,
 .fittsLaw {
-    padding: 1em; 
+    padding: 0  1em 0 ; 
     border: 1px solid rgb(42, 73, 131);
     border-radius: 9px 9px;
+    background-color: rgb(230, 228, 228);
+    justify-content: center;
+    max-width: 245px;
+    
 }
 
 header {

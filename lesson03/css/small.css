@@ -1,0 +1,36 @@
+
+
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Neuton', serif;
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #3D3A4B;
+    color: #F9F4F5;
+  }
+  .colors td{
+    width: 20%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: #5BC0EB;
+  }
+  .secondary {
+    background-color: #4381C1;
+  }
+  .accent1 {
+    background-color: #F6AE2D;
+  }
+  .accent2{
+    background-color: #3D3A4B;
+    color: #F9F4F5;
+  }
+  .accent3{
+    background-color: #F9F4F5;
+  }

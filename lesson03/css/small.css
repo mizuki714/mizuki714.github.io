@@ -1,36 +1,55 @@
+nav > ul{
+    list-style: none;
+}
+h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+}
 
-
-font-family: 'Archivo Narrow', sans-serif;
-font-family: 'Neuton', serif;
+h2,
+h3,
+h4,
+p,
+a {
+    font-family: 'Neuton', serif;
+}
+a{
+    text-decoration: none;
+}
 
 .colors {
     width: 100%;
     min-width: 350px;
     margin: auto;
     text-align: center;
-  }
-  .colors th {
+}
+
+.colors th {
     background-color: #3D3A4B;
     color: #F9F4F5;
-  }
-  .colors td{
+}
+
+.colors td {
     width: 20%;
     height: 3em;
-  }
-  
-  .primary {
+}
+
+.primary {
     background-color: #5BC0EB;
-  }
-  .secondary {
+}
+
+.secondary {
     background-color: #4381C1;
-  }
-  .accent1 {
+}
+
+.accent1 {
     background-color: #F6AE2D;
-  }
-  .accent2{
+}
+
+.accent2 {
     background-color: #3D3A4B;
     color: #F9F4F5;
-  }
-  .accent3{
+}
+
+.accent3 {
     background-color: #F9F4F5;
-  }
+}

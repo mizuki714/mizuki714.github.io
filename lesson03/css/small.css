@@ -62,6 +62,12 @@ nav a:hover {
 nav>ul {
     list-style: none;
 }
+footer{
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    padding:1em;
+    text-align: center;
+}
 
 .colors {
     width: 100%;

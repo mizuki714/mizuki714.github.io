@@ -88,7 +88,7 @@ p {
     background-color: rgb(230, 228, 228);
     justify-content: center;
     max-width: 245px;
-
+    margin:0 auto;
 }
 
 header {

@@ -1,2 +1,9 @@
 @media only screen and (min-width: 65em) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
 }

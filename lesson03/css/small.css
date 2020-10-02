@@ -1,47 +1,67 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Neuton', serif;
+}
 
+h1 {
+    font-size: 32pt;
+}
 
-nav{
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+a {
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+nav {
     background-color: #F6AE2D;
-    color:#3D3A4B;
+    color: #3D3A4B;
     line-height: 3rem;
     text-align: center;
     font-size: 1.5rem;
 }
-nav a{
+
+nav a {
     padding: 1rem;
 }
-nav a:link, nav a:visited {
+
+nav a:link,
+nav a:visited {
     color: #3D3A4B;
-  }
-  nav a:hover {
+}
+
+nav a:hover {
     color: #F9F4F5;
     background-color: #3D3A4B;
-  }
+}
 
-nav > ul{
+nav>ul {
     list-style: none;
 }
-h1 {
-    font-family: 'Archivo Narrow', sans-serif;
-}
-
-h2,
-h3,
-h4,
-p,
-a {
-    font-family: 'Neuton', serif;
-}
-a{
-    text-decoration: none;
-}
-p{
-    color:#3D3A4B;
-}
-a{
-    color: #3D3A4B
-}
-
 
 .colors {
     width: 100%;

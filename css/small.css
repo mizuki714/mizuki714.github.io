@@ -7,10 +7,10 @@ html {
 
 body {
 
-  background-color:  rgb(121, 9, 102);
+  background-color: rgb(121, 9, 102);
   font-family: 'Oxygen', sans-serif;
   font-size: 12px;
-  color:  black;
+  color: black;
   margin: 1em;
 }
 
@@ -39,11 +39,17 @@ img {
 }
 
 p {
-  color:black;
+  color: black;
 
 }
 
-header,footer {
+a {
+  text-decoration: none;
+  S
+}
+
+header,
+footer {
   background-color: rgb(73, 189, 204);
   margin: 1em;
   text-align: center;
@@ -58,5 +64,5 @@ header,footer {
 }
 
 .copyright {
-text-align: center;
+  text-align: center;
 }

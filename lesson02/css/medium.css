@@ -1,4 +1,7 @@
 @media only screen and (min-width: 32.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
     .visualHierarchy {
         grid-column: 2/3;
     }

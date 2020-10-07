@@ -1,0 +1,109 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Neuton', serif;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+a {
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+nav {
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav a {
+    padding: .9rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #3D3A4B;
+}
+
+nav a:hover {
+    color: #F9F4F5;
+    background-color: #3D3A4B;
+}
+
+nav>ul {
+    list-style: none;
+}
+
+footer{
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    padding:1em;
+    text-align: center;
+}
+
+.colors {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #3D3A4B;
+    color: #F9F4F5;
+}
+
+.colors td {
+    width: 100%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #5BC0EB;
+}
+
+.secondary {
+    background-color: #4381C1;
+}
+
+.accent1 {
+    background-color: #F6AE2D;
+}
+
+.accent2 {
+    background-color: #3D3A4B;
+    color: #F9F4F5;
+}
+
+.accent3 {
+    background-color: #F9F4F5;
+}

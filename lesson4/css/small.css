@@ -39,15 +39,16 @@ header {
     background-color: #4381C1;
     text-align: center;
 }
-
+section{
+    display: flex;
+}
 main {
     background-color: #5BC0EB;
 }
 
-.logo {
-    width: auto;
+img {
+    width: auto; 
     height: auto;
-    float: left;
 }
 
 h1 {

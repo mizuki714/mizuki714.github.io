@@ -1,6 +1,10 @@
 @media only screen and (min-width: 65em) {
-    main,body{ max-width: 960px;
+
+    main,
+    body {
+        max-width: 1000px;
     }
+
     nav ul {
         display: flex;
     }

@@ -4,22 +4,54 @@ h3,
 h4 {
     font-family: 'Neuton', serif;
 }
-html{background-color: #F9F4F5;}
-header{background-color: #4381C1;}
-main{
-    background-color:#5BC0EB;
+
+.navigation {
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
-.logo{
-    width:auto;
-    height:auto;
+
+nav a {
+    padding: .9rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #3D3A4B;
+}
+
+nav a:hover {
+    color: #F9F4F5;
+    background-color: #3D3A4B;
+}
+
+nav>ul {
+    list-style: none;
+}
+
+html {
+    background-color: #F9F4F5;
+}
+
+header {
+    background-color: #4381C1;
+    text-align: center;
+}
+
+main {
+    background-color: #5BC0EB;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    float: left;
 }
 
 h1 {
     font-size: 32pt;
-    text-align: center;
-}
-.motto{
-    text-align: center;
 }
 
 h2 {
@@ -50,36 +82,11 @@ a {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-nav {
+
+footer {
     background-color: #F6AE2D;
     color: #3D3A4B;
-    line-height: 3rem;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-nav a {
-    padding: .9rem;
-}
-
-nav a:link,
-nav a:visited {
-    color: #3D3A4B;
-}
-
-nav a:hover {
-    color: #F9F4F5;
-    background-color: #3D3A4B;
-}
-
-nav>ul {
-    list-style: none;
-}
-
-footer{
-    background-color: #F6AE2D;
-    color: #3D3A4B;
-    padding:1em;
+    padding: 1em;
     text-align: center;
 }
 

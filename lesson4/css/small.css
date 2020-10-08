@@ -4,9 +4,22 @@ h3,
 h4 {
     font-family: 'Neuton', serif;
 }
+html{background-color: #F9F4F5;}
+header{background-color: #4381C1;}
+main{
+    background-color:#5BC0EB;
+}
+.logo{
+    width:auto;
+    height:auto;
+}
 
 h1 {
     font-size: 32pt;
+    text-align: center;
+}
+.motto{
+    text-align: center;
 }
 
 h2 {
@@ -70,22 +83,7 @@ footer{
     text-align: center;
 }
 
-.colors {
-    width: 100%;
-    max-width: 350px;
-    margin: auto;
-    text-align: center;
-}
-
-.colors th {
-    background-color: #3D3A4B;
-    color: #F9F4F5;
-}
-
-.colors td {
-    width: 100%;
-    height: 3em;
-}
+/* these are here for reference*/
 
 .primary {
     background-color: #5BC0EB;
@@ -101,7 +99,6 @@ footer{
 
 .accent2 {
     background-color: #3D3A4B;
-    color: #F9F4F5;
 }
 
 .accent3 {

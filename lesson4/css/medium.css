@@ -6,4 +6,9 @@
     nav ul li {
         flex: 1 1 100%;
     }
+
+
+    .navigation li:first-child {
+        display: none;
+    }
 }

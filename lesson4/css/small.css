@@ -5,21 +5,25 @@ h4 {
     font-family: 'Neuton', serif;
 }
 
-.navigation {
+nav {
     background-color: #F6AE2D;
     color: #3D3A4B;
     line-height: 3rem;
     text-align: center;
     font-size: 1.5rem;
 }
-
-nav a {
-    padding: .9rem;
+nav button{
+  margin:  .2rem 2%;
+  background-color: transparent;
+  border:none;
+  font-size: 2 rem;
 }
-
 nav a:link,
 nav a:visited {
     color: #3D3A4B;
+}
+.navigation li:first-child {
+	display: block;
 }
 
 nav a:hover {
@@ -29,6 +33,8 @@ nav a:hover {
 
 nav>ul {
     list-style: none;
+    padding: 0;
+    margin:0;
 }
 
 html {

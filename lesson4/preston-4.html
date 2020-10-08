@@ -24,11 +24,11 @@
     </header>
     <!--- Navigation-->
     <nav>
-        <button>&#9776</button>
-        <ul class="navigation">
+        <button onclick="toggleMenu()">&#9776</button>
+        <ul id ="menu" class="">
             <li><a class="ham" href="#">Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="preston-4.html"> Preston </a></li>
+            <li class="active"><a href="preston-4.html"> Preston </a></li>
             <li><a href="#"> Soda Springs</a></li>
             <li><a href="#"> Fish Haven</a></li>
             <li><a href="#"> Storm Center</a></li>
@@ -51,6 +51,7 @@
                 Learning</a> | <a href="index.html">Home</a></p>
         <p class="lastUpdated"> Last Updated:<span id="lastUpdated"></span> </p>
     </footer>
+    <script src="js/menu.js"></script>
     <script src="../js/lastModified.js"></script>
 </body>
 

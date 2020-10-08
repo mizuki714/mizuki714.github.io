@@ -1,8 +1,9 @@
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 65rem) {
 
     main,
     body {
-        max-width: 1000px;
+        max-width: 960px;
+        margin: auto;
     }
 
     nav ul {
@@ -11,7 +12,7 @@
 
     nav ul li {
         flex: 1 1 100%;
-    
+    padding: .6rem, 1rem;
 	}
 	.navigation li:first-child {
 		display: none;

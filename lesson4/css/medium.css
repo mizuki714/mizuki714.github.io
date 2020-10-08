@@ -1,10 +1,17 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35rem) {
+    nav button{
+        display: none;
+    }
     nav ul {
         display: flex;
+        margin-left:2%;/*i dont know why this was in the video*/
     }
 
     nav ul li {
         flex: 1 1 100%;
+    }
+    nav ul li a{ border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
     }
 
 

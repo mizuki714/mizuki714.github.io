@@ -1,21 +1,21 @@
-@media only screen and (min-width: 35rem) {
-    nav button{
+@media only screen and (min-width: 35em) {
+    nav button {
         display: none;
-    }
-    nav ul {
-        display: flex;
-        margin-left:2%;/*i dont know why this was in the video*/
     }
 
     nav ul li {
         flex: 1 1 100%;
     }
-    nav ul li a{ border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
+
+    nav ul.hide_navigation,
+    nav ul {
+        display: flex;
+        margin-left: 2%;
     }
 
-
-    .navigation li:first-child {
-        display: none;
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
+
 }

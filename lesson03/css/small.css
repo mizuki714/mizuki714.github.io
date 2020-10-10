@@ -1,12 +1,11 @@
-h1,
+h1 {
+    font-family: 'Neuton', serif;
+    font-size: 3rem;
+}
 h2,
 h3,
 h4 {
-    font-family: 'Neuton', serif;
-}
-
-h1 {
-    font-size: 32pt;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 h2 {
@@ -36,11 +35,14 @@ a {
     font-size: 1.1rem;
     font-family: 'Archivo Narrow', sans-serif;
 }
+header{
+    background-color: #4381C1;
+    text-align: center;
+}
 
 nav {
     background-color: #F6AE2D;
     color: #3D3A4B;
-    line-height: 3rem;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -59,13 +61,19 @@ nav a:hover {
     background-color: #3D3A4B;
 }
 
-nav>ul {
+nav ul {
     list-style: none;
 }
-footer{
+
+main {
+    padding: 1rem;
+    background-color: #5BC0EB;
+}
+
+footer {
     background-color: #F6AE2D;
     color: #3D3A4B;
-    padding:1em;
+    padding: 1em;
     text-align: center;
 }
 

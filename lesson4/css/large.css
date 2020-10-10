@@ -10,9 +10,4 @@
         display: flex;
     }
 
-    nav ul li {
-        flex: 1 1 100%;
-    padding: .6rem 1rem;
-	}
-
 }

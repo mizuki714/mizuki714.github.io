@@ -1,14 +1,7 @@
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Neuton', serif;
-}
 
 nav {
     background-color: #F6AE2D;
     color: #3D3A4B;
-    line-height: 3rem;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -36,6 +29,7 @@ nav ul.hide_navigation {
 nav a:hover {
     color: #F9F4F5;
     background-color: #3D3A4B;
+
 }
 
 nav ul {
@@ -52,6 +46,10 @@ nav ul li a {
 .active {
     background-color: rgba(0, 0, 0, 0.2);
 
+}
+button{
+    color: #3D3A4B;
+    font-family: 'Archivo Narrow', sans-serif;  
 }
 
 
@@ -71,6 +69,7 @@ section {
 
 main {
     background-color: #5BC0EB;
+    padding: 1.5rem; 
 }
 
 img {
@@ -79,11 +78,17 @@ img {
 }
 
 h1 {
-    font-size: 32pt;
+    font-family: 'Neuton', serif;
+    font-size: 3rem;
+}
+h2,
+h3,
+h4 {
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -111,31 +116,10 @@ a {
 }
 
 
+
 footer {
     background-color: #F6AE2D;
     color: #3D3A4B;
     padding: 1em;
     text-align: center;
-}
-
-/* these are here for reference*/
-
-.primary {
-    background-color: #5BC0EB;
-}
-
-.secondary {
-    background-color: #4381C1;
-}
-
-.accent1 {
-    background-color: #F6AE2D;
-}
-
-.accent2 {
-    background-color: #3D3A4B;
-}
-
-.accent3 {
-    background-color: #F9F4F5;
 }

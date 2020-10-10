@@ -10,12 +10,14 @@
     nav ul.hide_navigation,
     nav ul {
         display: flex;
-        margin-left: 2%;
     }
 
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    header{
+        text-align: left;
     }
 
 }

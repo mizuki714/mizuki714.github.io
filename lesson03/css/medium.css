@@ -1,6 +1,8 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35em) {
     nav ul {
         display: flex;
+        margin: 0;
+        padding:10px 0;
     }
 
     nav ul li {

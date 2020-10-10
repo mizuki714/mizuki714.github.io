@@ -83,7 +83,9 @@ h1 {
 }
 h2,
 h3,
-h4 {
+h4, 
+.motto 
+{
     font-family: 'Archivo Narrow', sans-serif;
 }
 
@@ -97,6 +99,9 @@ h3 {
 
 h4 {
     font-size: 1.5rem;
+}
+.motto{
+   font-size:  1.3rem;
 }
 
 p {

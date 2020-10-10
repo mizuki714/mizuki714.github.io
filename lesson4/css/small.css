@@ -99,10 +99,6 @@ h4 {
     font-size: 1.5rem;
 }
 
-a {
-    text-decoration: none;
-}
-
 p {
     color: #3D3A4B;
     font-size: 1.1rem;
@@ -112,6 +108,7 @@ p {
 a {
     color: #3D3A4B;
     font-size: 1.1rem;
+    text-decoration: none;
     font-family: 'Archivo Narrow', sans-serif;
 }
 

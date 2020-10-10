@@ -2,6 +2,7 @@ h1 {
     font-family: 'Neuton', serif;
     font-size: 3rem;
 }
+
 h2,
 h3,
 h4 {
@@ -20,9 +21,6 @@ h4 {
     font-size: 1.5rem;
 }
 
-a {
-    text-decoration: none;
-}
 
 p {
     color: #3D3A4B;
@@ -34,8 +32,10 @@ a {
     color: #3D3A4B;
     font-size: 1.1rem;
     font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
 }
-header{
+
+header {
     background-color: #4381C1;
     text-align: center;
 }
@@ -63,6 +63,8 @@ nav a:hover {
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 main {

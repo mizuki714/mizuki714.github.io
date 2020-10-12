@@ -122,7 +122,7 @@ a {
 .herocontainer,
 .hero,
 .weatherSum {
-    border: 2px solid #3D3A4B;
+
     border-radius: 9px 9px;
 
 }
@@ -140,6 +140,7 @@ a {
     background-color: #F9F4F5;
     width: 100%S;
     height: 300px;
+    border: 2px solid #3D3A4B;
 }
 
 .weatherSum {
@@ -149,6 +150,7 @@ a {
     background: #f6b02d8e;
     padding: .6rem;
     box-shadow: 0 0 30px #3D3A4B;
+    border: 2px solid #3D3A4B;
 }
 
 footer {

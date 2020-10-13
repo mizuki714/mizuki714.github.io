@@ -195,10 +195,25 @@ a {
 .article-content {
     text-align: justify;
 }
+.contact-container{
+    display: flex;
+    height: 150px;
+    border: 3px solid;
+    border-color: #F6AE2D;
+}
+.prestonMap{
+    width: auto;
+    height:150px;
+}
+.contact {
+    margin: 20px;
+    
+}
 
-footer {
+  footer {
     background-color: #F6AE2D;
     color: #3D3A4B;
     padding: 1em;
     text-align: center;
 }
+ 

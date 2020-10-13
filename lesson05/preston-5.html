@@ -25,8 +25,8 @@
     </header>
     <!--- Navigation-->
     <nav>
-        <button onclick="toggleMenu()"> &#9776; Menu </button> 
-        <ul id ="menu" class="hide_navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu </button>
+        <ul id="menu" class="hide_navigation">
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="preston-5.html"> Preston </a></li>
             <li><a href="#"> Soda Springs</a></li>
@@ -38,19 +38,32 @@
 
     <main>
         <h2>Preston Idaho</h2>
-        <!--- content here-->
-        <div class="herocontainer">
-        <div class="hero">image placeholder</div>
-        <section class="weatherSum">
-            <h3>Weather Summary</h3>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-        </section>
-    </div>
-        <div class="forecast">5 Day Forecast</div>
-        <div class="article">Article</div>
-        <div class="contact">Contact Information</div>
+        
+        <div class="hero-container">
+            <div class="hero"> <img class ="hero-img" src="images\pexels-kevin-bidwell-1694642.jpg" alt="Lake with mountain"> </div>
+            <section class="weatherSum">
+                <h3>Weather Summary</h3>
+                <p>Currently: Cloudy</p>
+                <p>High: 49 &#176; F</p>
+                <p>Wind Chill: 42&#176;F</p>
+                <p>Humidity: 69%</p>
+                <p>Wind Speed: 5 MPH</p>
+            </section>
+        </div>
+        <div class="forecast-container">5 Day Forecast</div>
+        <div class="article-container"><img class="articleimg" src="images\pexels-markus-spiske-2027058.jpg"alt="article image">
+            <h4 class="article-title">Article Title Here</h4>
+            <p class="article-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore minima, unde quibusdam adipisci a rem dolor? Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur? Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit sunt in. Voluptate quae animi laborum quia consequatur. In.</p></div>
+        <div class="contact-container">
+            <p><strong>Cirrus Weather</strong> 1234 Rainbow Rd.</p>
+        </div>
+<!--- banner here-->
+        <div class="banner" data-component="dismissable-item" data-type="info"
+            data-value="Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.">Banner
+            Here
+        </div>
+
+
         <p></p>
     </main>
     <footer>
@@ -60,6 +73,7 @@
         <p class="lastUpdated"> Last Updated:<span id="lastUpdated"></span> </p>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/banner.js"></script>
     <script src="../js/lastModified.js"></script>
 </body>
 

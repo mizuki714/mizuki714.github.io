@@ -119,28 +119,35 @@ a {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-.herocontainer,
+.hero-container,
+.forecast-container,
+.article-container,
+.contact-container,
 .hero,
-.weatherSum {
+.weatherSum,
+.hero-img {
 
     border-radius: 9px 9px;
 
 }
 
-.herocontainer {
+.hero-container {
     margin: 10px, auto;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
 
 }
 
 .hero {
-    margin: 10px, auto;
-    background-color: #F9F4F5;
-    width: 100%S;
-    height: 300px;
-    border: 2px solid #3D3A4B;
+    width: auto;
+    height: 350px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .weatherSum {
@@ -151,6 +158,42 @@ a {
     padding: .6rem;
     box-shadow: 0 0 30px #3D3A4B;
     border: 2px solid #3D3A4B;
+}
+
+.result {
+    color: #4381C1;
+}
+
+.hero,
+.forecast-container,
+.article-container,
+.contact-container {
+    margin: 10px;
+    background-color: #F9F4F5;
+    border: 2px solid #3D3A4B;
+}
+
+.article-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.articleimg {
+    max-width: auto;
+    max-height: 300px;
+
+}
+
+.articleimg,
+.article-title,
+.article-content {
+    margin: 10px;
+}
+
+.article-content {
+    text-align: justify;
 }
 
 footer {

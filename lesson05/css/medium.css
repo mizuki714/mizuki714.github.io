@@ -24,7 +24,6 @@
     .article-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-row: 1fr 1fr;
     }
 
     .article-title {
@@ -33,12 +32,10 @@
 
     .article-content {
         grid-column: 1;
-        grid-row: 2;
     }
 
     .articleimg {
         grid-column: 2;
-        grid-row: 2;
         margin-left: auto;
         margin-right: auto;
     }

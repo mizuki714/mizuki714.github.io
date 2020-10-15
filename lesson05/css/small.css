@@ -106,7 +106,8 @@ h4 {
     font-size: 1.3rem;
 }
 
-p {
+p,
+.temp {
     color: #3D3A4B;
     font-size: 1.1rem;
     font-family: 'Archivo Narrow', sans-serif;
@@ -125,7 +126,9 @@ a {
 .contact-container,
 .hero,
 .weatherSum,
-.hero-img {
+.hero-img,
+.banner,
+.forecast-table {
 
     border-radius: 9px 9px;
 
@@ -152,12 +155,14 @@ a {
 
 .weatherSum {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 10px;
+    left: 10px;
     background: #f6b02d8e;
-    padding: .6rem;
+    padding: .5rem;
     box-shadow: 0 0 30px #3D3A4B;
     border: 2px solid #3D3A4B;
+    margin: 10px;
+    text-align: center;
 }
 
 .result {
@@ -168,7 +173,7 @@ a {
 .forecast-container,
 .article-container,
 .contact-container {
-    margin: 10px;
+    margin: 20px;
     background-color: #F9F4F5;
     border: 2px solid #3D3A4B;
 }
@@ -183,7 +188,6 @@ a {
 .articleimg {
     max-width: auto;
     max-height: 300px;
-
 }
 
 .articleimg,
@@ -195,25 +199,50 @@ a {
 .article-content {
     text-align: justify;
 }
-.contact-container{
+
+.contact-container {
     display: flex;
     height: 150px;
     border: 3px solid;
     border-color: #F6AE2D;
 }
-.prestonMap{
-    width: auto;
-    height:150px;
-}
-.contact {
-    margin: 20px;
-    
+
+.prestonMap {
+    display: none;
 }
 
-  footer {
-    background-color: #F6AE2D;
-    color: #3D3A4B;
-    padding: 1em;
-    text-align: center;
+.contact {
+    margin-left: auto;
+    margin-right: auto
 }
- 
+
+.banner {
+    display: none;
+    margin: 20px;
+    background-color: #F6AE2D;
+    border: 2px solid #3D3A4B;
+    text-align: center;
+    padding: 1em;
+}
+
+.social {
+    display: none;
+}
+
+.forecast-table {
+    display: none;
+}
+
+.forecast-head {
+    display: none;
+}
+
+.temp {
+    display:none;
+
+    footer {
+        background-color: #F6AE2D;
+        color: #3D3A4B;
+        padding: 1em;
+        text-align: center;
+    }

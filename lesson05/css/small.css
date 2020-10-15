@@ -135,7 +135,7 @@ a {
 }
 
 .hero-container {
-    margin: 10px, auto;
+    margin: 10px auto;
     position: relative;
     width: 100%;
     height: 350px;
@@ -186,7 +186,7 @@ a {
 }
 
 .articleimg {
-    max-width: auto;
+    width: auto;
     max-height: 300px;
 }
 
@@ -239,6 +239,7 @@ a {
 
 .temp {
     display:none;
+}
 
     footer {
         background-color: #F6AE2D;

@@ -24,7 +24,7 @@
     .article-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-row: 50px 1fr;
+        grid-row: 1fr 1fr;
     }
 
     .article-title {

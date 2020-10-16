@@ -1,0 +1,249 @@
+nav {
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #3D3A4B;
+}
+
+nav ul li a {
+    display: block;
+}
+
+nav ul.hide_navigation {
+    display: none;
+}
+
+nav a:hover {
+    color: #F9F4F5;
+    background-color: #3D3A4B;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+button {
+    color: #3D3A4B;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+html {
+    background-color: #F9F4F5;
+}
+
+header {
+    background-color: #4381C1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+}
+
+main {
+    background-color: #5BC0EB;
+    padding: 1.5rem;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Neuton', serif;
+    font-size: 3rem;
+}
+
+h2,
+h3,
+h4,
+.motto {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.motto {
+    font-size: 1.3rem;
+}
+
+p,
+.temp {
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+a {
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.hero-container,
+.forecast-container,
+.article-container,
+.contact-container,
+.hero,
+.weatherSum,
+.hero-img,
+.banner,
+.forecast-table {
+
+    border-radius: 9px 9px;
+
+}
+
+.hero-container {
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+    height: 350px;
+
+}
+
+.hero {
+    width: auto;
+    height: 350px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.weatherSum {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #f6b02d8e;
+    padding: .5rem;
+    box-shadow: 0 0 30px #3D3A4B;
+    border: 2px solid #3D3A4B;
+    margin: 10px;
+    text-align: center;
+}
+
+.result {
+    color: #4381C1;
+}
+
+.hero,
+.forecast-container,
+.article-container,
+.contact-container {
+    margin: 20px;
+    background-color: #F9F4F5;
+    border: 2px solid #3D3A4B;
+}
+
+.article-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.articleimg {
+    width: auto;
+    max-height: 300px;
+}
+
+.articleimg,
+.article-title,
+.article-content {
+    margin: 10px;
+}
+
+.article-content {
+    text-align: justify;
+}
+
+.contact-container {
+    display: flex;
+    height: 150px;
+    border: 3px solid;
+    border-color: #F6AE2D;
+}
+
+.prestonMap {
+    display: none;
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.banner {
+    display: none;
+    margin: 20px;
+    background-color: #F6AE2D;
+    border: 2px solid #3D3A4B;
+    text-align: center;
+    padding: 1em;
+}
+
+.social {
+    display: none;
+}
+
+.forecast-table {
+    display: none;
+}
+
+.forecast-head {
+    display: none;
+}
+
+.temp {
+    display:none;
+}
+
+    footer {
+        background-color: #F6AE2D;
+        color: #3D3A4B;
+        padding: 1em;
+        text-align: center;
+    }

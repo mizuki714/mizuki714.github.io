@@ -1,4 +1,6 @@
-
+header, footer, nav{
+    max-width: 100%;
+}
 nav {
     background-color: #F6AE2D;
     color: #3D3A4B;
@@ -61,6 +63,7 @@ header {
     background-color: #4381C1;
     text-align: center;
     padding: 1rem;
+    display:flex;
 }
 
 section {
@@ -117,7 +120,11 @@ a {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-
+.hero, .forecast-container, .article-container, .contact-container {
+    margin: 20px;
+    background-color: #F9F4F5;
+    border: 2px solid #3D3A4B;
+}
 
 footer {
     background-color: #F6AE2D;

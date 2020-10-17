@@ -1,3 +1,6 @@
+header, footer, nav{
+    max-width: 100%;
+}
 nav {
     background-color: #F6AE2D;
     color: #3D3A4B;
@@ -61,9 +64,6 @@ header {
     background-color: #4381C1;
     text-align: center;
     padding: 1rem;
-}
-
-.header {
     display: flex;
 }
 
@@ -238,12 +238,13 @@ a {
 }
 
 .temp {
-    display:none;
+    display: none;
 }
 
-    footer {
-        background-color: #F6AE2D;
-        color: #3D3A4B;
-        padding: 1em;
-        text-align: center;
-    }
+
+footer {
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    padding: 1em;
+    text-align: center;
+}

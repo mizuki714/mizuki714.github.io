@@ -76,7 +76,7 @@ img {
 }
 
 h1 {
-    font-family: 'Neuton', serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 3rem;
 }
 
@@ -185,7 +185,7 @@ a {
 }
 
 .article-content {
-    text-align: justify;
+    text-align: left;
 }
 
 .contact-container {

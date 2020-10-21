@@ -43,15 +43,20 @@
         <h2>Preston Idaho</h2>
 
         <div class="hero-container">
-            <div class="hero"> <img class="hero-img" src="images/pexels-kevin-bidwell-1694642.jpg"
-                    alt="Lake with mountain"> </div>
+            <div class="hero"> 
+                <picture class = "hero-picture">
+                    <source srcset="images/wdd230_image_franklinOriginal500.jpeg" media="(min-width:35rem) and (max-width:65rem)">
+                        <source srcset="images/wdd230_image_franklinOriginal800.jpeg" media="(min-width:65rem)">
+                <img class="hero-img" src="images/wdd230_image_franklinOriginal200.jpeg" alt="image of mountain">
+                </picture>
+             </div>
             <section class="weatherSum">
                 <h3>Weather Summary &#9925;</h3>
                 <p><strong>Currently:</strong> Cloudy</p>
-                <p><strong>High:</strong> 49 &#176; F</p>
-                <p><strong>Wind Chill:</strong> 42 &#176;F</p>
+                <p><strong>High:</strong><span id="temp"></span> 54 &#176; F</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span>&#176;F</p>
                 <p><strong>Humidity:</strong> 69%</p>
-                <p><strong>Wind Speed:</strong> 5 MPH</p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeedMPH">12</span> MPH</p>
             </section>
         </div>
         <div class="forecast-container">
@@ -118,6 +123,7 @@
     <footer>
         <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span> 
     </footer>
+    <script src="js/windchill.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/banner.js"></script>
     <script src="js/date.js"></script>

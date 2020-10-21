@@ -21,6 +21,26 @@
         text-align: left;
     }
 
+    .hero-container {
+        position: relative;
+        margin: 10px auto;
+        width: 100%;
+        height: 350px;
+
+    }
+
+    .weatherSum {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        background: #f6b02d8e;
+        padding: .5rem;
+        box-shadow: 0 0 30px #3D3A4B;
+        border: 2px solid #3D3A4B;
+        margin: 10px;
+        text-align: center;
+    }
+
     .article-container {
         display: grid;
         grid-template-columns: 1fr 1fr;

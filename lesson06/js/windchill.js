@@ -14,7 +14,7 @@ function getWindChill(temp, windSpeedMPH) {
         var windChill = (35.74 + (0.6215 * temp) - (35.75 * (Math.pow(windSpeedMPH, 0.16))) + (0.4275 * temp * (Math.pow(windSpeedMPH, 0.16)))).toFixed(0);
     } 
     else {
-        var windChill = "N/A"
+        var windChill = "N/A";
     }
     return windChill;
 }

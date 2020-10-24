@@ -6,13 +6,13 @@ by using t he formula to calculate the wind chill factor
  t is the air average temperature in Fahrenheit,
   and s is the wind speed in miles per hour. */
 
-let temp = 54;
-let windSpeedMPH = 12;
+let temp = document.getElementById('temp').textContent;
+let windSpeedMPH = document.getElementById('windSpeedMPH').textContent;
 
 function getWindChill(temp, windSpeedMPH) {
     if ((temp <= 30) && (windSpeedMPH > 3.0)) {
         var windChill = (35.74 + (0.6215 * temp) - (35.75 * (Math.pow(windSpeedMPH, 0.16))) + (0.4275 * temp * (Math.pow(windSpeedMPH, 0.16)))).toFixed(0);
-    }
+    } 
     else {
         var windChill = "N/A"
     }

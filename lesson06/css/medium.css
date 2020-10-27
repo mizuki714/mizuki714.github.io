@@ -47,7 +47,7 @@
         grid-column: 1;
     }
 
-    .articleimg {
+    .article-picture {
         grid-column: 2;
         margin-left: auto;
         margin-right: auto;

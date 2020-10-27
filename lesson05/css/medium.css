@@ -94,6 +94,7 @@
 
     .weatherSum {
         position: absolute;
+        background: #f6b02d8e;
         top: 20px;
         left: 20px;
     }

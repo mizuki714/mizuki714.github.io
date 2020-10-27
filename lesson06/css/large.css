@@ -1,11 +1,12 @@
 @media only screen and (min-width: 65rem) {
 
-    main {
+    main,
+    footer {
         max-width: 960px;
         margin: auto;
     }
+   
 
-    footer,
     header,
     nav {
         max-width: 100%;
@@ -39,5 +40,5 @@
         margin: 20px;
         grid-column: 3;
     }
-    
+
 }

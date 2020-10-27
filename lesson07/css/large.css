@@ -1,0 +1,44 @@
+@media only screen and (min-width: 65rem) {
+
+    main,
+    footer {
+        max-width: 960px;
+        margin: auto;
+    }
+   
+
+    header,
+    nav {
+        max-width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-color: #3D3A4B;
+        align-items: center;
+    }
+
+    .contact {
+        grid-column: 2;
+
+    }
+
+    .prestonMap {
+        display: block;
+        width: auto;
+        height: 150px;
+        grid-column: 1;
+    }
+
+    .social {
+        display: block;
+        margin: 20px;
+        grid-column: 3;
+    }
+
+}

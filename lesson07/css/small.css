@@ -237,6 +237,15 @@ a {
 
 footer {
     background-color: #F6AE2D;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
 }
+
+ img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+   img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }

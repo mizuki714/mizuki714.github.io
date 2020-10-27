@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="lazy loader."/>
+    <meta name="description" content="lazy loader." />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="/css/lazyload.css">
+
     <title>lazy load</title>
 </head>
+
 <body>
-    <h1>Lazy Load?</h1>
-    
-<picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/1037/300/400" alt="mountain img"> </picture>
-<picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/11/300/400"> </picture>
-<picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/1039/300/400"> </picture>
-<picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/1043/300/400"> </picture>
-<picture> <img src="https://via.placeholder.com/300X400" data-src=https://picsum.photos/id/1044/300/400"> </picture>
-<picture> <img src="https://via.placeholder.com/300X400" data-src=https://picsum.photos/id/128/300/400"> </picture>
+    <main>
+        <h1>Lazy Load</h1>
+
+        <picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/1037/300/400"
+                alt="img 1"> </picture>
+        <picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/11/300/400"
+                alt="img 2"> </picture>
+        <picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/1039/300/400"
+                alt="img 3"> </picture>
+        <picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/1043/300/400"
+                alt="img 4"> </picture>
+        <picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/1044/300/400"
+                alt="img 5"> </picture>
+        <picture> <img src="https://via.placeholder.com/300X400" data-src="https://picsum.photos/id/128/300/400"
+                alt="img 6"> </picture>
+    </main>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Archivo Narrow', 'Fredoka One'
+                ]
+            }
+        });
+    </script>
 </body>
+
 </html>

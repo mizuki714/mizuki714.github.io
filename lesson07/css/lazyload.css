@@ -1,12 +1,11 @@
-
-  img[data-src] {
+img[data-src] {
     filter: blur(0.2em);
-  }
-  
-   img {
+}
+
+img {
     filter: blur(0em);
     transition: filter 0.5s;
-  }
-  h1{
-      color: blue;
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

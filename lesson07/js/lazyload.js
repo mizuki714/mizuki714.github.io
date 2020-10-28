@@ -14,7 +14,12 @@ const preloadImage = (image) => {
 
 if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {});
+        entries.forEach((entry) => {if(!entry.isIntersecting) {
+            return;
+            }else{
+            preloadImage(entry.target);
+            observer.unobserve(entry.target);
+            }});
     }, imageOptions);
 
 

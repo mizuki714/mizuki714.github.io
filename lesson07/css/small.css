@@ -163,7 +163,8 @@ a {
 .hero,
 .forecast-container,
 .article-container,
-.contact-container {
+.contact-container,
+.gallery {
     margin: 20px;
     background-color: #F9F4F5;
     border: 2px solid #3D3A4B;
@@ -252,4 +253,11 @@ footer {
   /* hover effect for gallery images */
 .gallery:hover {
     box-shadow: 0 0 50px #333;
+}
+.gallery{
+
+    border-radius: 9px 9px;
+}
+.galleryimg{
+   margin: 1rem;
 }

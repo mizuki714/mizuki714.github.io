@@ -101,12 +101,7 @@
         display: grid;
     grid-template-columns: 1fr 1fr;
     }
-    figcaption{
-        display: block;
-        text-align: center;
-        color:#3D3A4B;
-        padding: 1rem; 
-    }
+    
     .gallery{
         width:300px;
         height: auto;

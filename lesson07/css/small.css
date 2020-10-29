@@ -270,6 +270,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+/* I am not sure if this is supposed to display here or only in larger views but I added it here in case*/
 figcaption{
-    display: none;
+    text-align: center;
+    color:#3D3A4B;
+    padding: 1rem; 
 }

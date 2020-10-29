@@ -97,4 +97,8 @@
         font-size: 0.8rem;
         text-align: center;
     }
+    .img_gallery{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
 }

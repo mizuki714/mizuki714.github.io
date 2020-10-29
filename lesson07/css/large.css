@@ -40,5 +40,8 @@
         margin: 20px;
         grid-column: 3;
     }
+    .img_gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 }

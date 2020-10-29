@@ -116,10 +116,11 @@ a {
     text-decoration: none;
     font-family: 'Archivo Narrow', sans-serif;
 }
+
 .weatherSum {
     top: 10px;
     left: 10px;
-    background:#F6AE2D;
+    background: #F6AE2D;
     padding: .5rem;
     box-shadow: 0 0 30px #3D3A4B;
     border: 2px solid #3D3A4B;
@@ -143,12 +144,14 @@ a {
 
 
 
-.hero, .hero-picture {
+.hero,
+.hero-picture {
     width: auto;
     height: 350px;
 }
 
-.hero-img, .hero-picture {
+.hero-img,
+.hero-picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -163,12 +166,21 @@ a {
 .hero,
 .forecast-container,
 .article-container,
-.contact-container,
-.gallery {
+.contact-container {
     margin: 20px;
+
+}
+
+.gallery,
+.hero,
+.forecast-container,
+.article-container,
+.contact-container {
     background-color: #F9F4F5;
     border: 2px solid #3D3A4B;
+
 }
+
 
 .article-container {
     position: relative;
@@ -232,7 +244,8 @@ a {
 .temp {
     display: none;
 }
-.forecast-title{
+
+.forecast-title {
     text-align: center;
 }
 
@@ -242,22 +255,31 @@ footer {
     text-align: center;
 }
 
- img[data-src] {
+img[data-src] {
     filter: blur(0.2em);
-  }
-  
-   img {
+}
+
+img {
     filter: blur(0em);
     transition: filter 0.5s;
-  }
-  /* hover effect for gallery images */
+}
+
+/* hover effect for gallery images */
 .gallery:hover {
     box-shadow: 0 0 50px #333;
 }
-.gallery{
 
-    border-radius: 9px 9px;
+.gallery {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .galleryimg{
-   margin: 1rem;
+    width: auto;
+    height: auto;
+}
+figcaption{
+    text-align: center;
+    color:#3D3A4B
 }

@@ -28,12 +28,7 @@
 
     }
 
-    .prestonMap {
-        display: block;
-        width: auto;
-        height: 150px;
-        grid-column: 1;
-    }
+   
 
     .social {
         display: block;

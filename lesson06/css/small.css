@@ -62,7 +62,12 @@ header {
     padding: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+header h1, header h3{
+    margin:10px 0;
+    text-align: center;
+    }
 
 main {
     background-color: #5BC0EB;
@@ -127,18 +132,9 @@ a {
     text-align: center;
 }
 
-.hero-container,
-.forecast-container,
-.article-container,
-.contact-container,
-.hero,
-.weatherSum,
-.hero-img,
-.banner,
-.forecast-table {
-
-    border-radius: 9px 9px;
-
+.weatherSum h3, .weatherSum p{
+    margin: 10px;
+    
 }
 
 
@@ -193,7 +189,6 @@ a {
 
 .contact-container {
     display: flex;
-    height: 150px;
     border: 3px solid;
     border-color: #F6AE2D;
 }
@@ -221,19 +216,45 @@ a {
 }
 
 .forecast-table {
-    display: none;
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 1px solid #3D3A4B;
 }
 
 .forecast-head {
-    display: none;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid#3D3A4B;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #3D3A4B;
+    color: #F9F4F5;
 }
 
-.temp {
-    display: none;
-}
-.forecast-title{
+.forecast-col {
+    flex: 1 1 auto;
+    background-color: #f6b02d81;
+    border-bottom: 1px solid #3D3A4B;
+    border-left: 1px solid #3D3A4B;
     text-align: center;
 }
+
+.forecast-col:hover {
+    opacity: 0.9;
+    background-color: #4382c16b;
+    color: #F9F4F5;
+}
+.forecast-title{
+text-align: center;
+}
+art
+.temp {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 
 footer {
     background-color: #F6AE2D;

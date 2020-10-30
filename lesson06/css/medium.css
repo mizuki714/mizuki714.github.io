@@ -59,42 +59,7 @@
         width: auto;
         height: 150px;
         grid-column: 1;
+        margin: auto;
     }
 
-    .forecast-table {
-        display: flex;
-        flex-flow: row wrap;
-        border-right: 1px solid #3D3A4B;
-    }
-
-    .forecast-head {
-        display: block;
-        padding: 5px;
-        border-bottom: 1px solid#3D3A4B;
-        text-align: center;
-        font-size: 1rem;
-        background-color: #3D3A4B;
-        color: #F9F4F5;
-    }
-
-    .forecast-col {
-        flex: 1 1 auto;
-        background-color: #f6b02d81;
-        border-bottom: 1px solid #3D3A4B;
-        border-left: 1px solid #3D3A4B;
-        text-align: center;
-    }
-
-    .forecast-col:hover {
-        opacity: 0.9;
-        background-color: #4382c16b;
-        color: #F9F4F5;
-    }
-
-    .temp {
-        display: block;
-        padding: 0 5px 5px;
-        font-size: 0.8rem;
-        text-align: center;
-    }
 }

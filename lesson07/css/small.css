@@ -299,6 +299,7 @@ img {
 
 /* I am not sure if this is supposed to display here or only in larger views but I added it here in case*/
 figcaption {
+    display:block;
     text-align: center;
     color: #3D3A4B;
     padding: 1rem;

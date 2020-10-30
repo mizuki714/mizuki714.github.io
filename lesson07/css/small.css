@@ -111,7 +111,8 @@ h4 {
 }
 
 p,
-.temp {
+.temp ,
+figcaption{
     color: #3D3A4B;
     font-size: 1.1rem;
     font-family: 'Archivo Narrow', sans-serif;
@@ -298,6 +299,5 @@ img {
 figcaption {
     display: block;
     text-align: center;
-    color: #3D3A4B;
     padding: 1rem;
 }

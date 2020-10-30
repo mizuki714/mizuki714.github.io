@@ -17,23 +17,13 @@
     }
 
     .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        border-color: #3D3A4B;
         align-items: center;
     }
 
-    .contact {
-        grid-column: 2;
-
-    }
-
-   
-
     .social {
         display: block;
-        margin: 20px;
-        grid-column: 3;
+        margin: auto;
+        
     }
 
 }

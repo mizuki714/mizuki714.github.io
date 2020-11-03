@@ -1,0 +1,303 @@
+nav {
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #3D3A4B;
+}
+
+nav ul li a {
+    display: block;
+}
+
+nav ul.hide_navigation {
+    display: none;
+}
+
+nav a:hover {
+    color: #F9F4F5;
+    background-color: #3D3A4B;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+button {
+    color: #3D3A4B;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+html {
+    background-color: #F9F4F5;
+}
+
+header {
+    background-color: #4381C1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1,
+header h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+main {
+    background-color: #5BC0EB;
+    padding: 1.5rem;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+}
+
+h2,
+h3,
+h4,
+.motto {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.motto {
+    font-size: 1.3rem;
+}
+
+p,
+.temp ,
+figcaption{
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+a {
+    color: #3D3A4B;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.weatherSum {
+    top: 10px;
+    left: 10px;
+    background: #F6AE2D;
+    padding: .5rem;
+    box-shadow: 0 0 30px #3D3A4B;
+    border: 2px solid #3D3A4B;
+    margin: 20px;
+    text-align: center;
+}
+
+.weatherSum h3, .weatherSum p{
+    margin: 10px;
+    
+}
+
+.hero,
+.hero-picture {
+    width: auto;
+    height: 350px;
+}
+
+.hero-img,
+.hero-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.result {
+    color: #4381C1;
+}
+
+.hero,
+.forecast-container,
+.article-container,
+.contact-container {
+    margin: 20px;
+
+}
+
+.gallery,
+.hero,
+.forecast-container,
+.article-container,
+.contact-container {
+    background-color: #F9F4F5;
+    border: 2px solid #3D3A4B;
+
+}
+
+
+.article-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.articleimg {
+    width: auto;
+    max-height: 300px;
+}
+
+.articleimg,
+.article-title,
+.article-content {
+    margin: 10px;
+}
+
+.article-content {
+    text-align: left;
+}
+
+.article-title {
+    text-align: left;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.prestonMap {
+    display: none;
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.banner {
+    display: none;
+    margin: 20px;
+    background-color: #F6AE2D;
+    border: 2px solid #3D3A4B;
+    text-align: center;
+    padding: 1em;
+}
+
+.social {
+    display: none;
+}
+
+.forecast-table {
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 1px solid #3D3A4B;
+}
+
+.forecast-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid#3D3A4B;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #3D3A4B;
+    color: #F9F4F5;
+}
+
+.forecast-col {
+    flex: 1 1 auto;
+    background-color: #f6b02d81;
+    border-bottom: 1px solid #3D3A4B;
+    border-left: 1px solid #3D3A4B;
+    text-align: center;
+}
+
+.forecast-col:hover {
+    opacity: 0.9;
+    background-color: #4382c16b;
+    color: #F9F4F5;
+}
+
+.forecast-title {
+    text-align: center;
+}
+
+.temp {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #F6AE2D;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
+.gallery {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* I am not sure if this is supposed to display here or only in larger views but I added it here in case*/
+figcaption {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}

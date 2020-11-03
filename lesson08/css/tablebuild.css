@@ -12,13 +12,13 @@ td {
 
 th,
 td {
-    padding: 10px;
     text-align: center;
+    padding: 10px;
 }
 
 thead tr {
-    background-color: #7fb9c2;
     font-size: 1.5em;
+    background-color: #7fb9c2;
 }
 
 tbody tr {

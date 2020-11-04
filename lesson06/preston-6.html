@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The weather site for Preston Idaho. This page will display Weather and information in Preston."/>
+    <meta name="description"
+        content="The weather site for Preston Idaho. This page will display Weather and information in Preston." />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -43,13 +44,14 @@
         <h2>Preston Idaho</h2>
 
         <div class="hero-container">
-            <div class="hero"> 
-                <picture class = "hero-picture">
-                    <source srcset="images/wdd230_image_franklinmedium.jpeg" media="(min-width:35rem) and (max-width:65rem)">
-                        <source srcset="images/wdd230_image_franklinlarge.jpeg" media="(min-width:65rem)">
-                <img class="hero-img" src="images/wdd230_image_franklinsmall.jpeg" alt="image of mountain">
+            <div class="hero">
+                <picture class="hero-picture">
+                    <source srcset="images/wdd230_image_franklinmedium.jpeg"
+                        media="(min-width:35rem) and (max-width:65rem)">
+                    <source srcset="images/wdd230_image_franklinlarge.jpeg" media="(min-width:65rem)">
+                    <img class="hero-img" src="images/wdd230_image_franklinsmall.jpeg" alt="image of mountain">
                 </picture>
-             </div>
+            </div>
             <section class="weatherSum">
                 <h3>Weather Summary &#9925;</h3>
                 <p><strong>Currently:</strong> Cloudy</p>
@@ -88,33 +90,38 @@
                     <img src="images/iconfinder_flash-cloud_2995010.png" alt="weather">
                     <span class="temp">temp 5</span>
                 </div>
-                <div class="forecast-col">
-                    <span class="forecast-head">Saturday</span>
-                    <img src="images/iconfinder_sun_2995005.png" alt="weather">
-                    <span class="temp">temp 6</span>
-                </div>
             </div>
         </div>
         <div class="article-container">
             <h4 class="article-title">Article Title Here</h4>
+            <picture class="article-picture">
+                <img class="articleimg" src="images/pexels-markus-spiske-2027058.jpg" alt="article image">
+            </picture>
             <p class="article-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore minima, unde
                 quibusdam adipisci a rem dolor? Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
                 neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
                 Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
-                sunt in. Voluptate quae animi laborum quia consequatur. In.</p>
-                <picture class="article-picture">
-                    <source srcset="images/pexels-markus-spiske-2027058.jpg" media="min-width: 65rem">
-                        <source srcset="images/pexels-markus-spiske-200px.jpg" media="(min-width: 35rem) and (max-width:65rem)">
-            <img class="articleimg" src="images/pexels-markus-spiske-150.jpeg" alt="article image">
-        </picture>
+                sunt in. Voluptate quae animi laborum quia consequatur. In. Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur. Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur.</p>
+
         </div>
         <div class="contact-container">
             <img class="prestonMap" src="images/1665260_ID_Preston.png" alt="Map of Preston ID">
-            <p class="contact"><strong>Cirrus Weather</strong><br> 1234 Rainbow Rd.<br> &#9742; 999.999.9999 <br>&#9993;
-                cirrusweather@gmail.com</p>
-            <div class="social">
+            <div class="contactinfo">
+                <p class="contact"><strong>Cirrus Weather</strong><br> 1234 Rainbow Rd.<br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
                 <a href="https://www.facebook.com">
                     <img src="images/iconfinder_Circled_Facebook_svg_5279111.png" alt="Facebook Icon"></a>
                 <a href="https://www.pintrest.com">
@@ -125,7 +132,7 @@
         </div>
     </main>
     <footer>
-        <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span> 
+        <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span>
     </footer>
     <script src="js/windchill.js"></script>
     <script src="js/menu.js"></script>
@@ -134,13 +141,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
-          google: {
-            families: [
-            'Archivo Narrow','Fredoka One'
-            ]
-          }
+            google: {
+                families: [
+                    'Archivo Narrow', 'Fredoka One'
+                ]
+            }
         });
-        </script>
+    </script>
 </body>
 
 </html>

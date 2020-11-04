@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The storm center page. This is where users will enter information aobut storms and submit."/>
+    <meta name="description"
+        content="The storm center page. This is where users will enter information aobut storms and submit." />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -11,6 +13,7 @@
     <link rel="stylesheet" href="css/large.css">
     <title>Storm Center</title>
 </head>
+
 <body>
     <header>
         <!--- logo site name motto-->
@@ -34,15 +37,44 @@
     </nav>
     <main>
         <form>
-<h3> Storm Center Submisison Form </h3>
-<!-- name NOT DONE-->
-<label for="Full Name">Full Name</label> 
-<input type="text" id="fullName" name="fullName" required>
+            <h3> Storm Center Submisison Form </h3>
+            <!-- name: input of type text and is required 
+     and only accepts alpha characters with a
+     minimum of five characters using a regular 
+     expression pattern -->
+            <label for="Full Name">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <!-- email input of type email and use a
+     placeholder to provide a demo email -->
 
+            <!-- phone number input of type tel and is required -->
+
+            <!-- Area Code input of type number and is required-->
+
+            <!-- storm Date input of type date-->
+
+            <!-- storm type  input with a list attribute referencing 
+    a datalist of suggestions that include "Flash Flood,"
+     "Hail," "Hurricane," "Thunderstorm," and "Tornado."-->
+
+            <!-- severity level type range (1 to 10) with a corresponding 
+    label that indicates the current range value from 1 to 10. -->
+
+            <!-- storm Region using select with drop-down options of "Preston",
+     "Soda Springs", and "Fish Haven".  a first option with the text 
+     "Select Region ..." that is shown by default but not selectable (disabled).
+    The rest of the options should have relevant value attributes.-->
+
+            <!-- user in danger level input of type radio with options and values of 
+    "yes," "maybe," and "no." -->
+
+            <!-- additional info or comments using a textarea -->
+
+            <!-- submission button input of type submit that loads thanks.html-->
         </form>
     </main>
     <footer>
-        <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span> 
+        <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span>
     </footer>
     <script src="js/windchill.js"></script>
     <script src="js/menu.js"></script>
@@ -50,12 +82,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
-          google: {
-            families: [
-            'Archivo Narrow','Fredoka One'
-            ]
-          }
+            google: {
+                families: [
+                    'Archivo Narrow', 'Fredoka One'
+                ]
+            }
         });
-        </script>
+    </script>
 </body>
+
 </html>

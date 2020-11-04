@@ -19,12 +19,9 @@
     .contact-container {
         align-items: center;
     }
+   
 
-    .social {
-        display: block;
-        margin: auto;
-        
-    }
+    
     .img_gallery{
         grid-template-columns: 1fr 1fr 1fr;
     }

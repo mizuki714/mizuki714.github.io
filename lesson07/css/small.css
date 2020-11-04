@@ -227,9 +227,10 @@ a {
     padding: 1em;
 }
 
-.social {
-    display: none;
-}
+.contactinfo{
+    padding:.6rem;
+    margin: auto;
+  }
 
 .forecast-table {
     display: flex;

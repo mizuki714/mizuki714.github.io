@@ -35,40 +35,36 @@
     }
 
     .article-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        content: "";
+        clear: both;
+        display: table;
     }
 
     .article-title {
         text-align: left;
     }
 
-    .article-content {
-        grid-column: 1;
-    }
-
     .article-picture {
-        grid-column: 2;
+        float: right;
         margin-left: auto;
         margin-right: auto;
     }
 
 
-    .prestonMap {
+
+      .prestonMap {
         display: block;
-        width: auto;
-        height: 150px;
-        grid-column: 1;
-        margin: auto;
+        width: 50%;
+        padding: .9 rem;
     }
 
-    .img_gallery{
+    .img_gallery {
         display: grid;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    
-    .gallery{
-        width:300px;
+
+    .gallery {
+        width: 300px;
         height: auto;
     }
 }

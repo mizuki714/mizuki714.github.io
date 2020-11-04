@@ -217,7 +217,10 @@ a {
     margin-left: auto;
     margin-right: auto
 }
-
+.contactinfo{
+    padding:.6rem;
+    margin: auto;
+  }
 .banner {
     display: none;
     margin: 20px;
@@ -227,9 +230,7 @@ a {
     padding: 1em;
 }
 
-.social {
-    display: none;
-}
+
 
 .forecast-table {
     display: flex;

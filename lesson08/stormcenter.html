@@ -36,42 +36,127 @@
         </ul>
     </nav>
     <main>
-        <form>
-            <h3> Storm Center Submisison Form </h3>
-            <!-- name: input of type text and is required 
+        <div class="stormCenterContainer">
+            <h3> Storm Center Report </h3>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <!-- name: input of type text and is required 
      and only accepts alpha characters with a
      minimum of five characters using a regular 
      expression pattern -->
-            <label for="Full Name">Full Name</label>
-            <input type="text" id="fullName" name="fullName" required>
-            <!-- email input of type email and use a
+                    <label class="top">
+                        <div>First Name*</div><input type="text" id="fName" name="fName" required>
+                    </label>
+                    <label class="top">
+                        <div>Last Name*</div><input type="text" id="lName" name="lName" required>
+                    </label>
+
+                    <!-- email input of type email and use a
      placeholder to provide a demo email -->
+                    <label class="top">
+                        <div>Email</div><input type="text" id="email" name="email" placeholder="someone@gmail.com">
+                    </label>
 
-            <!-- phone number input of type tel and is required -->
+                    <!-- phone number input of type tel and is required -->
+                    <label class="top">
+                        <div>Phone Number*</div> <input type="tel" id="Phone" name="Phone" placeholder="3554567"
+                            required>
+                    </label>
 
-            <!-- Area Code input of type number and is required-->
+                    <!-- Area Code input of type number and is required -->
+                    <label class="top">
+                        <div> Area Code*</div> <input type="number" id="areaCode" name="areaCode" placeholder="879"
+                            required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend> Storm Information </legend>
+                    <!-- storm Date input of type date-->
+                    <label class="top">
+                        <div>Storm Date</div><input type="date" id="date" name-="stormDate">
+                    </label>
 
-            <!-- storm Date input of type date-->
-
-            <!-- storm type  input with a list attribute referencing 
+                    <!-- storm type  input with a list attribute referencing 
     a datalist of suggestions that include "Flash Flood,"
      "Hail," "Hurricane," "Thunderstorm," and "Tornado."-->
+                    <label class="top">
+                        <div>Storm Type</div> <input type="datalist">
+                    </label>
 
-            <!-- severity level type range (1 to 10) with a corresponding 
+                    <!-- severity level type range (1 to 10) with a corresponding 
     label that indicates the current range value from 1 to 10. -->
 
-            <!-- storm Region using select with drop-down options of "Preston",
+                    <div>Severity Level</div>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="1">1
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="2">2
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="3">3
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="4">4
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="5">5
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="6">6
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="7">7
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="8">8
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="9">9
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="severity" value="10">10
+                    </label>
+                    <!-- storm Region using select with drop-down options of "Preston",
      "Soda Springs", and "Fish Haven".  a first option with the text 
      "Select Region ..." that is shown by default but not selectable (disabled).
     The rest of the options should have relevant value attributes.-->
+                    <label class="top">
+                        <div>Storm Region</div><select name="region">
+                            <option value="">Select Region... &#9662;</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                    </label>
+                    <!-- user in danger level input of type radio with options and values of 
+                     "yes," "maybe," and "no." -->
 
-            <!-- user in danger level input of type radio with options and values of 
-    "yes," "maybe," and "no." -->
+                     
+                    <label class="sbs">
+                        <div> Are you in Danger? </div>
+                        <input type="radio" name="danger" value="yes">Yes
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="danger" value="Maybe">Maybe
+                    </label>
+                    <label class="sbs">
+                        <input type="radio" name="danger" value="No">No
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <!-- additional info or comments using a textarea -->
+                    <label class="comments">
+                        <div>Comments</div><input type="textarea" name="comments">
+                    </label>
+                </fieldset>
+                <!-- submission button input of type submit that loads thanks.html-->
+                    <input type="submit" value="Send my Storm Report" class="submitBtn">
 
-            <!-- additional info or comments using a textarea -->
-
-            <!-- submission button input of type submit that loads thanks.html-->
-        </form>
+            </form>
+        </div>
     </main>
     <footer>
         <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span>

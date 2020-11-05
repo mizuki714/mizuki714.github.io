@@ -325,7 +325,8 @@ form legend {
     font-size: 1.2rem;
 }
 
-from label.top,
+form label.top,
+label.comments,
 form div {
     display: block;
     padding-top: 1rem;
@@ -368,7 +369,6 @@ form label.sbs {
 
 textarea {
     resize: none;
-    max-width: 100%;
 }
 
 form {

@@ -45,38 +45,36 @@
      and only accepts alpha characters with a
      minimum of five characters using a regular 
      expression pattern -->
-                    <div>First Name*</div>
-                    <label class="top">
-                        <input type="text" id="fName" name="fName" pattern="[a-zA-Z]+" minlength="5" required>
-                    </label>
-                    <div>Last Name*</div>
-                    <label class="top">
+                    
+                    <label for="fName" class="top">First Name*<input type="text" id="fName" name="fName" pattern="[a-zA-Z]+" minlength="5" required></label>
+                    
+                    <label class="top">Last Name*
                         <input type="text" id="lName" name="lName" pattern="[a-zA-Z]+" minlength="5" required>
                     </label>
 
                     <!-- email input of type email and use a placeholder to provide a demo email -->
-                    <div>Email</div>
-                    <label class="top">
+                    
+                    <label class="top">Email
                         <input type="text" id="email" name="email" placeholder="someone@gmail.com">
                     </label>
 
                     <!-- phone number input of type tel and is required -->
-                    <div>Phone Number*</div>
-                    <label class="top">
+                    
+                    <label class="top">Phone Number*
                         <input type="tel" id="Phone" name="Phone" placeholder="3554567" required>
                     </label>
 
                     <!-- Area Code input of type number and is required -->
-                    <div> Area Code*</div>
-                    <label class="top">
+                    
+                    <label class="top"> Area Code*
                         <input type="number" id="areaCode" name="areaCode" placeholder="879" required>
                     </label>
                 </fieldset>
                 <fieldset>
                     <legend> Storm Information </legend>
                     <!-- storm Date input of type date-->
-                    <div>Storm Date</div>
-                    <label class="top">
+                    
+                    <label class="top">Storm Date
                         <input type="date" id="date" name-="stormDate">
                     </label>
 
@@ -119,20 +117,20 @@
                      "yes," "maybe," and "no." -->
                     <div> Are you in Danger? </div>
                     <label class="sbs">
-                        <label class="sbs">
-                            <input type="radio" name="danger" value="Maybe">Maybe
+                        <label class="sbs">Maybe
+                            <input type="radio" name="danger" value="Maybe">
                         </label>
-                        <label class="sbs">
-                            <input type="radio" name="danger" value="No">No
-                        </label>
-                        <input type="radio" name="danger" value="yes">Yes
+                        <label class="sbs">No
+                            <input type="radio" name="danger" value="No">
+                        </label>Yes
+                         <input type="radio" name="danger" value="yes">
                     </label>
                 </fieldset>
                 <fieldset>
                     <legend>Additional Information</legend>
                     <!-- additional info or comments using a textarea -->
-                    <div>Comments</div>
-                    <label class="comments">
+                    
+                    <label class="comments">Comments
                         <textarea rows="10" cols="40" placeholder="Power lines are down..."></textarea>
                     </label>
                 </fieldset>

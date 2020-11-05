@@ -358,3 +358,12 @@ form label.top input:required{
 form label.top input:required:valid{
     border-left: green 6px;
 }
+textarea {
+    resize: none;
+    max-width: 100%;
+  }
+  form{
+     margin-left: auto;
+     margin-right: auto;
+     padding:1rem;
+  }

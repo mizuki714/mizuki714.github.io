@@ -46,10 +46,10 @@
      minimum of five characters using a regular 
      expression pattern -->
                     <label class="top">
-                        <div>First Name*</div><input type="text" id="fName" name="fName" required>
+                        <div>First Name*</div><input type="text" id="fName" name="fName" pattern="[a-zA-Z]+"  minlength="5" required>
                     </label>
                     <label class="top">
-                        <div>Last Name*</div><input type="text" id="lName" name="lName" required>
+                        <div>Last Name*</div><input type="text" id="lName" name="lName" pattern="[a-zA-Z]+"   minlength="5" required>
                     </label>
 
                     <!-- email input of type email and use a
@@ -81,42 +81,23 @@
     a datalist of suggestions that include "Flash Flood,"
      "Hail," "Hurricane," "Thunderstorm," and "Tornado."-->
                     <label class="top">
-                        <div>Storm Type</div> <input type="datalist">
+                        <div>Storm Type</div> 
+                        <select name="type">
+                            <option value="">Select Type... &#9662;</option>
+                            <option value="flashFlood">Flash Flood</option>
+                            <option value="hail">Hail</option>
+                            <option value="hurricane">Hurricane</option>
+                            <option value="thunderstorm">Thunderstorm</option>
+                            <option value="tornado">Tornado</option>
+                            </select>
                     </label>
 
                     <!-- severity level type range (1 to 10) with a corresponding 
     label that indicates the current range value from 1 to 10. -->
 
                     <div>Severity Level</div>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="1">1
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="2">2
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="3">3
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="4">4
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="5">5
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="6">6
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="7">7
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="8">8
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="9">9
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="severity" value="10">10
+                    <label class="sbs"> 1
+                        <input type="range" name="severity" min="1" max="10">10
                     </label>
                     <!-- storm Region using select with drop-down options of "Preston",
      "Soda Springs", and "Fish Haven".  a first option with the text 
@@ -136,20 +117,20 @@
                      
                     <label class="sbs">
                         <div> Are you in Danger? </div>
+                        <label class="sbs">
+                            <input type="radio" name="danger" value="Maybe">Maybe
+                        </label>
+                        <label class="sbs">
+                            <input type="radio" name="danger" value="No">No
+                        </label>
                         <input type="radio" name="danger" value="yes">Yes
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="danger" value="Maybe">Maybe
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="danger" value="No">No
                     </label>
                 </fieldset>
                 <fieldset>
                     <legend>Additional Information</legend>
                     <!-- additional info or comments using a textarea -->
                     <label class="comments">
-                        <div>Comments</div><input type="textarea" name="comments">
+                        <div>Additional Information</div><textarea id="comments" name="comments" rows="10" col="200"> Power lines are down...</textarea>
                     </label>
                 </fieldset>
                 <!-- submission button input of type submit that loads thanks.html-->

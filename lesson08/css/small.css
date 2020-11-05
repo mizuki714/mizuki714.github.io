@@ -111,8 +111,8 @@ h4 {
 }
 
 p,
-.temp ,
-figcaption{
+.temp,
+figcaption {
     color: #3D3A4B;
     font-size: 1.1rem;
     font-family: 'Archivo Narrow', sans-serif;
@@ -136,9 +136,10 @@ a {
     text-align: center;
 }
 
-.weatherSum h3, .weatherSum p{
+.weatherSum h3,
+.weatherSum p {
     margin: 10px;
-    
+
 }
 
 .hero,
@@ -217,10 +218,12 @@ a {
     margin-left: auto;
     margin-right: auto
 }
-.contactinfo{
-    padding:.6rem;
+
+.contactinfo {
+    padding: .6rem;
     margin: auto;
-  }
+}
+
 .banner {
     display: none;
     margin: 20px;
@@ -302,70 +305,83 @@ figcaption {
     text-align: center;
     padding: 1rem;
 }
+
 /* *********************************FORM STYLING ************************************/
-.stormCenterContainer{
-background-color: #F9F4F5;
+.stormCenterContainer {
+    background-color: #F9F4F5;
 }
-form fieldset{
-    margin:2rem 0;
+
+form fieldset {
+    margin: 2rem 0;
     border: 2px solid #F6AE2D;
-    color:#3D3A4B;
-    padding: 1rem 2% ;
+    color: #3D3A4B;
+    padding: 1rem 2%;
 }
-form legend{
-    color:#3D3A4B;
+
+form legend {
+    color: #3D3A4B;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 1.2rem;
 }
-from label.top, form div{
+
+from label.top,
+form div {
     display: block;
     padding-top: 1rem;
-Color: #4381C1;
-font-size: 1.1rem;
+    Color: #4381C1;
+    font-size: 1.1rem;
 }
-form label.top input, form label.top select, textarea {
+
+form label.top input,
+form label.top select,
+textarea {
     -webkit-appearance: none;
-display: block;
-font-size:1rem;
-border:solid 1px #4381C1;
-border-radius: 4px;
-padding: .75 rem;
-color:#3D3A4B;
-width:100%;
-max-width:20rem ;
-background-color: #3d3a4b25;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #4381C1;
+    border-radius: 4px;
+    padding: .75 rem;
+    color: #3D3A4B;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #3d3a4b25;
 }
-form input.submitBtn{
-border:none;
-background-color: #F6AE2D;
-color:#3D3A4B;
-border-radius: 1rem;
-padding: .75rem 1.5rem;
-margin: 0 0 2rem 2%;
-width: 96%;
-max-width: 20rem;
+
+form input.submitBtn {
+    border: none;
+    background-color: #F6AE2D;
+    color: #3D3A4B;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
 }
-form label.sbs{
-   display: block;
-   padding: .75 rem 0;
-   color: #3D3A4B; 
+
+form label.sbs {
+    display: block;
+    padding: .75 rem 0;
+    color: #3D3A4B;
 
 }
 
 textarea {
     resize: none;
     max-width: 100%;
-  }
-  form{
-     margin-left: auto;
-     margin-right: auto;
-     padding:1rem;
-  }
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
 /* these do not work properly and I was strugling with this! */
-  form label.top input:required{
+form label.top input:required {
     border-left: 6px red;
 }
-form label.top input:required:valid{
-    border-left:6px green ;
+
+form label.top input:required:valid {
+    border-left: 6px green;
 }

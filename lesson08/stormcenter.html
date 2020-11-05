@@ -46,10 +46,12 @@
      minimum of five characters using a regular 
      expression pattern -->
                     <label class="top">
-                        <div>First Name*</div><input type="text" id="fName" name="fName" pattern="[a-zA-Z]+"  minlength="5" required>
+                        <div>First Name*</div><input type="text" id="fName" name="fName" pattern="[a-zA-Z]+"
+                            minlength="5" required>
                     </label>
                     <label class="top">
-                        <div>Last Name*</div><input type="text" id="lName" name="lName" pattern="[a-zA-Z]+"   minlength="5" required>
+                        <div>Last Name*</div><input type="text" id="lName" name="lName" pattern="[a-zA-Z]+"
+                            minlength="5" required>
                     </label>
 
                     <!-- email input of type email and use a
@@ -81,7 +83,7 @@
     a datalist of suggestions that include "Flash Flood,"
      "Hail," "Hurricane," "Thunderstorm," and "Tornado."-->
                     <label class="top">
-                        <div>Storm Type</div> 
+                        <div>Storm Type</div>
                         <select name="type">
                             <option value="">Select Type... &#9662;</option>
                             <option value="flashFlood">Flash Flood</option>
@@ -89,7 +91,7 @@
                             <option value="hurricane">Hurricane</option>
                             <option value="thunderstorm">Thunderstorm</option>
                             <option value="tornado">Tornado</option>
-                            </select>
+                        </select>
                     </label>
 
                     <!-- severity level type range (1 to 10) with a corresponding 
@@ -109,12 +111,12 @@
                             <option value="Preston">Preston</option>
                             <option value="Soda Springs">Soda Springs</option>
                             <option value="Fish Haven">Fish Haven</option>
-                            </select>
+                        </select>
                     </label>
                     <!-- user in danger level input of type radio with options and values of 
                      "yes," "maybe," and "no." -->
 
-                     
+
                     <label class="sbs">
                         <div> Are you in Danger? </div>
                         <label class="sbs">
@@ -130,11 +132,12 @@
                     <legend>Additional Information</legend>
                     <!-- additional info or comments using a textarea -->
                     <label class="comments">
-                        <div>Additional Information</div><textarea id="comments" name="comments" rows="10" col="200"> Power lines are down...</textarea>
+                        <div>Comments</div><textarea id="comments" name="comments" rows="10"
+                            cols="20"> Power lines are down...</textarea>
                     </label>
                 </fieldset>
                 <!-- submission button input of type submit that loads thanks.html-->
-                    <input type="submit" value="Send my Storm Report" class="submitBtn">
+                <input type="submit" value="Send my Storm Report" class="submitBtn">
 
             </form>
         </div>

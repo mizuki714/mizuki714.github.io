@@ -324,7 +324,7 @@ from label.top, form div{
 Color: #4381C1;
 font-size: 1.1rem;
 }
-form label.top input, form label.top select{
+form label.top input, form label.top select, textarea {
     -webkit-appearance: none;
 display: block;
 font-size:1rem;
@@ -352,12 +352,7 @@ form label.sbs{
    color: #3D3A4B; 
 
 }
-form label.top input:required{
-    border-left: red 6px;
-}
-form label.top input:required:valid{
-    border-left: green 6px;
-}
+
 textarea {
     resize: none;
     max-width: 100%;
@@ -367,3 +362,10 @@ textarea {
      margin-right: auto;
      padding:1rem;
   }
+/* these do not work properly and I was strugling with this! */
+  form label.top input:required{
+    border-left: 6px red;
+}
+form label.top input:required:valid{
+    border-left:6px green ;
+}

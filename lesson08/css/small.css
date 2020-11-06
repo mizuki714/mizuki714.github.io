@@ -309,6 +309,8 @@ figcaption {
 /* *********************************FORM STYLING ************************************/
 .stormCenterContainer {
     background-color: #F9F4F5;
+    margin: 3rem;
+    padding: 5rem;
 }
 
 form fieldset {
@@ -379,9 +381,14 @@ form {
 
 /* these do not work properly and I was strugling with this! */
 form label.top input:required {
-    border-left: 6px red;
+    border-left: red solid 4px;
 }
 
 form label.top input:required:valid {
-    border-left: 6px green;
+    border-left:green solid 4px;
+}
+.tymessage{
+background-color: #F9F4F5;
+padding: 1rem;
+text-align: center;
 }

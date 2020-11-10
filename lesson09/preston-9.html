@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The weather site for Preston Idaho. This page will display Weather and information in Preston."/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Cirrus Weather | Preston ID </title>
+</head>
+
+<body>
+    <header>
+        <!--- logo site name motto-->
+        <img class="logo" src="images/mainicon.png" alt="cirrus weather logo">
+        <section>
+            <h1>Cirrus Weather</h1>
+            <h3 class="motto">For better unity in your community</h3>
+        </section>
+    </header>
+    <!--- Navigation-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776; Menu </button>
+        <ul id="menu" class="hide_navigation">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston-9.html"> Preston </a></li>
+            <li><a href="#"> Soda Springs</a></li>
+            <li><a href="#"> Fish Haven</a></li>
+            <li><a href="stormcenter.html"> Storm Center</a></li>
+            <li><a href="gallery-9.html"> Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--- banner here-->
+        <div class="banner">
+            <h4>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </h4>
+        </div>
+        <h2>Preston Idaho</h2>
+
+        <div class="hero-container">
+            <div class="hero"> 
+                <picture class = "hero-picture">
+                    <source srcset="images/heroimg400.jpg" media="(min-width:35rem) and (max-width:65rem)">
+                        <source srcset="images/heroimg500.jpg" media="(min-width:65rem)">
+                <img class="hero-img" src="images/heroimg250.jpg" alt="image of mountain">
+                </picture>
+             </div>
+            <section class="weatherSum">
+                <h3>Weather Summary &#9925;</h3>
+                <p><strong>Currently:</strong> Cloudy</p>
+                <p><strong>Tempurature: </strong><span id="temp">54</span>&#176; F</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+                <p><strong>Humidity:</strong> 69%</p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeedMPH">12</span> MPH</p>
+            </section>
+        </div>
+        <div class="forecast-container">
+
+            <h3 class="forecast-title">5 Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="forecast-head">Monday</span>
+                    <img src="images/sunicon.png" alt="weather">
+                    <span class="temp">temp 1</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Tuesday</span>
+                    <img src="images/tstormicon.png" alt="weather">
+                    <span class="temp">temp 2</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Wednesday</span>
+                    <img src="images/tstormicon.png" alt="weather">
+                    <span class="temp">temp 3</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Thursday</span>
+                    <img src="images/sunicon.png" alt="weather">
+                    <span class="temp">temp 4</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Friday</span>
+                    <img src="images/tstormicon.png" alt="weather">
+                    <span class="temp">temp 5</span>
+                </div>
+            </div>
+        </div>
+        <div class="article-container">
+            <h4 class="article-title">Article Title Here</h4>
+            <picture class="article-picture">
+                <img class="articleimg" src="images/articleimg.jpg" alt="article image">
+            </picture>
+            <p class="article-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore minima, unde
+                quibusdam adipisci a rem dolor? Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur. In. Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur. Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur.</p>
+                
+        </div>
+        <div class="contact-container">
+            <img class="prestonMap" src="images/map.png" alt="Map of Preston ID">
+            <div class="contactinfo">
+                <p class="contact"><strong>Cirrus Weather</strong><br> 1234 Rainbow Rd.<br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
+                <a href="https://www.facebook.com">
+                    <img src="images/fbicon.png" alt="Facebook Icon"></a>
+                <a href="https://www.pintrest.com">
+                    <img src="images/pinicon.png" alt="pintrest Icon"></a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twicon.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span> 
+    </footer>
+    <script src="js/windchill.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+          google: {
+            families: [
+            'Archivo Narrow','Fredoka One'
+            ]
+          }
+        });
+        </script>
+</body>
+
+</html>

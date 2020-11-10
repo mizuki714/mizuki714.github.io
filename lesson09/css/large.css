@@ -1,0 +1,37 @@
+@media only screen and (min-width: 65rem) {
+
+    main,
+    footer {
+        max-width: 960px;
+        margin: auto;
+    }
+
+
+    header,
+    nav {
+        max-width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .contact-container {
+        align-items: center;
+    }
+
+
+
+    .img_gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* hover effect for gallery images */
+    .gallery:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    form label.sbs {
+        padding: .4rem;
+    }
+}

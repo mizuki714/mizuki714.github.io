@@ -46,7 +46,7 @@
 
    
 
-    .article-picture {
+    .article-picture,  div.cards section:nth-child(even) img {
         float: right;
         margin-left: auto;
         margin-right: auto;
@@ -69,14 +69,10 @@
         width:300px;
         height: auto;
     }
-    div.cards section {
-        grid-template-columns: 1fr 1fr;
+    /*float image*/
+    div.cards section:nth-child(odd) img {
+        float:left;
      } 
-    div.cards section img:nth-child(odd) {
-        grid-column: 1/2;
-     } 
-    div.cards section img:nth-child(even) {
-       grid-column: 2/3;
-    }  
-        
+    
+    
 }

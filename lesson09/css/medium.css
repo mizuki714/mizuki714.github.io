@@ -69,4 +69,14 @@
         width:300px;
         height: auto;
     }
+    div.cards section {
+        grid-template-columns: 1fr 1fr;
+     } 
+    div.cards section img:nth-child(odd) {
+        grid-column: 1/2;
+     } 
+    div.cards section img:nth-child(even) {
+       grid-column: 2/3;
+    }  
+        
 }

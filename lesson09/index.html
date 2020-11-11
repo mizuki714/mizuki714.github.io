@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The weather site for Preston Idaho. This page will display Weather and information in Preston."/>
+    <meta name="description"
+        content="The weather site for Preston Idaho. This page will display Weather and information in Preston." />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -36,11 +37,61 @@
     </nav>
 
     <main>
+        <div class="hero-container">
+            <div class="hero">
+                <picture class="hero-picture">
+                    <source srcset="images/heroimg400.jpg" media="(min-width:35rem) and (max-width:65rem)">
+                    <source srcset="images/heroimg500.jpg" media="(min-width:65rem)">
+                    <img class="hero-img" src="images/heroimg250.jpg" alt="image of mountain">
+                </picture>
+            </div>
+        </div>
+
         
+            <div class="cards"></div>
+         
+
+        <div class="article-container">
+            <h4 class="article-title">Article Title Here</h4>
+            <picture class="article-picture">
+                <img class="articleimg" src="images/articleimg.jpg" alt="article image">
+            </picture>
+            <p class="article-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore minima, unde
+                quibusdam adipisci a rem dolor? Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur. In. Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur. Blanditiis dolorem optio error! Vitae unde culpa voluptate blanditiis
+                neque saepe eligendi veritatis! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                unde esse harum velit natus, odit ipsa eligendi! Iure laboriosam voluptatibus earum vel consequuntur?
+                Hic amet similique quia unde dolores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga aliquid, provident deserunt sequi non molestiae repellendus aut saepe impedit necessitatibus odit
+                sunt in. Voluptate quae animi laborum quia consequatur.</p>
+                
+        </div>
+        <div class="contact-container">
+            <img class="prestonMap" src="images/map.png" alt="Map of Preston ID">
+            <div class="contactinfo">
+                <p class="contact"><strong>Cirrus Weather</strong><br> 1234 Rainbow Rd.<br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
+                <a href="https://www.facebook.com">
+                    <img src="images/fbicon.png" alt="Facebook Icon"></a>
+                <a href="https://www.pintrest.com">
+                    <img src="images/pinicon.png" alt="pintrest Icon"></a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twicon.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
     </main>
-    
     <footer>
-        <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span> 
+       <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span> | <a href="home-wireframes.html"> Home Wireframe </a>
     </footer>
     <script src="js/windchill.js"></script>
     <script src="js/menu.js"></script>
@@ -56,6 +107,7 @@
           }
         });
         </script>
+    <script src = "js/home.js"></script>
 </body>
 
 </html>

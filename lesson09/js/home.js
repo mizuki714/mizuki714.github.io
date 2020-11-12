@@ -15,9 +15,16 @@ fetch(requestURL)
 
         //for loop to loop through the code and create cards
         for (let i = 0; i < towns.length; i++) {
+            if(towns[i].name=="Preston"|| towns[i].name=="Fish Haven" || towns[i].name=="Soda Springs"){
             //create cards
             let card = document.createElement('section');
 
+             //img
+             let image = document.createElement('img');
+             image.setAttribute('src',"images/" + towns[i].photo);
+             card.appendChild(image);
+
+             
             //town name
             let h2 = document.createElement('h2');
             h2.textContent = towns[i].name;
@@ -44,10 +51,7 @@ fetch(requestURL)
             p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
             card.appendChild(p3);
 
-            //img
-            let image = document.createElement('img');
-            image.setAttribute('src', towns[i].photo);
-            card.appendChild(image);
-
+           
+            }
         }
     });

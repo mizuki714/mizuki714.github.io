@@ -187,12 +187,14 @@ a {
     text-align: center;
 }
 
-.articleimg {
+.articleimg,
+.articleimg2 {
     width: auto;
     max-height: 300px;
 }
 
 .articleimg,
+.articleimg2,
 .article-title,
 .article-content {
     margin: 10px;

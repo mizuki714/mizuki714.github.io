@@ -79,7 +79,7 @@
      "Hail," "Hurricane," "Thunderstorm," and "Tornado."-->
                     <div>Storm Type</div>
                     <label class="top" for="stormType">
-                        <input list="stormTypes"id="stormchoice" name="choiceOfStormTypes"/>
+                        <input list="stormTypes" id="stormType" name="choiceOfStormTypes"/>
                         <datalist id="stormTypes">
                             <option value="Flash Flood">
                             <option value="Hail">
@@ -94,7 +94,7 @@
 
                     <div>Severity Level</div>
                     <label class="sbs" for="severity"> 
-                        <input type="range" name="severity" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">10</span>
+                        <input type="range" id="severity" name="severity" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">10</span>
                     </label>
                     <datalist id="tickmarks">
                         <option value="0">
@@ -116,7 +116,7 @@
                     <div>Storm Region</div>
                     <label class="top">
                         <select name="region">
-                            <option value=""disabled selected>Select Region... &#9662; </option>
+                            <option value="" disabled selected>Select Region... &#9662; </option>
                             <option value="Preston">Preston</option>
                             <option value="Soda Springs">Soda Springs</option>
                             <option value="Fish Haven">Fish Haven</option>

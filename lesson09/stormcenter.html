@@ -27,16 +27,16 @@
     <nav>
         <button onclick="toggleMenu()"> &#9776; Menu </button>
         <ul id="menu" class="hide_navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston-9.html"> Preston </a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="preston-8.html"> Preston </a></li>
             <li><a href="#"> Soda Springs</a></li>
             <li><a href="#"> Fish Haven</a></li>
             <li class="active"><a href="stormcenter.html"> Storm Center</a></li>
-            <li><a href="gallery-9.html"> Gallery</a></li>
+            <li><a href="gallery-8.html"> Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <div class="stormCenterContainer">
+       
             <h3> Storm Center Report </h3>
             <form method="get" action="thanks.html">
                 <fieldset>
@@ -46,11 +46,7 @@
      minimum of five characters using a regular 
      expression pattern -->
                     
-                    <label for="fName" class="top">First Name*<input type="text" id="fName" name="fName" pattern="[a-zA-Z]+" minlength="5" required></label>
-                    
-                    <label class="top">Last Name*
-                        <input type="text" id="lName" name="lName" pattern="[a-zA-Z]+" minlength="5" required>
-                    </label>
+                    <label for="fName" class="top">Full Name*<input type="text" id="fName" name="fName" pattern="[a-zA-Z\s]+" minlength="5" required></label>
 
                     <!-- email input of type email and use a placeholder to provide a demo email -->
                     
@@ -82,24 +78,37 @@
     a datalist of suggestions that include "Flash Flood,"
      "Hail," "Hurricane," "Thunderstorm," and "Tornado."-->
                     <div>Storm Type</div>
-                    <label class="top">
-                        <select name="type">
-                            <option value="">Select Type... &#9662;</option>
-                            <option value="flashFlood">Flash Flood</option>
-                            <option value="hail">Hail</option>
-                            <option value="hurricane">Hurricane</option>
-                            <option value="thunderstorm">Thunderstorm</option>
-                            <option value="tornado">Tornado</option>
-                        </select>
+                    <label class="top" for="stormType">
+                        <input list="stormTypes"id="stormchoice" name="choiceOfStormTypes"/>
+                        <datalist id="stormTypes">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
                     </label>
 
                     <!-- severity level type range (1 to 10) with a corresponding 
     label that indicates the current range value from 1 to 10. -->
 
                     <div>Severity Level</div>
-                    <label class="sbs"> 1
-                        <input type="range" name="severity" min="1" max="10">10
+                    <label class="sbs" for="severity"> 
+                        <input type="range" name="severity" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">10</span>
                     </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
                     <!-- storm Region using select with drop-down options of "Preston",
      "Soda Springs", and "Fish Haven".  a first option with the text 
      "Select Region ..." that is shown by default but not selectable (disabled).
@@ -107,7 +116,7 @@
                     <div>Storm Region</div>
                     <label class="top">
                         <select name="region">
-                            <option value="">Select Region... &#9662;</option>
+                            <option value=""disabled selected>Select Region... &#9662; </option>
                             <option value="Preston">Preston</option>
                             <option value="Soda Springs">Soda Springs</option>
                             <option value="Fish Haven">Fish Haven</option>
@@ -132,12 +141,11 @@
                 <input type="submit" value="Send my Storm Report" class="submitBtn">
 
             </form>
-        </div>
     </main>
     <footer>
         <p class="copyright">&copy;Cirrus Weather | Attributions | Julie Huntsman | <span id="currentDate"></span>
     </footer>
-    <script src="js/windchill.js"></script>
+    <script src="js/severitylevel.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/date.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

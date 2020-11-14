@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 nav {
     background-color: #F6AE2D;
     color: #3D3A4B;
@@ -100,6 +103,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    text-align: center;
 }
 
 h4 {
@@ -309,11 +313,7 @@ figcaption {
 }
 
 /* *********************************FORM STYLING ************************************/
-.stormCenterContainer {
-    background-color: #F9F4F5;
-    margin: 3rem;
-    padding: 5rem;
-}
+
 
 form fieldset {
     margin: 2rem 0;
@@ -379,6 +379,8 @@ form {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
+    background-color: #F9F4F5;
+    max-width: 24rem;
 }
 
 /* these do not work properly and I was strugling with this! */

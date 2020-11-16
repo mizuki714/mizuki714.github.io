@@ -1,0 +1,46 @@
+html{
+    text-align: center;
+}
+section {
+    background-color: rgb(25, 22, 87);
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+    
+    border-radius: 9px 9px;
+}
+
+img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 42em) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        
+    }
+
+    section{
+      
+        grid-auto-flow: column dense;
+    }
+
+}
+
+@media only screen and (min-width: 65em) {
+   .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        grid-auto-flow: row dense;
+    }
+    section{
+        grid-auto-flow: column dense;
+    }
+   
+}

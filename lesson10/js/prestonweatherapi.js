@@ -13,7 +13,7 @@ fetch(apiURL)
         let kelvin = jsObject.main.temp;
         let cel = kelvin - 273;
         let fahrenheit = Math.floor(cel * (9 / 5) + 32);
-        document.getElementById('currentTemp').textContent = fahrenheit;
+        document.getElementById('current-temp').textContent = fahrenheit;
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
         const desc = jsObject.weather[0].description; // note how we reference the weather array
         //Delete this line to show icon

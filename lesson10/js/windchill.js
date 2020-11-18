@@ -7,7 +7,6 @@ by using t he formula to calculate the wind chill factor
   and s is the wind speed in miles per hour. */
 
 window.onload = getWindChill();
-
  function getWindChill() {
     let temp =parseFloat( document.getElementById('current-temp').textContent);
     let windSpeedMPH = parseFloat(document.getElementById('windSpeedMPH').textContent);

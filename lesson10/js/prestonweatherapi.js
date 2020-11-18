@@ -5,7 +5,7 @@ Preston cityid = "5604473"*/
 /* preston page */
 
 //weather summary
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=08a952b25f428f198a70d56f6b821a3f";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=08a952b25f428f198a70d56f6b821a3f";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -21,12 +21,9 @@ fetch(apiURL)
         document.getElementById('icon').setAttribute('alt', desc);
     });
 
-id = "currently"
+/*id = "currently"
 id = "highTemp"
-
-
-
 id = "humidity"
 id = "windSpeedMPH"
-
+*/
 //5-day forecast

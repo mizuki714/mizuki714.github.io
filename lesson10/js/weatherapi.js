@@ -1,7 +1,7 @@
 /* key = 08a952b25f428f198a70d56f6b821a3f
 Preston cityid = "5604473"*/
 /* api-test page  and current temp for Preston Page Weather Summary*/
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=08a952b25f428f198a70d56f6b821a3f";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=08a952b25f428f198a70d56f6b821a3f";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {

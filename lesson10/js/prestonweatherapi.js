@@ -28,11 +28,6 @@ fetch(apiURL)
         document.getElementById('highTemp').textContent = highFahren;
         document.getElementById('humidity').textContent =jsObject.main.humidity;
         document.getElementById('windSpeedMPH').textContent =jsObject.wind.speed;
-        id = "currently"
-        id = "highTemp"
-        id = "humidity"
-        id = "windSpeedMPH"
-
 
     });
 

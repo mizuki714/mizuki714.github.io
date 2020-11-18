@@ -19,11 +19,22 @@ fetch(apiURL)
         //Delete this line to show icon
         document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
         document.getElementById('icon').setAttribute('alt', desc);
+
+        
+        document.getElementById('currently').textContent = jsObject.weather[0].description;
+        let maxKelvin = jsObject.main.temp_max;
+        let maxCel= maxKelvin- 273;
+        let highFahren = Math.floor(maxCel * (9 / 5) + 32);
+        document.getElementById('highTemp').textContent = highFahren;
+        document.getElementById('humidity').textContent =jsObject.main.humidity;
+        document.getElementById('windSpeedMPH').textContent =jsObject.wind.speed;
+        id = "currently"
+        id = "highTemp"
+        id = "humidity"
+        id = "windSpeedMPH"
+
+
     });
 
-/*id = "currently"
-id = "highTemp"
-id = "humidity"
-id = "windSpeedMPH"
-*/
+
 //5-day forecast

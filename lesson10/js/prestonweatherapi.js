@@ -26,8 +26,14 @@ fetch(apiURL)
         document.getElementById('highTemp').textContent = highFahren;
         document.getElementById('humidity').textContent =jsObject.main.humidity;
         document.getElementById('windSpeedMPH').textContent =jsObject.wind.speed;
-/*
+
 //5-day forecast
+/*
+ document.getElementById('#').textContent = #;
+ document.getElementById('#').textContent = #;
+ document.getElementById('#').textContent = #;
+
+ 
 var list1 = jsObject["list"];
 var dIDay = ["d1Day", "d2Day", "d3Day", "d4Day", "d5Day"];
 var dITemp =["d1Temp","d2Temp", "d3Temp", "d4Temp", "d5Temp" ];

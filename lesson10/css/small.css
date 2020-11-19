@@ -115,7 +115,7 @@ h4 {
 }
 
 p,
-.forecastTemp,
+.forecast-col .forecastTemp,
 figcaption {
     color: #3D3A4B;
     font-size: 1.1rem;
@@ -420,4 +420,7 @@ div.cards img {
     margin-right: auto;
     width: auto;
     height: auto;
+}
+.forecast-col .forecastTemp{
+    display: inline;
 }

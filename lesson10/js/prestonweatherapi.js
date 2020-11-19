@@ -33,7 +33,7 @@ fetch(forecast)
         const days = jsonObject['list'];
         console.log(days);
         var newDays = [];
-        var today = parseInt(new Date().getDate() + 1 );
+        var today = parseInt(new Date(days[0].dt_txt).getDate());
         var x = 0;
        
         //check if the time is 6pm

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The weather site for Preston Idaho. This page will display Weather and information in Preston." />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Cirrus Weather | Preston ID </title>
+</head>
+
+<body>
+    <header>
+        <!--- logo site name motto-->
+        <img class="logo" src="images/mainicon.png" alt="cirrus weather logo">
+        <section>
+            <h1>Cirrus Weather</h1>
+            <h3 class="motto">For better unity in your community</h3>
+        </section>
+    </header>
+    <!--- Navigation-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776; Menu </button>
+        <ul id="menu" class="hide_navigation">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston-11.html"> Preston </a></li>
+            <li><a href="sodasprings.html"> Soda Springs</a></li>
+            <li><a href="fishhaven.html"> Fish Haven</a></li>
+            <li><a href="stormcenter.html"> Storm Center</a></li>
+            <li><a href="gallery-11.html"> Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--- banner here-->
+        <div class="banner">
+            <h4>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </h4>
+        </div>
+        <h2>Preston Idaho</h2>
+
+        <div class="hero-container">
+            <div class="hero">
+                <picture class="hero-picture">
+                    <source srcset="images/heroimg400.jpg" media="(min-width:35rem) and (max-width:65rem)">
+                    <source srcset="images/heroimg500.jpg" media="(min-width:65rem)">
+                    <img class="hero-img" src="images/heroimg250.jpg" alt="image of mountain">
+                </picture>
+            </div>
+            <section class="weatherSum">
+                <h3>Weather Summary</h3>
+                <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon">
+                <p><strong>Currently:</strong> <span id="currently"></span></p>
+                <p><strong>High:</strong> <span id="highTemp"></span>&#176; F</p>
+                <p><strong>Tempurature: </strong><span id="current-temp"></span>&#176; F</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeedMPH"></span> MPH</p>
+            </section>
+        </div>
+        <div class="forecast-container">
+
+            <h3 class="forecast-title">5 Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/sunicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg" src="images/sunicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+            </div>
+        </div>
+        <div class="article-container">
+            <h4 class="article-title">With the official canvass for the 2020 election done, Idaho sets 3 new records for
+                voter turnout </h4>
+            <picture class="article-picture">
+                <img class="articleimg" src="images/articleimg.jpg" alt="article image">
+            </picture>
+            <p class="article-content">
+                A record-breaking 878,527 ballots were cast in Idaho for the 2020 General Election, which is a turnout
+                of 81.2% of Idaho's
+                1,082,417 registered voters BOISE, Idaho — Editor's Note: This story was originally published by The
+                Idaho Press. The
+                official canvass for election 2020 in Idaho is complete, with every ballot now accounted for and
+                counted. In Idaho,
+                voters broke not one record, not two, but three records this election. A record-breaking 878,527 ballots
+                were cast
+                in Idaho for the 2020 General Election, which is a turnout of 81.2% of Idaho's 1,082,417 registered
+                voters.
+                This year's turnout of 81.2% is the highest percentage of voter turnout Idaho has seen for any election
+                this century.
+                Idahoans also set the record for the most absentee ballots cast in an election ever with 493,719.
+                “State and county election officials and workers are to be commended for their dedication, patience and
+                flexibility
+                in staging a successful general election under the challenging circumstances of a global pandemic,”
+                Idaho Secretary
+                of State Lawerence Denney said in a statement. “Idahoans cast a record number of ballots, a record
+                number of which
+                were early or absentee ballots, and produced the highest percentage voter turnout we have seen for any
+                election
+                this century.” The state Board of Canvassers includes Denney; state Controller Brandon Woolf; and state
+                Treasurer
+                Julie Ellsworth, who participated in Wednesday’s meeting by phone while the other two attended in
+                person.
+                The state canvass, conducted after each county has canvassed its results, makes the results of the
+                election official.
+                All told, a record 878,527 Idahoans cast ballots. More than half — 56.2% —were cast early, either
+                through absentee
+                voting or in-person early voting. The highest turnout counties, by percentage of registered voters, were
+                Fremont,
+                88.1%; Kootenai, 87.4%; Butte, 86.3%; and Idaho, 85.1%. The lowest were Madison, 71%; Jerome, 73.9%;
+                Clark, 74.9%;
+                Latah, 76.2%; and Elmore, 76.9%. Ada County’s final turnout was listed at 81.8% of registered voters;
+                Canyon County’s
+                was 78.5%. Jason Hancock, deputy secretary of state and elections director, noted that the election set
+                a record for
+                the number of ballots cast and the number of registered voters, and also for percentage turnout since
+                2000. Since then,
+                the previous high mark was 77.1% in 2008. According to Idaho Secretary of State’s office records dating
+                back to 1980,
+                the previous record during that period was 80.46% of registered voters in 1992. Idaho’s turnout is much
+                lower when
+                calculated as the percentage of the voting-age population casting ballots. In 1992, that figure was
+                66.45%;
+                in 2016, 59.07%. Hancock said the office hasn’t calculated that figure this year. The 2024 presidential
+                election
+                will have some tough numbers to beat, but Idaho only has to wait 1,447 days until then.<br> Betsy Z.
+                Russell is the Boise bureau chief and state capitol reporter for the Idaho Press and Adams Publishing
+                Group.
+                Follow her on Twitter at @BetsyZRussell. Retrieved from:
+                <a href="https://articlegenerator.org/foldertemp/411_generatedfile.text">Article Generator</a></p>
+
+        </div>
+        <div class="contact-container">
+            <img class="prestonMap" src="images/map.png" alt="Map of Preston ID">
+            <div class="contactinfo">
+                <p class="contact"><strong>Cirrus Weather</strong><br> 1234 Rainbow Rd.<br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
+                <a href="https://www.facebook.com">
+                    <img src="images/fbicon.png" alt="Facebook Icon"></a>
+                <a href="https://www.pintrest.com">
+                    <img src="images/pinicon.png" alt="pintrest Icon"></a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twicon.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy;Cirrus Weather | Attributions <a href="http://openweathermap.org/api"> Open Weather
+                API</a> | Julie Huntsman | <span id="currentDate"></span>
+    </footer>
+    <script src="js/prestonweatherapi.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Archivo Narrow', 'Fredoka One'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

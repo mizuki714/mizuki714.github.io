@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The weather site for Soda Springs Idaho. This page will display Weather and information in Soda Springs." />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Cirrus Weather | Soda Springs ID </title>
+</head>
+
+<body>
+    <header>
+        <!--- logo site name motto-->
+        <img class="logo" src="images/mainicon.png" alt="cirrus weather logo">
+        <section>
+            <h1>Cirrus Weather</h1>
+            <h3 class="motto">For better unity in your community</h3>
+        </section>
+    </header>
+    <!--- Navigation-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776; Menu </button>
+        <ul id="menu" class="hide_navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-11.html"> Preston </a></li>
+            <li class="active"><a href="sodasprings.html"> Soda Springs</a></li>
+            <li><a href="fishhaven.html"> Fish Haven</a></li>
+            <li><a href="stormcenter.html"> Storm Center</a></li>
+            <li><a href="gallery-11.html"> Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--- banner here idk if we need a banner but we have one!!!-->
+        <div class="banner">
+            <h4>Saturday = Soda Springs Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </h4>
+        </div>
+        <h2>Soda Springs Idaho</h2>
+
+        <div class="hero-container">
+            <div class="hero">
+                <picture class="hero-picture">
+                    <source srcset="images/heroimg400.jpg" media="(min-width:35rem) and (max-width:65rem)">
+                    <source srcset="images/heroimg500.jpg" media="(min-width:65rem)">
+                    <img class="hero-img" src="images/heroimg250.jpg" alt="image of mountain">
+                </picture>
+            </div>
+            <section class="weatherSum">
+                <h3>Weather Summary</h3>
+                <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon">
+                <p><strong>Currently:</strong> <span id="currently"></span></p>
+                <p><strong>High:</strong> <span id="highTemp"></span>&#176; F</p>
+                <p><strong>Tempurature: </strong><span id="current-temp"></span>&#176; F</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeedMPH"></span> MPH</p>
+            </section>
+        </div>
+        <div class="forecast-container">
+
+            <h3 class="forecast-title">5 Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/sunicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg" src="images/sunicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"></span>
+                    <img class="forcastimg"  src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+            </div>
+        </div>
+        <div class="article-container">
+            <h4 class="article-title">ARTICLE CONTENT </h4>
+            <picture class="article-picture">
+                <img class="articleimgFH" src="images/articleimgFHS.jpg" alt="article image">
+            </picture>
+            <p class="article-content">
+                ARTICLE GOES HERE!!!
+
+        </div>
+        <div class="contact-container">
+            <img class="prestonMap" src="images/map.png" alt="Map of Preston ID">
+            <div class="contactinfo">
+                <p class="contact"><strong>Cirrus Weather</strong><br> 1234 Rainbow Rd.<br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
+                <a href="https://www.facebook.com">
+                    <img src="images/fbicon.png" alt="Facebook Icon"></a>
+                <a href="https://www.pintrest.com">
+                    <img src="images/pinicon.png" alt="pintrest Icon"></a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twicon.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy;Cirrus Weather | Attributions <a href="http://openweathermap.org/api"> Open Weather
+                API</a> | Julie Huntsman | <span id="currentDate"></span>
+    </footer>
+    <script src="js/prestonweatherapi.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Archivo Narrow', 'Fredoka One'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

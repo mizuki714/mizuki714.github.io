@@ -53,7 +53,7 @@ fetch(forecast)
         let weatherIcon = document.getElementsByClassName("forcastimg");
         for (let i = 0; i < weatherIcon.length; i++) {
             weatherIcon[i].setAttribute("src", `http://openweathermap.org/img/wn/${newDays[i].weather[0].icon}@2x.png`);
-            weatherIcon[i].setAttribute("alt", `Icon representing ${newDays[i].weather[0].description}`);
+            weatherIcon[i].setAttribute("alt", `Icon representing ${newDays[i].days[i].weather[0].description}`);
         }
         //days of the week
         let weatherDay = document.getElementsByClassName('day');

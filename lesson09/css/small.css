@@ -165,6 +165,7 @@ a {
     color: #4381C1;
 }
 
+.cards,
 .hero,
 .forecast-container,
 .article-container,
@@ -172,6 +173,7 @@ a {
     margin: 20px;
 
 }
+
 
 .gallery,
 .hero,

@@ -115,7 +115,7 @@ h4 {
 }
 
 p,
-.temp,
+.forecastTemp,
 figcaption {
     color: #3D3A4B;
     font-size: 1.1rem;
@@ -165,6 +165,7 @@ a {
     color: #4381C1;
 }
 
+.cards,
 .hero,
 .forecast-container,
 .article-container,
@@ -172,6 +173,7 @@ a {
     margin: 20px;
 
 }
+
 
 .gallery,
 .hero,
@@ -247,7 +249,7 @@ a {
     border-right: 1px solid #3D3A4B;
 }
 
-.forecast-head {
+.day {
     display: block;
     padding: 5px;
     border-bottom: 1px solid#3D3A4B;
@@ -275,7 +277,7 @@ a {
     text-align: center;
 }
 
-.temp {
+.forecastTemp {
     display: block;
     padding: 0 5px 5px;
     font-size: 0.8rem;

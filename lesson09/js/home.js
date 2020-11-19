@@ -20,9 +20,12 @@ fetch(requestURL)
             let card = document.createElement('section');
 
              //img
+             
              let image = document.createElement('img');
              image.setAttribute('src',"images/" + towns[i].photo);
+             image.setAttribute('alt',jsObject.towns[i].name);
              card.appendChild(image);
+            
 
              
             //town name

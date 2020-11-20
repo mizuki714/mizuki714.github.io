@@ -44,7 +44,7 @@ fetch(forecast)
                 today++;
             }
         }
-        //temperature
+        //temperature sometimes i get an error here
         let forecastTemp = document.getElementsByClassName('forecastTemp');
         for (let i = 0; i < forecastTemp.length; i++) {
             forecastTemp[i].innerHTML = newDays[i].main.temp;

@@ -20,16 +20,27 @@ fetch(requestURL)
             let card = document.createElement('section');
 
 
+            
+             
+
+             
             //town name
             let h2 = document.createElement('h2');
-            h2.textContent = towns[i].name;
+            h2.textContent = towns[i].name + " Events:";
             card.appendChild(h2);
-            document.querySelector('div.cards').appendChild(card);
+            document.querySelector('div.preston-card').appendChild(card);
 
-            //events
-            let p4 = document.createElement('p');
-            p1.textContent = "Events: " + towns[i].events;
-            card.appendChild(p4);
+           //events
+           let p1 = document.createElement('p');
+           p1.textContent = towns[i].events[0] ;
+           card.appendChild(p1);
+           let p2 = document.createElement('p');
+           p2.textContent = towns[i].events[1] ;
+           card.appendChild(p2);
+           let p3 = document.createElement('p');
+           p3.textContent = towns[i].events[2] ;
+           card.appendChild(p3);
+
             }
         }
     });

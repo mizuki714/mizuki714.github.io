@@ -1,3 +1,4 @@
+
 //references the JSON file
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 //Method to fetch the JSON file,
@@ -15,29 +16,33 @@ fetch(requestURL)
 
         //for loop to loop through the code and create cards
         for (let i = 0; i < towns.length; i++) {
-            if( towns[i].name=="Fish Haven){
+            if( towns[i].name=="Fish Haven"){
             //create cards
             let card = document.createElement('section');
 
-             //img
-             let image = document.createElement('img');
-             image.setAttribute('src',"images/" + towns[i].photo);
-             image.setAttribute("alt", `Image of ${towns[i].name}`);
-             card.appendChild(image);
+             
 
              
             //town name
             let h2 = document.createElement('h2');
-            h2.textContent = towns[i].name;
+            h2.textContent = towns[i].name + " Events:";
             card.appendChild(h2);
-            document.querySelector('div.cards').appendChild(card);
+            document.querySelector('div.fh-card').appendChild(card);
 
            //events
+           let p1 = document.createElement('p');
+           p1.textContent = towns[i].events[0] ;
+           card.appendChild(p1);
+           let p2 = document.createElement('p');
+           p2.textContent = towns[i].events[1] ;
+           card.appendChild(p2);
+           let p3 = document.createElement('p');
+           p3.textContent = towns[i].events[2] ;
+           card.appendChild(p3);
            let p4 = document.createElement('p');
-           p1.textContent = "Events: " + towns[i].events;
+           p4.textContent = towns[i].events[3] ;
            card.appendChild(p4);
 
-           
             }
         }
     });

@@ -169,7 +169,10 @@ a {
 .hero,
 .forecast-container,
 .article-container,
-.contact-container {
+.contact-container,
+.preston-card ,
+.ss-card, 
+.fh-card {
     margin: 20px;
 
 }
@@ -179,7 +182,10 @@ a {
 .hero,
 .forecast-container,
 .article-container,
-.contact-container {
+.contact-container,
+.preston-card ,
+.ss-card, 
+.fh-card {
     background-color: #F9F4F5;
     border: 2px solid #3D3A4B;
 
@@ -221,7 +227,6 @@ a {
 .prestonMap {
     display: none;
 }
-
 .contact {
     margin-left: auto;
     margin-right: auto
@@ -424,3 +429,10 @@ div.cards img {
 .forecast-col .forecastTemp{
     display: inline;
 }
+.preston-card ,
+.ss-card, 
+.fh-card{
+    text-align: center;
+}
+
+

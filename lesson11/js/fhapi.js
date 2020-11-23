@@ -5,7 +5,7 @@ FISH HAVEN cityid = "5585010"*/
 /* FISH HAVEN page */
 
 //weather summary
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=08a952b25f428f198a70d56f6b821a3f&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&appid=08a952b25f428f198a70d56f6b821a3f&units=imperial";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -24,7 +24,7 @@ fetch(apiURL)
     });
 
 //5-day forecast
-const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=08a952b25f428f198a70d56f6b821a3f&units=imperial";
+const forecast = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=08a952b25f428f198a70d56f6b821a3f&units=imperial";
 fetch(forecast)
     .then(function (response) {
         return response.json();

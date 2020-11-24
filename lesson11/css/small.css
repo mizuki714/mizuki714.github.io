@@ -172,7 +172,8 @@ a {
 .contact-container,
 .preston-card ,
 .ss-card, 
-.fh-card {
+.fh-card,
+.attribute-container {
     margin: 20px;
 
 }
@@ -185,7 +186,8 @@ a {
 .contact-container,
 .preston-card ,
 .ss-card, 
-.fh-card {
+.fh-card,
+.attribute-container {
     background-color: #F9F4F5;
     border: 2px solid #3D3A4B;
 
@@ -436,4 +438,7 @@ div.cards img {
     text-align: center;
 }
 
-
+div.attribute-container ul li{
+    text-align: center;
+    list-style-type: none;
+  }

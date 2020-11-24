@@ -72,13 +72,33 @@
         height: auto;
     }
     /*float image*/
-    div.cards section:nth-child(odd) img {
-        float:left;
-        margin-left: auto;
-        margin-right: auto;
+    div.cards section:nth-child(even) img {
+        grid-column: 2;
+        grid-row: span 5;
      } 
     div.cards section{
         padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
     }
+    div.cards img{
+        order:1;
+        width: 100%;
+        grid-row: span 5;
+    }
+    div.cards h2{
+        order: 2;
+        margin: 0;
+    }
+    div.cards h4{
+        order:3;
+        margin: 0;
+    }
+    div.cards p{
+        order:4;
+        margin:0 auto;
+    }
+  
     
 }

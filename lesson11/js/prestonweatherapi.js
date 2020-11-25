@@ -18,7 +18,7 @@ fetch(apiURL)
         document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
         document.getElementById('icon').setAttribute('alt', desc);
         document.getElementById('currently').textContent = jsObject.weather[0].description;
-        document.getElementById('highTemp').textContent = jsObject.main.temp_max;
+        
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('windSpeedMPH').textContent = jsObject.wind.speed;
     });

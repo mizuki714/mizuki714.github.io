@@ -18,9 +18,6 @@ fetch(requestURL)
             if( towns[i].name=="Soda Springs"){
             //create cards
             let card = document.createElement('section');
-
-             
-
              
             //town name
             let h2 = document.createElement('h2');
@@ -39,6 +36,6 @@ fetch(requestURL)
            p3.textContent = towns[i].events[2] ;
            card.appendChild(p3);
 
-            }
         }
+    }
     });

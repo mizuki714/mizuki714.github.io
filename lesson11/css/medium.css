@@ -34,19 +34,65 @@
         background: #f6b02d8e;
     }
 
+    .forecast-container {
+        display: block;
+    }
+
+    .forecast-table {
+        display: flex;
+        flex-flow: row wrap;
+        border-right: 1px solid #3D3A4B;
+    }
+
+    .days {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid#3D3A4B;
+        text-align: center;
+        font-size: 1rem;
+        background-color: #3D3A4B;
+        color: #F9F4F5;
+    }
+
+    .forecast-col {
+        flex: 1 1 auto;
+        background-color: #f6b02d81;
+        border-bottom: 1px solid #3D3A4B;
+        border-left: 1px solid #3D3A4B;
+        text-align: center;
+    }
+
+    .forecast-col:hover {
+        opacity: 0.9;
+        background-color: #4382c16b;
+        color: #F9F4F5;
+    }
+
+    .forecast-title {
+        text-align: center;
+    }
+
+    .forecastTemp {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
     .article-container {
         content: "";
         clear: both;
         display: table;
     }
- 
+
     .article-title {
         text-align: left;
     }
 
-   
 
-    .article-picture,  div.cards section:nth-child(even) img {
+
+    .article-picture,
+    div.cards section:nth-child(even) img {
         float: right;
         margin-left: auto;
         margin-right: auto;
@@ -54,51 +100,57 @@
         height: auto;
     }
 
-    
 
-     .prestonMap {
+
+    .prestonMap {
         display: block;
         width: 50%;
         padding: .9rem;
     }
 
-    .img_gallery{
+    .img_gallery {
         display: grid;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    
-    .gallery{
-        width:300px;
+
+    .gallery {
+        width: 300px;
         height: auto;
     }
+
     /*float image*/
     div.cards section:nth-child(even) img {
         grid-column: 2;
         grid-row: span 5;
-     } 
-    div.cards section{
+    }
+
+    div.cards section {
         padding: 3rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
     }
-    div.cards img{
-        order:1;
+
+    div.cards img {
+        order: 1;
         width: 100%;
         grid-row: span 5;
     }
-    div.cards h2{
+
+    div.cards h2 {
         order: 2;
         margin: 0;
     }
-    div.cards h4{
-        order:3;
+
+    div.cards h4 {
+        order: 3;
         margin: 0;
     }
-    div.cards p{
-        order:4;
-        margin:0 auto;
+
+    div.cards p {
+        order: 4;
+        margin: 0 auto;
     }
-  
-    
+
+
 }

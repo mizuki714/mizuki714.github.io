@@ -1,6 +1,7 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 nav {
     background-color: #F6AE2D;
     color: #3D3A4B;
@@ -170,9 +171,7 @@ a {
 .forecast-container,
 .article-container,
 .contact-container,
-.preston-card ,
-.ss-card, 
-.fh-card,
+.eventcard,
 .attribute-container {
     margin: 20px;
 
@@ -184,9 +183,7 @@ a {
 .forecast-container,
 .article-container,
 .contact-container,
-.preston-card ,
-.ss-card, 
-.fh-card,
+.eventcard,
 .attribute-container {
     background-color: #F9F4F5;
     border: 2px solid #3D3A4B;
@@ -206,6 +203,7 @@ a {
     width: auto;
     max-height: 300px;
 }
+
 .articleimgFH,
 .articleimgSS,
 .articleimg,
@@ -230,6 +228,7 @@ a {
 .prestonMap {
     display: none;
 }
+
 .contact {
     margin-left: auto;
     margin-right: auto
@@ -250,46 +249,8 @@ a {
 }
 
 
-
-.forecast-table {
-    display: flex;
-    flex-flow: row wrap;
-    border-right: 1px solid #3D3A4B;
-}
-
-.day {
-    display: block;
-    padding: 5px;
-    border-bottom: 1px solid#3D3A4B;
-    text-align: center;
-    font-size: 1rem;
-    background-color: #3D3A4B;
-    color: #F9F4F5;
-}
-
-.forecast-col {
-    flex: 1 1 auto;
-    background-color: #f6b02d81;
-    border-bottom: 1px solid #3D3A4B;
-    border-left: 1px solid #3D3A4B;
-    text-align: center;
-}
-
-.forecast-col:hover {
-    opacity: 0.9;
-    background-color: #4382c16b;
-    color: #F9F4F5;
-}
-
-.forecast-title {
-    text-align: center;
-}
-
-.forecastTemp {
-    display: block;
-    padding: 0 5px 5px;
-    font-size: 0.8rem;
-    text-align: center;
+.forecast-container {
+    display: none;
 }
 
 footer {
@@ -399,24 +360,26 @@ form label.top input:required {
 }
 
 form label.top input:required:valid {
-    border-left:green solid 4px;
+    border-left: green solid 4px;
 }
-.tymessage{
-background-color: #F9F4F5;
-padding: 1rem;
-text-align: center;
+
+.tymessage {
+    background-color: #F9F4F5;
+    padding: 1rem;
+    text-align: center;
 }
 
 /**************************wireframestyling******************************/
-.gallerywfimg{
-width: 250px;
-height: auto;
+.gallerywfimg {
+    width: 250px;
+    height: auto;
 }
+
 /*****************************homepagestyling****************************/
-div.cards section{
-    background-color:#F9F4F5;
+div.cards section {
+    background-color: #F9F4F5;
     color: #3D3A4B;
-    text-align:center;
+    text-align: center;
     padding: 1rem;
     margin: 1.5rem;
     max-width: 100%;
@@ -429,16 +392,16 @@ div.cards img {
     width: auto;
     height: auto;
 }
-.forecast-col .forecastTemp{
+
+.forecast-col .forecastTemp {
     display: inline;
 }
-.preston-card ,
-.ss-card, 
-.fh-card{
+
+.eventcard {
     text-align: center;
 }
 
-div.attribute-container ul li{
+div.attribute-container ul li {
     text-align: center;
     list-style-type: none;
-  }
+}

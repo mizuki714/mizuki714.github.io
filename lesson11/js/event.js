@@ -3,7 +3,7 @@
 //references the JSON file
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-// Page selector
+// Select the page
 var townName = "";
 if (document.getElementById("preston")) {
     townName = "Preston";

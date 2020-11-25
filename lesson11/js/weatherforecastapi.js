@@ -8,7 +8,7 @@ const prestonURL = '?id=5604473' + apiID + apiUnits;
 const sodaspringsURL = '?id=5607916' + apiID + apiUnits;
 const fishhavenURL = '?lat=42.0380399&lon=-111.4048681' + apiID + apiUnits;
 
-// Just puttin' it all together
+// concatenating the links
 const prestonWeather = weatherAPIurl + prestonURL;
 const sodaspringsWeather = weatherAPIurl + sodaspringsURL;
 const fishhavenWeather = weatherAPIurl + fishhavenURL;
@@ -54,6 +54,7 @@ fetch(weatherURL)
         document.getElementById('humidity').innerHTML = jsObject.main.humidity;
         document.getElementById('windSpeedMPH').innerHTML = Math.round(s) + " MPH";
     });
+    //5-day forecast
 fetch(forecastURL)
     .then((response) => response.json())
     .then((forecastObject) => {

@@ -1,0 +1,13 @@
+@media only screen and (min-width: 65em) {
+    body {
+        max-width: 960px;
+        margin: auto;
+    }
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}

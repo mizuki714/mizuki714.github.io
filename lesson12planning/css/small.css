@@ -41,7 +41,7 @@ a {
 }
 
 header {
-    background-color: #028090;
+    background-color: #03B2C9;
     text-align: center;
 }
 
@@ -83,7 +83,7 @@ footer a:visited{
     color: #281E15;
 }
 footer {
-    background-color: #028090;
+    background-color: #03B2C9;
     padding: 1em;
     text-align: center;
 }
@@ -113,7 +113,7 @@ footer {
 }
 
 .secondary {
-    background-color: #028090;
+    background-color: #03B2C9;
 }
 
 .accent1 {
@@ -132,3 +132,4 @@ lighter brown:#35281C
 darker brown:281E15
 Blue 1:#02809
 Blue 2:#1B5299
+lighter blue 03B2C9

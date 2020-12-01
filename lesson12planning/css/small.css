@@ -129,4 +129,6 @@ footer {
     background-color: #FFF9EB;
 }
 
-darker brown:281E15
+div.small, div.medium, div.large{
+   text-align: center;
+}

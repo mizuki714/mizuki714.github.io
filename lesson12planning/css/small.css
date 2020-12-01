@@ -12,7 +12,7 @@ h2{
 h1,
 h3,
 h4 {
-    color: #281E15;
+    color: #35281C;
 }
 h1,
 h2, h3, h4{
@@ -28,13 +28,13 @@ h4 {
 }
 
 p {
-    color: #281E15;
+    color: #35281C;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
 }
 
 a {
-    color: #281E15;
+    color: #35281C;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -47,7 +47,7 @@ header {
 
 nav {
     background-color:#97EAD2;
-    color: #281E15;
+    color: #35281C;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -58,7 +58,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color: #281E15;
+    color: #35281C;
 }
 
 nav a:hover {
@@ -80,7 +80,7 @@ main {
 footer p,
 footer a:link,
 footer a:visited{
-    color: #281E15;
+    color: #35281C;
 }
 footer {
     background-color: #03B2C9;
@@ -99,7 +99,7 @@ footer {
 }
 
 .colors th {
-    background-color: #281E15;
+    background-color: #35281C;
     color: #FFF9EB;
 }
 
@@ -121,7 +121,7 @@ footer {
 }
 
 .accent2 {
-    background-color: #281E15;
+    background-color: #35281C;
     color: #FFF9EB;
 }
 
@@ -130,6 +130,5 @@ footer {
 }
 lighter brown:#35281C
 darker brown:281E15
-Blue 1:#02809
-Blue 2:#1B5299
+
 lighter blue 03B2C9

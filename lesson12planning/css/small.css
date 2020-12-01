@@ -80,7 +80,7 @@ main {
 footer p,
 footer a:link,
 footer a:visited{
-    color: #FFF9EB;
+    color: #35281C;
 }
 footer {
     background-color: #028090;
@@ -128,3 +128,6 @@ footer {
 .accent3 {
     background-color: #FFF9EB;
 }
+
+Blue 1:#02809
+Blue 2:#1B5299

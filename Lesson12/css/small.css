@@ -1,0 +1,196 @@
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #FFF9EB;
+
+}
+
+h2 {
+    color: #97EAD2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h1,
+h3,
+h4 {
+    color: #35281C;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: #35281C;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #35281C;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/***********************************************NAV*******************************************************/
+nav {
+    background-color: #97EAD2;
+    color: #35281C;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav a {
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #35281C;
+}
+
+nav a:hover {
+    color: #FFF9EB;
+    background-color: #35281C;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #97EAD2;
+    color: #35281C;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
+nav ul.hide_navigation {
+    display: none;
+}
+
+
+nav ul li a {
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+button {
+    color: #35281C;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html {
+    background-color: #FFF9EB;
+}
+
+header {
+    background-color: #03B2C9;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+    background-color: #1A6318;
+}
+
+footer p,
+footer a:link,
+footer a:visited {
+    color: #35281C;
+}
+
+footer {
+    background-color: #03B2C9;
+    padding: 1em;
+    text-align: center;
+}
+
+div.content-box,
+div.contact-box {
+    background-color: #FFF9EB;
+    margin: 20px;
+    border: 5px solid #03B2C9;
+    padding: 20px;
+}
+
+.cozumelmap {
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    width: auto;
+    height: auto;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.motto {
+    font-size: 1.3rem;
+}
+
+/***********************************************Reference for colors used*********************************************/
+.primary {
+    background-color: #1A6318;
+}
+
+.secondary {
+    background-color: #03B2C9;
+}
+
+.accent1 {
+    background-color: #97EAD2;
+}
+
+.accent2 {
+    background-color: #35281C;
+    color: #FFF9EB;
+}
+
+.accent3 {
+    background-color: #FFF9EB;
+}

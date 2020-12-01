@@ -3,7 +3,7 @@ h1 {
     margin:0;
 }
 h2{
-    color:#97EAD2;
+    color: #97EAD2;
     font-family: 'Libre Baskerville', serif;
     text-align: center;
 }
@@ -76,10 +76,13 @@ main {
     padding: 1rem;
     background-color: #1A6318;
 }
-
+footer p,
+footer a:link,
+footer a:visited{
+    color: #97EAD2;
+}
 footer {
     background-color: #028090;
-    color: #35281C;
     padding: 1em;
     text-align: center;
 }

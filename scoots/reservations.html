@@ -26,9 +26,9 @@
     <nav>
         <button onclick="toggleMenu()"> &#9776; Menu </button>
         <ul id="menu" class="hide_navigation">
-            <li class="active"><a href="index.html"> Home </a></li>
+            <li><a href="index.html"> Home </a></li>
             <li><a href="rentals.html"> Rentals </a></li>
-            <li><a href="reservations.html"> Reservations </a></li>
+            <li class="active"><a href="reservations.html"> Reservations </a></li>
             <li><a href="tours.html"> Tours </a></li>
             <li><a href="contact.html"> Contact </a></li>
             <li><a href="#.html"> # </a></li>
@@ -57,11 +57,11 @@
     </div>
 </main>
 <footer>
-    <p class="copyright">&copy;~Scoots | <a href="attributions.html">Attributions</a> | Julie Huntsman |
-        <span id="currentDate"></span></p>
+    <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a> | Julie Huntsman | Last modified:
+        <span id="lastupdated"></span></p>
 </footer>
 <script src="js/menu.js"></script>
-<script src="js/date.js"></script>
+<script src="js/lastModified.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
     WebFont.load({

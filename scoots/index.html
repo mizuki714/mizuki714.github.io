@@ -34,44 +34,94 @@
             <li><a href="#.html"> # </a></li>
         </ul>
     </nav>
-<main>
-
-    <div class="contact-box">
-        <img class="cozumelmap" src="images/cozumelmap.jpg" alt="Map of the island of Cozumel">
-        <div class="contactinfo">
-            <p class="contact"><strong>~Scoots</strong><br>  Avenida Rafael E. Melgar 599 K-18, Centro,<br> 77600 San Miguel de Cozumel, Q.R., Mexico
-                <br> &#9742; 999.999.9999
-                <br>&#9993;
-                cirrusweather@gmail.com</p>
-            <a href="https://www.facebook.com">
-                <img src="images/fbicon.png" alt="Facebook Icon"></a>
-            <a href="https://www.pintrest.com">
-                <img src="images/pinicon.png" alt="pintrest Icon"></a>
-            <a href="https://www.twitter.com">
-                <img src="images/twicon.png" alt="Twitter Icon"></a>
+    <main>
+        <div class="herocontainer">
+            <div class="hero">
+                <picture class="hero-picture">
+                    <source srcset="images/cozumelbeach800.jpg" media="(min-width:35rem) and (max-width:50rem)">
+                    <source srcset="images/cozumelbeach1100.jpg" media="(min-width:50rem)">
+                    <img class="hero-img" src="images/cozumelbeach500.jpg" alt="Image of a Beach in Cozumel">
+                </picture>
+            </div>
+            <section class="calltoaction">
+                <h4>Make a Reservation</h4>
+            </section>
+            <div class="weatheralerts">
+                <p><span id="weatheralerts"></span></p>
+            </div>
         </div>
-    </div>
-    <div class="">
+        <!-- Rental Types-->
+        <div class="rentaltypehome">
+            <h3>Rental Types</h3>
 
-    </div>
-</main>
-<footer>
-    <p class="copyright">&copy;~Scoots | <a href="attributions.html">Attributions</a> | Julie Huntsman |
-        <span id="currentDate"></span></p>
-</footer>
-<script src="js/menu.js"></script>
-<script src="js/date.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-    WebFont.load({
-        google: {
-            families: [
-            'Libre Baskerville', 'Roboto'
-            ]
-        }
-    });
-</script>
-<script src="js/home.js"></script>
+        </div>
+        <!--Weather info-->
+        <div class="weatherhome">
+            <h3>Weather Information</h3>
+            <p><strong>Currently:</strong> <span id="condition"></span></p>
+            <p><strong>Tempurature: </strong><span id="current-temp"></span></p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+            <p><strong>Wind Speed:</strong> <span id="windSpeedMPH"></span></p>
+        </div>
+        <div class="forecast-container">
+            <h3 class="forecast-title">3 Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="days"></span>
+                    <img class="forcastimg" src="images/sunicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="days"></span>
+                    <img class="forcastimg" src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="days"></span>
+                    <img class="forcastimg" src="images/tstormicon.png" alt="weather">
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+            </div>
+        </div>
+        <!--contact info-->
+        <div class="contact-box">
+            <h3><a href="contact.html"></a>Contact Us</a></h3>
+            <img class="cozumelmap" src="images/cozumelmap.jpg" alt="Map of the island of Cozumel">
+            <div class="contactinfo">
+
+                <p class="contact"><strong>~Scoots</strong><br> Avenida Rafael E. Melgar 599 K-18, Centro,<br> 77600 San
+                    Miguel de Cozumel, Q.R., Mexico
+                    <br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
+                <a href="https://www.facebook.com">
+                    <img src="images/fbicon.png" alt="Facebook Icon"></a>
+                <a href="https://www.pintrest.com">
+                    <img src="images/pinicon.png" alt="pintrest Icon"></a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twicon.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a>
+            | Julie Huntsman | Last modified:
+            <span id="lastupdated"></span></p>
+    </footer>
+    <script src="weather.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lastModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Libre Baskerville', 'Roboto'
+                ]
+            }
+        });
+    </script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

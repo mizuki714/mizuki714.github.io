@@ -26,31 +26,34 @@
     <nav>
         <button onclick="toggleMenu()"> &#9776; Menu </button>
         <ul id="menu" class="hide_navigation">
-            <li class="active"><a href="index.html"> Home </a></li>
+            <li><a href="index.html"> Home </a></li>
             <li><a href="rentals.html"> Rentals </a></li>
             <li><a href="reservations.html"> Reservations </a></li>
             <li><a href="tours.html"> Tours </a></li>
-            <li><a href="contact.html"> Contact </a></li>
+            <li class="active"><a href="contact.html"> Contact </a></li>
             <li><a href="#.html"> # </a></li>
         </ul>
     </nav>
 <main>
     <!--FORM-->
-<h3 class="contactinfohead">Contact</h3>
-<div class="contactinfo">
-    <table>
-    <tbody>
-    <tr>
-    <td>
-    </td>
-    </tr>
-    </tbody>
-    </table>   
-</div>
 
+
+<h2 class="contactinfohead">Contact Us</h2>
     <div class="contact-box">
+        <h3>Contact Info</h3>
         <img class="cozumelmap" src="images/cozumelmap.jpg" alt="Map of the island of Cozumel">
         <div class="contactinfo">
+            <div class="contactinfotable">
+                
+                <table>
+                <tbody>
+                <tr>
+                <td>
+                </td>
+                </tr>
+                </tbody>
+                </table>   
+            </div>
             <p class="contact"><strong>~Scoots</strong><br>  Avenida Rafael E. Melgar 599 K-18, Centro,<br> 77600 San Miguel de Cozumel, Q.R., Mexico
                 <br> &#9742; 999.999.9999
                 <br>&#9993;
@@ -66,11 +69,11 @@
     
 </main>
 <footer>
-    <p class="copyright">&copy;~Scoots | <a href="attributions.html">Attributions</a> | Julie Huntsman |
-        <span id="currentDate"></span></p>
+    <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a> | Julie Huntsman | Last modified:
+        <span id="lastupdated"></span></p>
 </footer>
 <script src="js/menu.js"></script>
-<script src="js/date.js"></script>
+<script src="js/lastModified.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
     WebFont.load({

@@ -261,6 +261,18 @@ div.rentalcards img {
     width: auto;
     height: auto;
 }
+/***************************************************alerts***********************************************************/
+div.weatheralerts{
+    background-color:#97EAD2;
+    color: #35281C;
+    text-align:center;
+    padding: 1rem;
+    box-shadow: 0 0 30px #35281C;
+    border: 2px solid #35281C;
+    position:absolute;
+    bottom: 10px;
+    margin:20px;
+}
 /***********************************************Reference for colors used*********************************************/
 .primary {
     background-color: #1A6318;

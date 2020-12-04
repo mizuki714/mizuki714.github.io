@@ -43,17 +43,18 @@
                     <img class="hero-img" src="images/cozumelbeach500.jpg" alt="Image of a Beach in Cozumel">
                 </picture>
             </div>
-            <section class="calltoaction">
+            <section class="calltoaction" onclick="window.location.href='reservations.html'">
                 <h4>Make a Reservation</h4>
             </section>
             <div class="weatheralerts">
-                <p><span id="weatheralerts"></span></p>
+                <p>The <span id="weatheralertsender"></span> reports there is a(n) <span id="weatheralertevent"></span>
+                    This alert lasts <span id="weatheralerttime"></span></p>
             </div>
         </div>
         <!-- Rental Types-->
         <div class="rentaltypehome">
             <h3>Rental Types</h3>
-
+            <div class="rentaltypes"></div>
         </div>
         <!--Weather info-->
         <div class="weatherhome">
@@ -111,6 +112,7 @@
             <span id="lastupdated"></span></p>
     </footer>
     <script src="js/weather.js"></script>
+    <script src="js/rentaltype.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/lastModified.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -123,7 +125,7 @@
             }
         });
     </script>
-    
+
 </body>
 
 </html>

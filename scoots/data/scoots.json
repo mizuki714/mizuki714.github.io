@@ -30,7 +30,7 @@
       "capacity": "2"
     },
     {
-      "name": "Honda Pioneer ATV",
+      "name": "~Honda Pioneer ATV",
       "photo": "hondaatv.jpg",
       "desc": "All-Terrain-Vehicle",
       "reservehalf": "$50",

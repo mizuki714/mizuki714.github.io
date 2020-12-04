@@ -251,6 +251,7 @@ div.rentalcards section{
     padding: 1rem;
     margin: 1.5rem;
     max-width: 100%;
+    border: 5px solid #03B2C9;
 }
 
 div.rentalcards img {

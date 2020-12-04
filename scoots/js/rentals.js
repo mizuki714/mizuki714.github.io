@@ -31,33 +31,33 @@ fetch(requestURL)
             document.querySelector('div.rentalcards').appendChild(card);
 
             //car description
-            let p4 = document.createElement('p');
-            p4.textContent = rentals[i].desc;
+            let p1 = document.createElement('p');
+            p1.textContent = rentals[i].desc;
             card.appendChild(p);
 
             //car reserve price full
-            let p5 = document.createElement('p');
-            p5.textContent = "Half-Day (3-hr) Reservation Price: " + rentals[i].reservehalf;
+            let p2 = document.createElement('p');
+            p2.textContent = "Half-Day (3-hr) Reservation Price: " + rentals[i].reservehalf;
             card.appendChild(p);
 
             //car reserve price half
-            let p5 = document.createElement('p');
-            p5.textContent = "Full Day Reservation Price: " + rentals[i].reservefull;
+            let p3 = document.createElement('p');
+            p3.textContent = "Full Day Reservation Price: " + rentals[i].reservefull;
             card.appendChild(p);
 
             //rental price walk in half
-            let p6 = document.createElement('p');
-            p6.textContent = "Half-Day (3-hr) Walk-in Price: " + rentals[i].walkhalf;
+            let p4 = document.createElement('p');
+            p4.textContent = "Half-Day (3-hr) Walk-in Price: " + rentals[i].walkhalf;
             card.appendChild(p);
 
             //rental price walk in full
-            let p6 = document.createElement('p');
-            p6.textContent = "Full Day Walk-in Price: " + rentals[i].walkfull;
+            let p5 = document.createElement('p');
+            p5.textContent = "Full Day Walk-in Price: " + rentals[i].walkfull;
             card.appendChild(p);
 
             //maximum capacity
-            let p2 = document.createElement('p');
-            p2.textContent = "Max Persons: " + rentals[i].capacity;
-            card.appendChild(p2);
+            let p6 = document.createElement('p');
+            p6.textContent = "Max Persons: " + rentals[i].capacity;
+            card.appendChild(p);
         }
     });

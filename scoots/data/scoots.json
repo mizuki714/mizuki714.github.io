@@ -40,9 +40,9 @@
       "capacity": "4"
     },
     {
-      "name": "Jeep Wrangler",
+      "name": "Jeep Wrangler 4 Door",
       "photo": "jeep4door.jpg",
-      "desc": "4 door with a/c",
+      "desc": "4 door with air conditioning and a comfortable ride",
       "reservehalf": "$70",
       "walkhalf": "$85",
       "reservefull": "$100",
@@ -50,9 +50,9 @@
       "capacity": "5"
     },
     {
-      "name": "Jeep Wrangler",
+      "name": "Jeep Wrangler 2 Door",
       "photo": "jeep2door.jpg",
-      "desc": "2 door",
+      "desc": "2 door ride that is comfortable",
       "reservehalf": "$60",
       "walkhalf": "$70",
       "reservefull": "$85",

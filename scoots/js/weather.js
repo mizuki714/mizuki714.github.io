@@ -24,16 +24,6 @@ fetch(forecastURL)
         document.getElementById("windChill").innerHTML = output + "&#8457;";
         document.getElementById('humidity').innerHTML = jsObject.current.humidity;
         document.getElementById('windSpeedMPH').innerHTML = Math.round(s) + " MPH";
-        //weather alert info
-        //hide alert IF there is no alert to show and display alert if there is one
-        /*********************works only when alert exists but otherwise wont function****************************/
-        /* if (json.has("alerts")) {
-             document.getElementById('weatheralert').innerHTML = "The " + jsObject.alerts[0].sender_name + " reports there is a(n) " + jsObject.alerts[0].event +
-                 " This alert lasts from " + jsObject.alerts[0].start + " until " + jsObject.alerts[0].end + ".";
-         } else {
-             document.getElementsByClassName('weatheralerts').classList.toggle("hide_alert")
-         }
-         */
 
         //weekday names
         let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -47,9 +37,11 @@ fetch(forecastURL)
         //loop through array days 
         for (let day = 0; day < jsObject.daily.length; day++) {
             let weatherDay = document.getElementsByClassName('days');
+            let milliseconds =jsObject.daily[day + 1].dt * 1000;
+            let date = new Date(milliseconds).toLocaleString("en-us",{weekday:"long"});
             for (let i = 0; i < weatherDay.length; i++) {
                 //change to milliseconds and calculate day
-                weatherDay[day].textContent = new Date(jsObject.daily[day + 1].dt * 1000).toLocaleString("en-us", {weekday: "long"}) ;
+              weatherDay[day].textContent = date;
             }
             //temperature
             let forecastTemp = document.getElementsByClassName('forecastTemp');
@@ -67,6 +59,15 @@ fetch(forecastURL)
 
 
         }
-        console.log(daily)
+         //weather alert info
+        //hide alert IF there is no alert to show and display alert if there is one
+        /*********************works only when alert exists but otherwise wont function****************************/
+         if (jsObject.has("alerts")) {
+             document.getElementById('weatheralerts').innerHTML = "The " + jsObject.alerts[0].sender_name + " reports there is a(n) " + jsObject.alerts[0].event +
+                 " This alert lasts from " + jsObject.alerts[0].start + " until " + jsObject.alerts[0].end + ".";
+         } else {
+            document.getElementsByClassName('weatheralerts').classList.toggle("hide_alert")
+         }
+         
 
     });

@@ -3,7 +3,7 @@ let forecastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.5083&l
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        //console.log(jsObject);
+
         //Today
         let t = parseFloat(jsObject.current.temp);
         let s = parseFloat(jsObject.current.wind_speed);
@@ -19,44 +19,54 @@ fetch(forecastURL)
             let f = (35.74 + (0.6215 * t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275 * (t * (Math.pow(s, 0.16))));
             output = Math.round(f);
         };
+
         //putting things where they need to be
         document.getElementById("windChill").innerHTML = output + "&#8457;";
         document.getElementById('humidity').innerHTML = jsObject.current.humidity;
         document.getElementById('windSpeedMPH').innerHTML = Math.round(s) + " MPH";
         //weather alert info
-        document.getElementById('weatheralertsender').innerHTML = jsObject.alerts[0].sender_name;
-        document.getElementById('weatheralertevent').innerHTML = jsObject.alerts[0].event;
-       // document.getElementById('weatheralertdesc').innerHTML = jsObject.alerts[0].description;
-        document.getElementById('weatheralerttime').innerHTML = " from " + jsObject.alerts[0].start + " until " + jsObject.alerts[0].end +"." ;
-    });
-//three day forecast
-fetch(forecastURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
+        //hide alert IF there is no alert to show and display alert if there is one
+        /*********************works only when alert exists but otherwise wont function****************************/
+        /* if (json.has("alerts")) {
+             document.getElementById('weatheralert').innerHTML = "The " + jsObject.alerts[0].sender_name + " reports there is a(n) " + jsObject.alerts[0].event +
+                 " This alert lasts from " + jsObject.alerts[0].start + " until " + jsObject.alerts[0].end + ".";
+         } else {
+             document.getElementsByClassName('weatheralerts').classList.toggle("hide_alert")
+         }
+         */
+
+        //weekday names
+        let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        let d = new Date();
+        let dayName = dayNames[d.getDay()];
+        console.log(dayNames)
+        document.getElementsByClassName("days").textContent = dayName;
+        //three day forecast
+
         console.log(jsObject)
-        //loop through array days
-        for (let day = 0; day < jsObject.length; day++) {
-             //weekday names
+        //loop through array days 
+        for (let day = 0; day < jsObject.daily.length; day++) {
             let weatherDay = document.getElementsByClassName('days');
             for (let i = 0; i < weatherDay.length; i++) {
-            //change to milliseconds and calculate day
-                weatherDay[day].textContent = new Date (jsobject.daily[day].dt * 1000).toLocaleString("en-us", {
-                    weekday: "long"
-                });
+                //change to milliseconds and calculate day
+                weatherDay[day].textContent = new Date(jsObject.daily[day + 1].dt * 1000).toLocaleString("en-us", {weekday: "long"}) ;
             }
             //temperature
             let forecastTemp = document.getElementsByClassName('forecastTemp');
             for (let i = 0; i < forecastTemp.length; i++) {
-                forecastTemp[day].innerHTML = jsObject.daily[day].temp.day;
+                forecastTemp[day].innerHTML = jsObject.daily[day + 1].temp.day + "&#8457;";
+               console.log(jsObject.daily[i].temp)
             }
             //icon
             let weatherIcon = document.getElementsByClassName("forcastimg");
             for (let i = 0; i < weatherIcon.length; i++) {
-                weatherIcon[day].setAttribute("src", `https://openweathermap.org/img/wn/${jsObject.daily[day].weather[0].icon}@2x.png`);
-                weatherIcon[day].setAttribute("alt", `Icon representing ${jsObject.daily[day].weather[0].description}`);
+                weatherIcon[day].setAttribute("src", `https://openweathermap.org/img/wn/${jsObject.daily[day +1].weather[0].icon}@2x.png`);
+                weatherIcon[day].setAttribute("alt", `Icon representing ${jsObject.daily[day +1 ].weather[0].description}`);
+                
             }
 
-            
+
         }
+        console.log(daily)
 
     });

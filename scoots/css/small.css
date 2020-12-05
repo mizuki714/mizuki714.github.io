@@ -91,10 +91,11 @@ nav button {
     border: none;
     font-size: 2rem;
 }
-
+div.hide_alert,
 nav ul.hide_navigation {
     display: none;
 }
+
 
 
 nav ul li a {

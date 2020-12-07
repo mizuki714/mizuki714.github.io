@@ -26,48 +26,65 @@ fetch(forecastURL)
         document.getElementById('windSpeedMPH').innerHTML = Math.round(s) + " MPH";
 
         //weekday names
-        let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-        let d = new Date();
-        let dayName = dayNames[d.getDay()];
-        console.log(dayNames)
+        const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        const d = new Date();
+        const dayName = dayNames[d.getDay()];
+        const n1 = dayNames[d.getDay() + 1];
+        const n2 = dayNames[d.getDay() + 2];
+        const n3 = dayNames[d.getDay() + 3];
+        allowedDays = [n1, n2, n3];
+
         document.getElementsByClassName("days").textContent = dayName;
         //three day forecast
+        const daily = jsObject.daily;
 
-        console.log(jsObject)
         //loop through array days 
-        for (let day = 0; day < jsObject.daily.length; day++) {
-            let weatherDay = document.getElementsByClassName('days');
-            let milliseconds =jsObject.daily[day + 1].dt * 1000;
-            let date = new Date(milliseconds).toLocaleString("en-us",{weekday:"long"});
-            for (let i = 0; i < weatherDay.length; i++) {
-                //change to milliseconds and calculate day
-              weatherDay[day].textContent = date;
-            }
-            //temperature
-            let forecastTemp = document.getElementsByClassName('forecastTemp');
-            for (let i = 0; i < forecastTemp.length; i++) {
-                forecastTemp[day].innerHTML = jsObject.daily[day + 1].temp.day + "&#8457;";
-               console.log(jsObject.daily[i].temp)
-            }
-            //icon
-            let weatherIcon = document.getElementsByClassName("forcastimg");
-            for (let i = 0; i < weatherIcon.length; i++) {
-                weatherIcon[day].setAttribute("src", `https://openweathermap.org/img/wn/${jsObject.daily[day +1].weather[0].icon}@2x.png`);
-                weatherIcon[day].setAttribute("alt", `Icon representing ${jsObject.daily[day +1 ].weather[0].description}`);
-                
-            }
+        for (let day = 0; day < daily.length; day++) {
+            const weatherDay = document.getElementsByClassName('days');
+            if (day + 1 != daily.length) {
+                const milliseconds = daily[day + 1].dt * 1000;
+                const date = new Date(milliseconds).toLocaleString("en-us", {
+                    weekday: "long"
+                });
+                for (let ad = 0; ad < allowedDays.length; ad++) {
+                    if (allowedDays[ad] == date) {
+                        for (let i = 0; i < weatherDay.length; i++) {
+                            //change to milliseconds and calculate day
+                            weatherDay[day].textContent = date;
 
+                        }
+                        //temperature
+                        let forecastTemp = document.getElementsByClassName('forecastTemp');
+                        for (let i = 0; i < forecastTemp.length; i++) {
 
+                            forecastTemp[day].innerHTML = daily[day + 1].temp.day + "&#8457;";
+
+                        }
+
+                        //icon
+                        let weatherIcon = document.getElementsByClassName("forcastimg");
+                        for (let i = 0; i < weatherIcon.length; i++) {
+
+                            weatherIcon[day].setAttribute("src", `https://openweathermap.org/img/wn/${daily[day +1].weather[0].icon}@2x.png`);
+                            weatherIcon[day].setAttribute("alt", `Icon representing ${daily[day +1 ].weather[0].description}`);
+
+                        }
+                    }
+                }
+            }
         }
-         //weather alert info
+        const jsonstring = JSON.stringify(jsObject);
+        //weather alert info
         //hide alert IF there is no alert to show and display alert if there is one
         /*********************works only when alert exists but otherwise wont function****************************/
-         if (jsObject.has("alerts")) {
-             document.getElementById('weatheralerts').innerHTML = "The " + jsObject.alerts[0].sender_name + " reports there is a(n) " + jsObject.alerts[0].event +
-                 " This alert lasts from " + jsObject.alerts[0].start + " until " + jsObject.alerts[0].end + ".";
-         } else {
-            document.getElementsByClassName('weatheralerts').classList.toggle("hide_alert")
-         }
-         
-
+        if (jsonstring.indexOf("alerts") != -1) {
+            document.getElementById('weatheralerts').innerHTML = "The " + jsObject.alerts[0].sender_name + " reports there is a(n) " + jsObject.alerts[0].event +
+                " This alert lasts from " + jsObject.alerts[0].start + " until " + jsObject.alerts[0].end + ".";
+        } else {
+            function newClass() {
+                var className = document.getElementsBy
+                ClassName('weatherAlerts');
+                this.classList.toggle("hide_alert");
+            }
+        }
     });

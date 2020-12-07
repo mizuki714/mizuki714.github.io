@@ -155,8 +155,10 @@ div.forecast-container {
     border: 5px solid #03B2C9;
     padding: 20px;
 }
-div.forecast-container{
-
+div.weatherinfo{
+background-color: #03B2C9;
+margin:20px;
+padding:20px;
 }
 .forecast-container {
     display: block;
@@ -184,7 +186,7 @@ div.forecast-container{
     border: 3px solid #35281C;
     text-align: center;
 }
-
+.weatherinfo:hover,
 .forecast-col:hover {
     opacity: 0.9;
     background-color: #97EAD2;

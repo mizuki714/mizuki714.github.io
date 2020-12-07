@@ -81,10 +81,9 @@ fetch(forecastURL)
             document.getElementById('weatheralerts').innerHTML = "The " + jsObject.alerts[0].sender_name + " reports there is a(n) " + jsObject.alerts[0].event +
                 " This alert lasts from " + jsObject.alerts[0].start + " until " + jsObject.alerts[0].end + ".";
         } else {
-            function newClass() {
+            
                 var className = document.getElementsBy
-                ClassName('weatherAlerts');
+                className('weatherAlerts');
                 this.classList.toggle("hide_alert");
-            }
         }
     });

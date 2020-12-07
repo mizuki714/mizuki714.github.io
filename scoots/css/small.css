@@ -224,7 +224,8 @@ section.calltoaction {
     position: absolute;
 }
 
-.cozumelmap {
+.cozumelmap,
+iframe {
     max-width: 450px;
     width: 100%;
     height: 100%;
@@ -274,6 +275,92 @@ div.weatheralerts{
     bottom: 10px;
     margin:20px;
 }
+/*********************************************************form styling**************************************************/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #97EAD2;
+    color: #35281C;
+    padding: 1rem 2%;
+}
+
+form legend {
+    color: #35281C;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+
+form label.top,
+label.comments,
+form div {
+    display: block;
+    padding-top: 1rem;
+    Color: #35281C;
+    font-size: 1.1rem;
+}
+
+form label.top input,
+form label.top select,
+textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #03B2C9;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #35281C;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #97ead344;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #03B2C9;
+    color: #35281C;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #35281C;
+
+}
+
+textarea {
+    resize: none;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: #FFF9EB;
+    max-width: 24rem;
+}
+
+/* these do not work properly and I was strugling with this! */
+form label.top input:required,
+form label.top select:required {
+    border-left: red solid 4px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 4px;
+}
+
+.tymessage {
+    background-color: #F9F4F5;
+    padding: 1rem;
+    text-align: center;
+}
+
 /***********************************************Reference for colors used*********************************************/
 .primary {
     background-color: #1A6318;

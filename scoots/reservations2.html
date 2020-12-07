@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Reservation page for ~Scoots." />
+    <link rel="shortcut icon" href="images/mintscootericon16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>~Scoots | Reservations </title>
+</head>
+
+<body>
+    <header>
+        <!--- logo site name motto-->
+        <img class="logo" src="images/mintscootericon128.png" alt="~Scoots logo">
+        <section>
+            <h1>~Scoots</h1>
+            <h3 class="motto">How we scoot</h3>
+        </section>
+    </header>
+    <!--- Navigation-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776; Menu </button>
+        <ul id="menu" class="hide_navigation">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="rentals.html"> Rentals </a></li>
+            <li class="active"><a href="reservations.html"> Reservations </a></li>
+            <li><a href="tours.html"> Tours </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2> Reservations </h2>
+        <form method="get" action="confirmation.html">
+            <fieldset>
+                <legend> Reservation Information </legend>
+                <!-- input of reservation date-->
+
+                <label class="top">Reservation Date
+                    <input type="date" id="date" name="reservationDate">
+                </label>
+
+                <!-- vehicle type  input with a list attribute referencing 
+a datalist of suggestions-->
+                <div>Vehicle Type</div>
+                <label class="top" for="vehicleType">
+                    <input list="vehicleypes" id="vehicleType" name="choiceOfVehicleTypes" />
+                    <datalist id="vehicleypes">
+                        <option value="Jeep Wrangler 2 Door">
+                        <option value="Jeep Wrangler 4 Door">
+                        <option value="~Honda Pioneer ATV">
+                        <option value="~Honda PCX150 Scooter">
+                        <option value="~Honda Dio Scooter">
+                        <option value="~Honda Metro Scooter"></option>
+                    </datalist>
+                </label>
+
+                <!-- Number of Vehicle type range (1 to 20) with a corresponding 
+label that indicates the current range value from 1 to 20. -->
+
+                <div>Number of Vehicles</div>
+                <label class="sbs" for="vehicleAmt">
+                    <input type="range" id="vehicleAmt" name="vehicleAmts" min="1" max="20" step="1" list="tickmarks"
+                        oninput="adjustNumber(this.value)" onchange="adjustNumber(this.value)"><span
+                        id="vehicleAmts">20</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                    <option value="11">
+                    <option value="12">
+                    <option value="13">
+                    <option value="14">
+                    <option value="15">
+                    <option value="16">
+                    <option value="17">
+                    <option value="18">
+                    <option value="19">
+                    <option value="20">
+                </datalist>
+
+            </fieldset>
+            <fieldset>
+                <legend>Pickup Information</legend>
+
+                <!-- Pickup Time using select with drop-down options of different times between 8am ans 7pm.  a first option with the text 
+"Select time ..." that is shown by default but not selectable (disabled).-->
+                <div>Pickup Time</div>
+                <label class="top">
+                    <select name="pickup">
+                        <option value="" disabled selected>Select time... &#9662; </option>
+                        <option value="p8a"> 8:00am </option>
+                        <option value="p83a"> 8:30am </option>
+                        <option value="p9a"> 9:00am </option>
+                        <option value="9p3a"> 9:30am </option>
+                        <option value="p10a"> 10:00am </option>
+                        <option value="p103a"> 10:30am </option>
+                        <option value="p11a"> 11:00am </option>
+                        <option value="p113a"> 11:30am </option>
+                        <option value="p12p"> 12:00pm </option>
+                        <option value="p123p"> 12:30pm </option>
+                        <option value="p1p"> 1:00pm </option>
+                        <option value="p13p"> 1:30pm </option>
+                        <option value="p2p"> 2:00pm </option>
+                        <option value="p23p"> 2:30pm </option>
+                        <option value="p3p"> 3:00pm </option>
+                        <option value="p33p"> 3:30pm </option>
+                        <option value="p4p"> 4:00pm </option>
+                        <option value="p43p"> 4:30pm </option>
+                        <option value="p5p"> 5:00pm </option>
+                        <option value="p53p"> 5:30pm </option>
+                        <option value="p6p"> 6:00pm </option>
+                        <option value="p63p"> 6:30pm </option>
+                        <option value="p7p"> 7:00pm </option>
+                    </select>
+                </label>
+                <div> Rental Length </div>
+                <label class="sbs"> <input type="radio" name="fullDay" value="full"> Full Day </label>
+                <label class="sbs"> <input type="radio" name="halfDay" value="half"> Half Day</label>
+
+                <!-- Pickup Locataion input of type radio with options -->
+                <div> Pickup location </div>
+                <label class="sbs"> <input type="radio" name="pulocation" value="Terminal"> Terminal Puerta Maya
+                </label>
+                <label class="sbs"> <input type="radio" name="pulocation" value="Playa"> Playa del Carmen-Cozumel Ferry
+                    dock </label>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Drop-off Information</legend>
+                <label class="top">Drop-off Date
+                    <input type="date" id="ddate" name="dropOffDate">
+                </label>
+                <!-- Drop off Time using select with drop-down options of different times between 8am ans 7pm.  a first option with the text 
+"Select time ..." that is shown by default but not selectable (disabled).-->
+                <div>Drop-off Time</div>
+                <label class="top">
+                    <select name="pickup">
+                        <option value="" disabled selected>Select time... &#9662; </option>
+                        <option value="d8a"> 8:00am </option>
+                        <option value="d83a"> 8:30am </option>
+                        <option value="d9a"> 9:00am </option>
+                        <option value="d93a"> 9:30am </option>
+                        <option value="d10a"> 10:00am </option>
+                        <option value="d103a"> 10:30am </option>
+                        <option value="d11a"> 11:00am </option>
+                        <option value="d113a"> 11:30am </option>
+                        <option value="d12p"> 12:00pm </option>
+                        <option value="d123p"> 12:30pm </option>
+                        <option value="d1p"> 1:00pm </option>
+                        <option value="d13p"> 1:30pm </option>
+                        <option value="d2p"> 2:00pm </option>
+                        <option value="d23p"> 2:30pm </option>
+                        <option value="d3p"> 3:00pm </option>
+                        <option value="d33p"> 3:30pm </option>
+                        <option value="d4p"> 4:00pm </option>
+                        <option value="d43p"> 4:30pm </option>
+                        <option value="d5p"> 5:00pm </option>
+                        <option value="d53p"> 5:30pm </option>
+                        <option value="d6p"> 6:00pm </option>
+                        <option value="d63p"> 6:30pm </option>
+                        <option value="d7p"> 7:00pm </option>
+                    </select>
+                </label>
+
+
+                <!-- drop off Locataion input of type radio with options -->
+                <div> Drop-off location </div>
+                <label class="sbs"> <input type="radio" name="pulocation" value="doTerminal"> Terminal Puerta Maya
+                </label>
+                <label class="sbs"> <input type="radio" name="pulocation" value="doPlaya"> Playa del Carmen-Cozumel
+                    Ferry
+                    dock </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>Payment Type*</div>
+                <label class="top">
+                    <select name="payment" id="payment" required>
+                        <option value="" disabled selected>Select Payment... &#9662; </option>
+                        <option value="cash"> Cash </option>
+                        <option value="credit"> Credit </option>
+                        <option value="debit"> Debit </option>
+                        <option value="google"> Google Pay </option>
+                        <option value="payPal"> PayPal </option>
+                    </select>
+                </label>
+
+                <label class="comments">Comments
+                    <textarea rows="10" cols="40" placeholder="Special Requests..."></textarea>
+            </fieldset>
+            </label>
+            <input type="submit" value="Reserve My Ride" class="submitBtn">
+        </form>
+        <div class="contact-box">
+            <img class="cozumelmap" src="images/cozumelmap.jpg" alt="Map of the island of Cozumel">
+            <div class="contactinfo">
+                <p class="contact"><strong>~Scoots</strong><br> Avenida Rafael E. Melgar 599 K-18, Centro,<br> 77600 San
+                    Miguel de Cozumel, Q.R., Mexico
+                    <br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
+                <a href="https://www.facebook.com">
+                    <img src="images/fbicon.png" alt="Facebook Icon"></a>
+                <a href="https://www.pintrest.com">
+                    <img src="images/pinicon.png" alt="pintrest Icon"></a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twicon.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a>
+            | Julie Huntsman | Last modified:
+            <span id="lastupdated"></span></p>
+    </footer>
+    <script src="js/reservations.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lastModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Libre Baskerville', 'Roboto'
+                ]
+            }
+        });
+    </script>
+
+</body>
+
+</html>

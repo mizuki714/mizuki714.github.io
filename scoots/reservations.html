@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The home page for ~Scoots." />
+    <meta name="description" content="The Reservation page for ~Scoots." />
     <link rel="shortcut icon" href="images/mintscootericon16.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <title>~Scoots | Home </title>
+    <title>~Scoots | Reservations </title>
 </head>
 
 <body>
     <header>
         <!--- logo site name motto-->
-        <img class="logo" src="images/mintscootericon128.png" alt="cirrus weather logo">
+        <img class="logo" src="images/mintscootericon128.png" alt="~Scoots logo">
         <section>
             <h1>~Scoots</h1>
             <h3 class="motto">How we scoot</h3>
@@ -31,47 +31,104 @@
             <li class="active"><a href="reservations.html"> Reservations </a></li>
             <li><a href="tours.html"> Tours </a></li>
             <li><a href="contact.html"> Contact </a></li>
-            <li><a href="#.html"> # </a></li>
+ 
         </ul>
     </nav>
-<main>
+    <main>
+        <h2> Reservations </h2>
+        <form method="get" action="reservations2.html">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <!-- first and last name -->
 
-    <div class="contact-box">
-        <img class="cozumelmap" src="images/cozumelmap.jpg" alt="Map of the island of Cozumel">
-        <div class="contactinfo">
-            <p class="contact"><strong>~Scoots</strong><br>  Avenida Rafael E. Melgar 599 K-18, Centro,<br> 77600 San Miguel de Cozumel, Q.R., Mexico
-                <br> &#9742; 999.999.9999
-                <br>&#9993;
-                cirrusweather@gmail.com</p>
-            <a href="https://www.facebook.com">
-                <img src="images/fbicon.png" alt="Facebook Icon"></a>
-            <a href="https://www.pintrest.com">
-                <img src="images/pinicon.png" alt="pintrest Icon"></a>
-            <a href="https://www.twitter.com">
-                <img src="images/twicon.png" alt="Twitter Icon"></a>
+                <label for="firstName" class="top">First Name*<input type="text" id="firstName" name="firstName"
+                        pattern="[a-zA-Z\s]+" minlength="2" required></label>
+
+                <label for="lastName" class="top">Last Name*<input type="text" id="lastName" name="lastName"
+                        pattern="[a-zA-Z\s]+" minlength="2" required></label>
+
+                <!-- email input of type email and use a placeholder to provide a demo email -->
+
+                <label class="top">Email
+                    <input type="text" id="email" name="email" placeholder="myaddress@gmail.com">
+                </label>
+
+                <!-- phone number input of type tel and is required -->
+
+                <label class="top">Phone Number*
+                    <input type="tel" id="Phone" name="Phone" placeholder="3554567" required>
+                </label>
+
+                <!-- Lodging info. input of type text and is required -->
+
+                <label class="top"> Where are you staying?*
+                    <input type="text" id="lodging" name="lodging" placeholder="Ship Name, Hotel, or 'Apartment'"
+                        required>
+                </label>
+                <label class="top"> What Home State/Country do you reside in? *
+                    <input type="text" id="home" name="home" placeholder="Country and/or State you reside in" required>
+                </label>
+
+            </fieldset>
+           
+
+            <fieldset>
+                <legend>Rental Information</legend>
+                <!-- additional info about rentals -->
+                <ul>
+                    <li>A $50 security deposit is required to confirm any reservations.</li>
+                    <li>A valid drivers license is required in hand at time of rental.</li>
+                    <li>No one under 12 years of age will be allowed to ride on the scooters.</li>
+                    <li>Fuel charges are not included in rental cost and may apply.</li>
+                    <li>Unlimited mileage is offered with rental.</li>
+                    <li>Liability insurance is free of charge.</li>
+                    <li>Reservations rate requires 24 hour prior notification.</li>
+                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal are accepted.</li>
+                    <li>Rentals may be returned to either location.</li>
+                </ul>
+            </fieldset>
+            <!-- submission button input of type submit that loads thanks.html-->
+            <input type="submit" value="Make a Reservation" class="submitBtn">
+
+        </form>
+
+        <div class="contact-box">
+            <img class="cozumelmap" src="images/cozumelmap.jpg" alt="Map of the island of Cozumel">
+            <div class="contactinfo">
+                <p class="contact"><strong>~Scoots</strong><br> Avenida Rafael E. Melgar 599 K-18, Centro,<br> 77600 San
+                    Miguel de Cozumel, Q.R., Mexico
+                    <br> &#9742; 999.999.9999
+                    <br>&#9993;
+                    cirrusweather@gmail.com</p>
+                <a href="https://www.facebook.com">
+                    <img src="images/fbicon.png" alt="Facebook Icon"></a>
+                <a href="https://www.pintrest.com">
+                    <img src="images/pinicon.png" alt="pintrest Icon"></a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twicon.png" alt="Twitter Icon"></a>
+            </div>
         </div>
-    </div>
-    <!--FORM-->
-    <div class="">
 
-    </div>
-</main>
-<footer>
-    <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a> | Julie Huntsman | Last modified:
-        <span id="lastupdated"></span></p>
-</footer>
-<script src="js/menu.js"></script>
-<script src="js/lastModified.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-    WebFont.load({
-        google: {
-            families: [
-            'Libre Baskerville', 'Roboto'
-            ]
-        }
-    });
-</script>
+    </main>
+    <footer>
+        <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a>
+            | Julie Huntsman | Last modified:
+            <span id="lastupdated"></span></p>
+    </footer>
+    <script src="js/reservations.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lastModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Libre Baskerville', 'Roboto'
+                ]
+            }
+        });
+    </script>
 
 </body>
 

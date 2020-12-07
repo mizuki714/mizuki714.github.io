@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="The Confirmation page for ~Scoots." />
+    <link rel="shortcut icon" href="images/mintscootericon16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>~Scoots | Thank You </title>
 </head>
+
 <body>
-    
+    <header>
+        <!--- logo site name motto-->
+        <img class="logo" src="images/mintscootericon128.png" alt="~Scoots logo">
+        <section>
+            <h1>~Scoots</h1>
+            <h3 class="motto">How we scoot</h3>
+        </section>
+    </header>
+    <!--- Navigation-->
+    <nav>
+        <button onclick="toggleMenu()"> &#9776; Menu </button>
+        <ul id="menu" class="hide_navigation">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="rentals.html"> Rentals </a></li>
+            <li class="active"><a href="reservations.html"> Reservations </a></li>
+            <li><a href="tours.html"> Tours </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <p>Thank you for your Submission!</p> 
+    <footer>
+        <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a>
+            | Julie Huntsman | Last modified:
+            <span id="lastupdated"></span></p>
+    </footer>
+    <script src="js/reservations.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lastModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Libre Baskerville', 'Roboto'
+                ]
+            }
+        });
+    </script>
+
 </body>
 </html>

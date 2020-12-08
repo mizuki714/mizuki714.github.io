@@ -81,6 +81,7 @@ fetch(forecastURL)
         //hide alert IF there is no alert to show and display alert if there is one
         /*********************works only when alert exists but otherwise wont function****************************/
         if (jsonstring.indexOf("alerts") != -1) {
+            document.querySelector(".weatheralert").style.display="block" 
           let className=  document.getElementsByClassName('weatheralert');
             for (var a = 0; a < jsObject.alerts.length; a++) {
                 //convert  start date to milliseconds because i have to!
@@ -102,9 +103,5 @@ fetch(forecastURL)
                className[a].innerHTML = `${senderName} reports there is an alert for ${event} This alert lasts from ${startDate} until ${endDate}.`;
                
             }
-        } else {
-
-            document.getElementsByClassName('weatheralert');
-            this.classList.toggle("hide_alert");
-        }
+        } 
     });

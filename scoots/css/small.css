@@ -267,6 +267,7 @@ div.rentalcards img {
 }
 /***************************************************alerts***********************************************************/
 .weatheralert{
+    display: none;
     background-color:#97EAD2;
     color: #35281C;
     text-align:center;

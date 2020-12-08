@@ -1,5 +1,5 @@
 let forecastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.5083&lon=-86.9458&exclude=minutely,hourly,&appid=08a952b25f428f198a70d56f6b821a3f&units=imperial";
-//test
+//test used a location in canada to view weather alerts
 //let forecastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=62.201&lon=-75.632&exclude=minutely,hourly,&appid=08a952b25f428f198a70d56f6b821a3f&units=imperial";
 //weather info
 fetch(forecastURL)

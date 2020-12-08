@@ -266,7 +266,7 @@ div.rentalcards img {
     height: auto;
 }
 /***************************************************alerts***********************************************************/
-div.weatheralerts{
+.weatheralert{
     background-color:#97EAD2;
     color: #35281C;
     text-align:center;

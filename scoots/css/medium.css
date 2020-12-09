@@ -20,4 +20,32 @@
     header {
         text-align: left;
     }
+
+    /********************************************images styling*******************************************************/
+    div.weatherhome,
+    div.rentaltypehome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+h3.rentalhead,
+div.rentaltypes{
+    grid-column: 2;
+    grid-row:1/3;
+    text-align: center;
+}
+div.rentaltypes{
+    line-height: normal;
+    margin-top:60px;
+}
+    img.palmtreesimg,
+    img.scooterimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        grid-row:1/3;
+    }
 }

@@ -15,4 +15,52 @@
     nav ul {
         display: flex;
     }
+    .contact-container {
+        align-items: center;
+    }
+
+    form label.sbs {
+        padding: .4rem;
+    }
+div.rentalweather{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:.5fr .5fr;
+}
+div.weatherhome{
+    grid-column: 2;
+    grid-row: 1/3
+}
+div.bonus{
+    display: block;
+    grid-column: 1;
+    grid-row:2/3;
+}
+div.rentaltypehome{
+    grid-column: 1;
+    grid-row: 1/2;
+}
+div.weatherhome,
+div.rentaltypehome {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+h3.rentalhead,
+div.rentaltypes{
+grid-column: 1;
+grid-row:;
+text-align: center;
+}
+div.rentaltypes{
+line-height: normal;
+margin-top:60px;
+}
+img.palmtreesimg{
+    grid-column: 1;
+    grid-row: 2;
+}
+img.scooterimg {
+  
+}
 }

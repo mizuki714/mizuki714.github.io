@@ -91,6 +91,7 @@ nav button {
     border: none;
     font-size: 2rem;
 }
+
 div.hide_alert,
 nav ul.hide_navigation {
     display: none;
@@ -148,18 +149,27 @@ footer {
 div.weatherhome,
 div.rentaltypehome,
 div.content-box,
-div.contact-box, 
-div.forecast-container {
+div.contact-box,
+div.forecast-container,
+div.bonus {
     background-color: #FFF9EB;
     margin: 20px;
     border: 5px solid #03B2C9;
     padding: 20px;
+
 }
-div.weatherinfo{
-background-color: #03B2C9;
-margin:20px;
-padding:20px;
+
+div.weatherhome,
+div.rentaltypehome {
+    text-align: center;
 }
+
+div.weatherinfo {
+    background-color: #03B2C9;
+    margin: 20px;
+    padding: 20px;
+}
+
 .forecast-container {
     display: block;
 }
@@ -186,6 +196,7 @@ padding:20px;
     border: 3px solid #35281C;
     text-align: center;
 }
+
 .weatherinfo:hover,
 .forecast-col:hover {
     opacity: 0.9;
@@ -208,10 +219,11 @@ div.herocontainer {
     margin: 20px;
     position: relative;
 }
-img.hero-img{
-max-width: 100%;
-max-height: 100%;
-border: 5px solid #35281C;
+
+img.hero-img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid #35281C;
 }
 
 section.calltoaction {
@@ -247,11 +259,12 @@ img {
 .motto {
     font-size: 1.3rem;
 }
+
 /*****************************************************Rental Page cards***********************************************/
-div.rentalcards section{
-    background-color:#97EAD2;
+div.rentalcards section {
+    background-color: #97EAD2;
     color: #35281C;
-    text-align:center;
+    text-align: center;
     padding: 1rem;
     margin: 1.5rem;
     max-width: 100%;
@@ -265,19 +278,21 @@ div.rentalcards img {
     width: auto;
     height: auto;
 }
+
 /***************************************************alerts***********************************************************/
-.weatheralert{
+.weatheralert {
     display: none;
-    background-color:#97EAD2;
+    background-color: #97EAD2;
     color: #35281C;
-    text-align:center;
+    text-align: center;
     padding: 1rem;
     box-shadow: 0 0 30px #35281C;
     border: 2px solid #35281C;
-    position:absolute;
+    position: absolute;
     bottom: 10px;
-    margin:20px;
+    margin: 20px;
 }
+
 /*********************************************************form styling**************************************************/
 
 form fieldset {
@@ -354,7 +369,8 @@ form label.top select:required {
     border-left: red solid 4px;
 }
 
-form label.top input:required:valid {
+form label.top input:required:valid,
+form label.top select:required:valid {
     border-left: green solid 4px;
 }
 
@@ -362,6 +378,55 @@ form label.top input:required:valid {
     background-color: #F9F4F5;
     padding: 1rem;
     text-align: center;
+}
+
+/***************************************images and styling*****************************************/
+img.palmtreesimg,
+img.scooterimg {
+    display: none;
+}
+
+/****************************************contact container********************************************************************/
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+}
+
+h3.contact-title {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+div.bonus {
+    background-image: url("../images/sunsetbeach800.jpg");
+
+}
+
+section.article {
+    background-color: #FFF9EB;
+    /* background color  */
+    background-color: rgba(206, 203, 203, 0.589);
+    /*  and the opacity */
+    margin: 20px;
+    padding: 20px;
+}
+
+iframe {
+    grid-column: 1;
+    grid-row: 2
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.contactinfo {
+    padding: .6rem;
+    margin: auto;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 /***********************************************Reference for colors used*********************************************/

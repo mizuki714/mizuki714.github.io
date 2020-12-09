@@ -50,23 +50,47 @@
                 <p><span class="weatheralert"></span></p>
             </div>
         </div>
-        <!-- Rental Types-->
-        <div class="rentaltypehome">
-            <h3>Rental Types</h3>
-            <div class="rentaltypes"></div>
-        </div>
-        <!--Weather info-->
-        <div class="weatherhome">
-            <div class=weatherinfo>
-                <h3>Weather Information</h3>
-                <span id="imagesrc"></span> &nbsp; <img src="#" alt="#" id="icon">
-                <p><strong>Currently:</strong> <span id="condition"></span></p>
-                <p><strong>Tempurature: </strong><span id="current-temp"></span></p>
-                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
-                <p><strong>Windchill:</strong> <span id="windChill"></span></p>
-                <p><strong>Wind Speed:</strong> <span id="windSpeedMPH"></span></p>
+        <div class=rentalweather>
+            <!--Weather info-->
+            <div class="weatherhome">
+                <div class=weatherinfo>
+                    <h3>Weather Information</h3>
+                    <span id="imagesrc"></span> &nbsp; <img src="#" alt="#" id="icon">
+                    <p><strong>Currently:</strong> <span id="condition"></span></p>
+                    <p><strong>Tempurature: </strong><span id="current-temp"></span></p>
+                    <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                    <p><strong>Windchill:</strong> <span id="windChill"></span></p>
+                    <p><strong>Wind Speed:</strong> <span id="windSpeedMPH"></span></p>
+                </div>
+
+
+
+
+                <div class="weatherinfoimg">
+                    <picture class="weatherinfopicture">
+                        <img class="palmtreesimg" src="images/palmtrees500x800.jpg"
+                            alt="Image of palm trees in cozumel">
+                    </picture>
+                </div>
+            </div>
+
+            <!-- Rental Types-->
+            <div class="rentaltypehome">
+                <h3 class="rentalhead">Rental Types</h3>
+                <div class="rentaltypes"></div>
+                <div class="rentalimg"><img class="scooterimg" src="images/scooterbeach.jpg"
+                        alt="image of a scooter on the beach"></div>
+            </div>
+            <div class="bonus">
+                <section class="article">
+                <h3>Riding a Scooter on Cozumel Island in Mexico</h3>
+                <p>POSTED ON MAY 8, 2018 BY JUSTCHASINGSUNSETS</p>
+                <p>Apart from knowing that scuba diving is awesome on Cozumel and it’s a major cruise docking point, I didn’t do much research on things to do in Cozumel, Mexico before I arrived. So as I walked from the ferry to the hostel, I was surprised at the number of agencies offering scooter and car rentals. I thought a car seemed a bit unnecessary. However, I noticed the beaches in town were all coral and rocky – not the white sand I’d imagined. The receptionist at the hostel confirmed I would need transportation if I intended to experience Cozumel’s sandy beaches. They offered scooter rentals, which is how I found myself riding a scooter on Cozumel the following day!</p><p></p><a href="https://www.justchasingsunsets.com/scooting-around-cozumel/">Click HERE to read more</a></p>
+                </section>
             </div>
         </div>
+        <!-- 3 day forecast-->
+
         <div class="forecast-container">
             <h3 class="forecast-title">3 Day Forecast</h3>
             <div class="forecast-table">
@@ -89,13 +113,12 @@
         </div>
         <!--contact info-->
         <div class="contact-box">
-            <h3><a href="contact.html">Contact Us</a></h3>
+            <h3>Contact Info</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59796.2544013649!2d-86.97553004149879!3d20.49532322969485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1607361824012!5m2!1sen!2sus"
                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
             <div class="contactinfo">
-
                 <p class="contact"><strong>~Scoots</strong><br> Avenida Rafael E. Melgar 599 K-18, Centro,<br> 77600 San
                     Miguel de Cozumel, Q.R., Mexico
                     <br> &#9742; 999.999.9999
@@ -109,6 +132,7 @@
                     <img src="images/twicon.png" alt="Twitter Icon"></a>
             </div>
         </div>
+
     </main>
     <footer>
         <p class="copyright">&copy;~Scoots <span id="currentYear"></span>| <a href="attributions.html">Attributions</a>

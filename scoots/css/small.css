@@ -6,11 +6,10 @@ h1 {
 }
 
 h2 {
-    color: #97EAD2;
     text-align: center;
     font-size: 2.5rem;
 }
-
+h2,
 h1,
 h3,
 h4 {
@@ -131,7 +130,8 @@ header {
 
 main {
     padding: 1rem;
-    background-color: #1A6318;
+   /* background-color: #1A6318;*/
+   background-color:#FFE7D7;
 }
 
 footer p,
@@ -431,7 +431,7 @@ iframe {
 
 /***********************************************Reference for colors used*********************************************/
 .primary {
-    background-color: #1A6318;
+    background-color: #FFE7D7;
 }
 
 .secondary {

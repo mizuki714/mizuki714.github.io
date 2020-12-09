@@ -9,6 +9,7 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
 }
+
 h2,
 h1,
 h3,
@@ -67,8 +68,7 @@ nav a:hover {
 
 }
 
-nav ul
- {
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -131,8 +131,8 @@ header {
 
 main {
     padding: 1rem;
-   /* background-color: #1A6318;*/
-   background-color:#FFE7D7;
+    /* background-color: #1A6318;*/
+    background-color: #FFE7D7;
 }
 
 footer p,
@@ -153,8 +153,8 @@ div.content-box,
 div.contact-box,
 div.forecast-container,
 div.bonus,
-div.faq ,
-div.storeimgsm{
+div.faq,
+div.storeimgsm {
     background-color: #FFF9EB;
     margin: 20px;
     border: 5px solid #03B2C9;
@@ -182,6 +182,7 @@ div.weatherinfo {
     flex-flow: row wrap;
     border-right: 1px solid #35281C;
 }
+
 
 .days {
     display: block;
@@ -232,7 +233,7 @@ img.hero-img {
 section.calltoaction {
     top: 50px;
     right: 50px;
-    background:#97EAD2;
+    background: #97EAD2;
     ;
     padding: .5rem;
     box-shadow: 0 0 30px #35281C;
@@ -298,9 +299,10 @@ div.rentalcards img {
 }
 
 /*********************************************************form styling**************************************************/
-form fieldset ul{
+form fieldset ul {
     list-style: circle;
 }
+
 form fieldset {
     margin: 2rem 0;
     border: 3px solid #03B2C9;
@@ -388,17 +390,19 @@ form label.top select:required:valid {
 
 /***************************************images and styling*****************************************/
 img.palmtreesimg,
-img.scooterstoreimg {
+img.scooterstoreimg,
+.rentaldiv,
+.rentaltable {
     display: none;
 }
 
 img.smimg,
-img.ferry{
+img.ferry {
     margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
-        width: 100%;
-        height: 100%;
+    margin-right: auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 /****************************************contact container********************************************************************/

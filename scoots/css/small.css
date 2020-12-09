@@ -153,7 +153,8 @@ div.content-box,
 div.contact-box,
 div.forecast-container,
 div.bonus,
-div.faq {
+div.faq ,
+div.storeimgsm{
     background-color: #FFF9EB;
     margin: 20px;
     border: 5px solid #03B2C9;
@@ -387,8 +388,16 @@ form label.top select:required:valid {
 
 /***************************************images and styling*****************************************/
 img.palmtreesimg,
-img.scooterimg {
+img.scooterstoreimg {
     display: none;
+}
+
+img.smimg{
+    margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
 }
 
 /****************************************contact container********************************************************************/

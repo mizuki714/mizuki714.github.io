@@ -39,7 +39,7 @@ div.rentaltypes{
     margin-top:60px;
 }
     img.palmtreesimg,
-    img.scooterimg {
+    img.scooterstoreimg {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -48,4 +48,11 @@ div.rentaltypes{
         height: 100%;
         grid-row:1/3;
     }
+    div.storeimgsm{
+        display:none;
+    }
+   
+img.smimg{
+    display: none;
+}
 }

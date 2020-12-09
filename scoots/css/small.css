@@ -67,7 +67,8 @@ nav a:hover {
 
 }
 
-nav ul {
+nav ul
+ {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -263,7 +264,7 @@ img {
 
 /*****************************************************Rental Page cards***********************************************/
 div.rentalcards section {
-    background-color: #97EAD2;
+    background-color: #FFF9EB;
     color: #35281C;
     text-align: center;
     padding: 1rem;
@@ -295,10 +296,12 @@ div.rentalcards img {
 }
 
 /*********************************************************form styling**************************************************/
-
+form fieldset ul{
+    list-style: circle;
+}
 form fieldset {
     margin: 2rem 0;
-    border: 2px solid #97EAD2;
+    border: 3px solid #03B2C9;
     color: #35281C;
     padding: 1rem 2%;
 }
@@ -376,7 +379,7 @@ form label.top select:required:valid {
 }
 
 .tymessage {
-    background-color: #F9F4F5;
+    background-color: #FFF9EB;
     padding: 1rem;
     text-align: center;
 }

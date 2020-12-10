@@ -147,6 +147,12 @@ footer {
     text-align: center;
 }
 
+div.discover,
+div.features,
+div.about,
+div.passionIsland,
+div.snorkel,
+div.couples,
 div.weatherhome,
 div.rentaltypehome,
 div.content-box,
@@ -396,6 +402,11 @@ img.scooterstoreimg,
     display: none;
 }
 
+img.discovermexico,
+img.sanGervasio,
+img.snorkel,
+img.passion,
+img.myanvows,
 img.imgsm,
 img.ferry {
     margin-left: auto;

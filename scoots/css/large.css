@@ -49,7 +49,6 @@ div.rentaltypehome {
 h3.rentalhead,
 div.rentaltypes{
 grid-column: 1;
-grid-row:;
 text-align: center;
 }
 div.rentaltypes{
@@ -60,7 +59,5 @@ img.palmtreesimg{
     grid-column: 1;
     grid-row: 2;
 }
-img.scooterimg {
-  
-}
+
 }

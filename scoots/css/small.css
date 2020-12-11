@@ -147,6 +147,7 @@ footer {
     text-align: center;
 }
 
+div.confirmationmessage,
 div.discover,
 div.features,
 div.about,
@@ -373,11 +374,15 @@ form {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
-    background-color: #FFF9EB;
     max-width: 24rem;
+    /*color*/
+    background-color: #FFE7D7;
+    /*opacity*/
+    background-color: hsla(24, 100%, 92%, 0.788);
+   
 }
 
-/* these do not work properly and I was strugling with this! */
+
 form label.top input:required,
 form label.top select:required {
     border-left: red solid 4px;
@@ -393,6 +398,13 @@ form label.top select:required:valid {
     padding: 1rem;
     text-align: center;
 }
+
+main.reservation {
+    background-image: url("../images/form.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /***************************************images and styling*****************************************/
 img.palmtreesimg,
@@ -431,7 +443,6 @@ h3.contact-title {
 
 div.bonus {
     background-image: url("../images/sunsetbeach800.jpg");
-
 }
 
 section.article {

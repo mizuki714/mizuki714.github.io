@@ -20,9 +20,8 @@
     header {
         text-align: left;
     }
-    /**************************** call to action***************************/
-  
-    
+
+
 
     /********************************************images styling*******************************************************/
     div.weatherhome,
@@ -44,6 +43,7 @@
         margin-top: 60px;
     }
 
+    img.passionisle,
     img.palmtreesimg,
     img.scooterstoreimg {
         display: block;
@@ -92,8 +92,7 @@
         border-right: 1px solid #35281C;
     }
 
-    div.rentaldiv
-        {
+    div.rentaldiv {
         display: block;
         background-color: #FFF9EB;
         margin: 20px;
@@ -101,30 +100,83 @@
         padding: 20px;
 
     }
+
     /****************************************contact container********************************************************************/
-.contact-box {
-    display: grid;
+    .contact-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 1fr;
+    }
+
+    h3.contact-title {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+
+
+    iframe {
+        grid-column: 1;
+        grid-row: 2
+    }
+
+
+
+    .contactinfo {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /*****************************************************Rental Page cards***********************************************/
+    div.rentalelements section {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    div.rentalcards section:nth-child(even) img {
+        grid-column: 2;
+        grid-row: span 7;
+    }
+    div.rentalcards section:nth-child(even) h3{
+        grid-row:1;
+    }
+
+    div.rentalcards section {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .3fr .3fr .3fr .3fr .3fr .3fr;
+    }
+
+    div.rentalcards img {
+        order: 1;
+        width: 100%;
+        grid-row: span 7;
+    }
+
+    div.rentalcards h3 {
+        order: 2;
+        margin: 0;
+    }
+
+    div.rentalcards p {
+        order: 3;
+        margin: 0 auto;
+    }
+/**************************************************TOURS PAGE*********************************************/
+div.tours{
+    display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1fr;
+    
 }
-
-h3.contact-title {
-    grid-row: 1;
-    grid-column: 1/3;
+div.snorkel{
+      grid-column:2 ;  
 }
-
-
-
-iframe {
-    grid-column: 1;
-    grid-row: 2
-}
-
-
-
-.contactinfo {
-    grid-column: 2;
-    grid-row: 2;
+h3.tour 
+{
+    grid-column: span 2;
 }
 
 }

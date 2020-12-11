@@ -20,6 +20,9 @@
     header {
         text-align: left;
     }
+    /**************************** call to action***************************/
+  
+    
 
     /********************************************images styling*******************************************************/
     div.weatherhome,
@@ -98,5 +101,30 @@
         padding: 20px;
 
     }
+    /****************************************contact container********************************************************************/
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+}
+
+h3.contact-title {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+
+
+iframe {
+    grid-column: 1;
+    grid-row: 2
+}
+
+
+
+.contactinfo {
+    grid-column: 2;
+    grid-row: 2;
+}
 
 }

@@ -134,13 +134,14 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    
+
     div.rentalcards section:nth-child(even) img {
         grid-column: 2;
         grid-row: span 7;
     }
-    div.rentalcards section:nth-child(even) h3{
-        grid-row:1;
+
+    div.rentalcards section:nth-child(even) h3 {
+        grid-row: 1;
     }
 
     div.rentalcards section {
@@ -165,18 +166,20 @@
         order: 3;
         margin: 0 auto;
     }
-/**************************************************TOURS PAGE*********************************************/
-div.tours{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    
-}
-div.snorkel{
-      grid-column:2 ;  
-}
-h3.tour 
-{
-    grid-column: span 2;
-}
+
+    /**************************************************TOURS PAGE*********************************************/
+    div.tours {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    div.snorkel {
+        grid-column: 2;
+    }
+
+    h3.tour {
+        grid-column: span 2;
+    }
 
 }

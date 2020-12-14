@@ -153,12 +153,12 @@ footer {
 
 div.attribution,
 div.confirmationmessage,
-div.discover,
-div.features,
-div.about,
-div.passionIsland,
-div.snorkel,
-div.couples,
+article.discover,
+article.features,
+article.about,
+article.passionIsland,
+article.snorkel,
+article.couples,
 div.weatherhome,
 div.rentaltypehome,
 div.content-box,
@@ -453,7 +453,7 @@ div.bonus {
     background-image: url("../images/sunsetbeach800.jpg");
 }
 
-section.article {
+article.article {
     background-color: #FFF9EB;
     /* background color  */
     background-color: rgba(206, 203, 203, 0.589);

@@ -111,10 +111,10 @@
 
     }
 
-    div.snorkel,
-    div.passionIsland,
-    div.features,
-    div.discover,
+    article.snorkel,
+    article.passionIsland,
+    article.features,
+    article.discover,
     div.other {
         grid-column: span 2;
     }
